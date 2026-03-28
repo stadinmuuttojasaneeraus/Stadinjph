@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">Stadin Jokapaikanhöylät Oy</div>
         <nav>
@@ -15,11 +16,6 @@
                 <a href="#yhteystiedot">Yhteystiedot</a>
                 <a href="#meista">Meistä</a>
             </div>
-            <select class="lang-select" id="langSelect">
-                <option value="fi" selected>FI</option>
-                <option value="sv">SV</option>
-                <option value="en">EN</option>
-            </select>
             <div class="hamburger" id="hamburger">
                 <div></div>
                 <div></div>
@@ -28,21 +24,55 @@
         </nav>
     </header>
 
-    <section id="palvelut">
-        <h2>Palvelut</h2>
-        <p>Tarjoamme monipuolisia palveluita eri aloilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <ul>
-            <li>Palvelu 1</li>
-            <li>Palvelu 2</li>
-            <li>Palvelu 3</li>
-        </ul>
+    <!-- Hero-sektion -->
+    <section class="hero">
+        <h1>Luotettavaa palvelua Helsingissä</h1>
+        <p>Monipuoliset ratkaisut kaikenlaisiin tarpeisiin vuodesta 2010.</p>
+        <a href="#yhteystiedot" class="cta-button">Ota yhteyttä</a>
     </section>
 
+    <!-- Tjänster -->
+    <section id="palvelut">
+        <h2>Palvelut</h2>
+        <div class="services">
+            <div class="service-item">
+                <div class="icon">🛠️</div>
+                <h3>Palvelu 1</h3>
+                <p>Kuvaus palvelusta 1</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">🏗️</div>
+                <h3>Palvelu 2</h3>
+                <p>Kuvaus palvelusta 2</p>
+            </div>
+            <div class="service-item">
+                <div class="icon">🔧</div>
+                <h3>Palvelu 3</h3>
+                <p>Kuvaus palvelusta 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om oss -->
     <section id="meista">
         <h2>Meistä</h2>
         <p>Stadin Jokapaikanhöylät Oy on luotettava ja ammattitaitoinen yritys. Lorem ipsum dolor sit amet.</p>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>Asiakkaamme sanovat</h2>
+        <div class="testimonial-item">
+            <p>"Loistavaa palvelua ja nopea reagointi!"</p>
+            <span>- Matti M.</span>
+        </div>
+        <div class="testimonial-item">
+            <p>"Erittäin ammattitaitoinen tiimi."</p>
+            <span>- Liisa K.</span>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
     <section id="yhteystiedot">
         <h2>Yhteystiedot</h2>
         <p>Voit ottaa meihin yhteyttä seuraavilla tavoilla:</p>
@@ -59,6 +89,21 @@
             <button type="submit">Lähetä</button>
         </form>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Stadin Jokapaikanhöylät Oy</p>
+        <div class="footer-links">
+            <a href="#palvelut">Palvelut</a> |
+            <a href="#yhteystiedot">Yhteystiedot</a> |
+            <a href="#meista">Meistä</a>
+        </div>
+        <select class="lang-select" id="langSelect">
+            <option value="fi" selected>FI</option>
+            <option value="sv">SV</option>
+            <option value="en">EN</option>
+        </select>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
