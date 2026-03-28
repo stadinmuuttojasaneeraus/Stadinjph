@@ -131,12 +131,15 @@ header {
     flex: 1 1 250px;
     background: #e6f0ff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 
     display: block;
     text-decoration: none;
     color: #003366;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 /* CONTACT */
