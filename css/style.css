@@ -213,7 +213,7 @@ header {
     border-radius: 8px;
     margin: 20px 0;
 }
-/* ABOUT / Meistä */
+
 /* MEISTÄ / About section */
 .about-section {
     position: relative;
@@ -382,15 +382,28 @@ footer {
         margin-bottom: 15px;
     }
 }
-/* Mobilanpassning */
+/* Mobilanpassning för Meistä / About */
 @media (max-width: 768px) {
     .about-section {
-        min-height: auto;
-        padding: 40px 15px;
+        min-height: auto; /* låter sektionen växa med texten */
+        padding: 60px 15px; /* mer utrymme runt texten */
     }
+
+    .about-overlay {
+        padding: 20px 10px; /* säkerställer att overlay täcker texten */
+        align-items: flex-start; /* staplar texten från toppen */
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: left; /* bättre läsbarhet på mobil */
+    }
+
     .about-content h2 {
         font-size: 1.5rem;
+        margin-bottom: 10px;
     }
+
     .about-content p {
         font-size: 0.95rem;
     }
