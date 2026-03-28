@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: Arial, sans-serif;
@@ -16,151 +14,48 @@ body {
 
 /* HEADER */
 header {
-    background: #003366;      /* Blå bakgrund */
+    background: #003366;
     color: #ffffff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: sticky;          /* Sticky fix */
+    position: sticky;
     top: 0;
-    z-index: 1000;             /* Viktigt så den ligger över allt */
+    z-index: 1000;
 }
 
-/* Logo */
-.logo {
-    font-weight: 700;
-    font-size: 1.6rem;
-}
+.logo { font-weight: 700; font-size: 1.6rem; }
 
-/* Meny */
-.menu {
-    display: flex;
-    gap: 20px;
-}
+.menu { display: flex; gap: 20px; }
 
-.menu a {
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-}
+.menu a { font-weight: 700; color: #ffffff; text-decoration: none; }
 
-/* HAMBURGER */
-.hamburger {
-    display: none;             /* Visas bara på mobil */
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 100%;
-    height: 3px;
-    background: #ffffff;       /* Vita streck */
-    border-radius: 2px;
-}
-/* HERO */
-#hero {
-    position: relative;
-    background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80'); /* hero-bild */
-    background-size: cover;
-    background-position: center;
-    color: #003366;
-
-    display: flex;
-    align-items: center; /* centrerar vertikalt */
-    justify-content: center;
-    min-height: 400px; /* höjd på desktop */
-    padding: 40px 20px;
-}
-
-/* Overlay för bättre läsbarhet */
-#hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 0;
-}
-
-/* Hero container */
-.hero-container {
-    position: relative;
-    z-index: 1; /* ovanpå overlay */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-/* Logga */
-.hero-logo img {
-    max-width: 250px;
-    height: auto;
-}
-
-/* Text + CTA */
-.hero-content {
-    flex: 1;
-    min-width: 250px;
-}
-
-.hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-/* CTA-knapp */
-.cta-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 25px;
-    background: #003366;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-}
+.hamburger { display: none; flex-direction: column; justify-content: space-between; width: 25px; height: 20px; cursor: pointer; }
+.hamburger div { width: 100%; height: 3px; background: #ffffff; border-radius: 2px; }
 
 /* HERO */
 #hero {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80'); /* exempelbild städ/flytt */
+    background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
     background-position: center;
-    color: #003366;
-
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 400px;
-    max-height: 600px;
-    padding: 20px;
+    padding: 40px 20px;
+    color: #003366;
 }
 
-/* Overlay */
 #hero::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(255,255,255,0.5);
     z-index: 0;
 }
 
-/* Hero container */
 .hero-container {
     position: relative;
     z-index: 1;
@@ -173,10 +68,7 @@ header {
     gap: 20px;
 }
 
-/* Språkval */
-.hero-lang {
-    margin-bottom: 10px;
-}
+.hero-lang { margin-bottom: 10px; }
 .hero-lang select {
     padding: 5px 8px;
     border-radius: 4px;
@@ -187,15 +79,9 @@ header {
     color: #ffffff;
 }
 
-/* Text + CTA */
-.hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-.hero-content p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
+.hero-content h1 { font-size: 2rem; margin-bottom: 10px; }
+.hero-content p { font-size: 1rem; margin-bottom: 15px; }
+
 .cta-button {
     display: inline-block;
     padding: 12px 25px;
@@ -206,35 +92,24 @@ header {
     border-radius: 5px;
 }
 
-
-/* IMAGE */
-.section-image {
-    width: 100%;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-/* MEISTÄ / About section */
+/* MEISTÄ */
 .about-section {
     position: relative;
     background-image: url('https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg');
     background-size: cover;
     background-position: center;
-    color: #ffffff;
-    min-height: 400px; /* höjd på desktop */
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
+    color: #ffffff;
 }
 
-/* Overlay för text */
 .about-overlay {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5); /* mörk overlay för kontrast */
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,31 +117,16 @@ header {
     padding: 20px;
 }
 
-/* Textinnehåll */
 .about-content {
     position: relative;
-    z-index: 1; /* så texten hamnar ovanpå overlay */
+    z-index: 1;
     max-width: 800px;
 }
 
-.about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.about-content p {
-    font-size: 1rem;
-}
-
+.about-content h2 { font-size: 2rem; margin-bottom: 15px; }
+.about-content p { font-size: 1rem; }
 
 /* SERVICES */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
 .service-item {
     flex: 1 1 250px;
     background: #e6f0ff;
@@ -276,129 +136,30 @@ header {
 }
 
 /* CONTACT */
-.contact-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-info, form {
-    flex: 1 1 300px;
-    background: #e6f0ff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #003366;
-    color: white;
-    border: none;
-}
-
-/* MAP */
-.map {
-    margin-top: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-}
+.contact-container { display: flex; gap: 20px; flex-wrap: wrap; }
+.contact-info, form { flex: 1 1 300px; background: #e6f0ff; padding: 20px; border-radius: 8px; }
+input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
+button { width: 100%; padding: 10px; background: #003366; color: white; border: none; }
+.map { margin-top: 20px; border-radius: 8px; overflow: hidden; }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #e6f0ff;
-}
-
-.social-links a {
-    margin: 0 10px;
-}
+footer { text-align: center; padding: 20px; background: #e6f0ff; }
+.social-links a { margin: 0 10px; }
 
 /* MOBILE */
 @media (max-width: 768px) {
-    /* Dölj standardmeny */
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: #003366;   /* Matcha headern */
-        position: absolute;
-        top: 60px;             /* Justera om header ändras i höjd */
-        right: 0;
-        width: 200px;
-        padding: 10px;
-        border-radius: 0 0 8px 8px;
-    }
+    .menu { display: none; flex-direction: column; background: #003366; position: absolute; top: 60px; right: 0; width: 200px; padding: 10px; border-radius: 0 0 8px 8px; }
+    .menu.active { display: flex; }
+    .hamburger { display: flex; }
+    .services { flex-direction: column; }
 
-    /* Visa meny när hamburgaren klickas */
-    .menu.active {
-        display: flex;
-    }
+    #hero { min-height: auto; padding: 30px 15px; }
+    .hero-content h1 { font-size: 1.4rem; }
+    .hero-content p { font-size: 0.9rem; }
+    .cta-button { padding: 10px 20px; }
+    .hero-lang { margin-bottom: 15px; }
 
-    /* Visa hamburger */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 25px;
-        height: 20px;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 100%;
-        height: 3px;
-        background: #ffffff;    /* Vita streck syns mot blå bakgrund */
-        border-radius: 2px;
-    }
-
-    /* Services staplas på mobil */
-    .services {
-        flex-direction: column;
-    }
-}   
-/* Mobilanpassning */
-@media (max-width: 768px) {
-    #hero {
-        min-height: auto;
-        padding: 30px 15px;
-    }
-    .hero-content h1 {
-        font-size: 1.4rem;
-    }
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-    .cta-button {
-        padding: 10px 20px;
-    }
-    .hero-lang {
-        margin-bottom: 15px;
-    }
-}
-/* Mobilanpassning för Meistä / About */
-@media (max-width: 768px) {
-    .about-section {
-        display: block;       /* låter sektionen växa naturligt */
-        min-height: auto;     
-        padding: 60px 15px;
-    }
-
-    .about-overlay {
-        position: relative;   /* slutar vara absolute */
-        background: rgba(0,0,0,0.5);
-        padding: 20px 10px;
-        text-align: left;
-    }
-
-    .about-content {
-        max-width: 100%;
-        text-align: left;
-    }
+    .about-section { display: block; min-height: auto; padding: 60px 15px; }
+    .about-overlay { position: relative; padding: 20px 10px; text-align: left; }
+    .about-content { max-width: 100%; text-align: left; }
 }
