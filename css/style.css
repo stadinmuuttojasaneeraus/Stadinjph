@@ -63,20 +63,75 @@ header {
     border-radius: 2px;
 }
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: #cce0ff;
+#hero {
+    position: relative;
+    background-image: url('img/hero-bg.jpg'); /* byt ut mot din bild */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #003366;
 }
 
+/* Overlay (för bättre läsbarhet) */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+}
+
+/* Hero container med flexbox */
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+/* Logga */
+.hero-logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Text + CTA */
+.hero-content {
+    flex: 1;
+}
+
+/* Språkval */
+.hero-lang {
+    margin-bottom: 10px;
+    text-align: right;
+}
+.hero-lang select {
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background: #003366;
+    color: #ffffff;
+}
+
+/* CTA-knapp */
 .cta-button {
     display: inline-block;
     margin-top: 20px;
-    background: #003366;
-    color: white;
     padding: 12px 25px;
+    background: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
     border-radius: 5px;
 }
+
 
 /* IMAGE */
 .section-image {
@@ -189,32 +244,33 @@ footer {
         flex-direction: column;
     }
 }   
+/* Mobilanpassning */
 @media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  .hero-logo img {
-    max-width: 180px;
-    margin-bottom: 20px;
-  }
+    .hero-logo img {
+        max-width: 180px;
+        margin-bottom: 20px;
+    }
 
-  .hero-lang {
-    text-align: center;
-    margin-bottom: 15px;
-  }
+    .hero-lang {
+        text-align: center;
+        margin-bottom: 15px;
+    }
 
-  .cta-button {
-    padding: 10px 20px;
-  }
+    .cta-button {
+        padding: 10px 20px;
+    }
 
-  .hero-content h1 {
-    font-size: 1.4rem;
-  }
+    .hero-content h1 {
+        font-size: 1.4rem;
+    }
 
-  .hero-content p {
-    font-size: 0.9rem;
-  }
+    .hero-content p {
+        font-size: 0.9rem;
+    }
 }
