@@ -214,25 +214,27 @@ header {
     margin: 20px 0;
 }
 /* ABOUT / Meistä */
+/* MEISTÄ / About section */
 .about-section {
     position: relative;
-    background-image: url('https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg'); /* Bild 1 */
+    background-image: url('https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
-    min-height: 350px;
+    min-height: 400px; /* höjd på desktop */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
 }
 
-/* Overlay för texten */
+/* Overlay för text */
 .about-overlay {
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* mörk overlay för kontrast */
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* mörk overlay för kontrast */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,10 +242,10 @@ header {
     padding: 20px;
 }
 
-/* Text innehåll */
+/* Textinnehåll */
 .about-content {
     position: relative;
-    z-index: 1; /* säkerställer att texten är ovanpå overlay */
+    z-index: 1; /* så texten hamnar ovanpå overlay */
     max-width: 800px;
 }
 
