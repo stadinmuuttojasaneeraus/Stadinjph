@@ -65,14 +65,19 @@ header {
 /* HERO */
 #hero {
     position: relative;
-    background-image: url('img/hero-bg.jpg'); /* byt ut mot din bild */
+    background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80'); /* hero-bild */
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
     color: #003366;
+
+    display: flex;
+    align-items: center; /* centrerar vertikalt */
+    justify-content: center;
+    min-height: 400px; /* höjd på desktop */
+    padding: 40px 20px;
 }
 
-/* Overlay (för bättre läsbarhet) */
+/* Overlay för bättre läsbarhet */
 #hero::before {
     content: "";
     position: absolute;
@@ -82,16 +87,17 @@ header {
     z-index: 0;
 }
 
-/* Hero container med flexbox */
+/* Hero container */
 .hero-container {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* ovanpå overlay */
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
+    width: 100%;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 /* Logga */
@@ -103,13 +109,37 @@ header {
 /* Text + CTA */
 .hero-content {
     flex: 1;
+    min-width: 250px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* CTA-knapp */
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 /* Språkval */
 .hero-lang {
-    margin-bottom: 10px;
     text-align: right;
+    margin-bottom: 15px;
 }
+
 .hero-lang select {
     padding: 5px 8px;
     border-radius: 4px;
@@ -118,18 +148,6 @@ header {
     cursor: pointer;
     background: #003366;
     color: #ffffff;
-}
-
-/* CTA-knapp */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #003366;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
 }
 
 
@@ -244,8 +262,13 @@ footer {
         flex-direction: column;
     }
 }   
-/* Mobilanpassning */
+/* MOBILANPASSNING */
 @media (max-width: 768px) {
+    #hero {
+        min-height: auto; /* låt hero växa efter innehåll */
+        padding: 30px 15px;
+    }
+
     .hero-container {
         flex-direction: column;
         align-items: center;
@@ -257,20 +280,20 @@ footer {
         margin-bottom: 20px;
     }
 
-    .hero-lang {
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-    }
-
     .hero-content h1 {
         font-size: 1.4rem;
     }
 
     .hero-content p {
         font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .hero-lang {
+        text-align: center;
+        margin-bottom: 15px;
     }
 }
