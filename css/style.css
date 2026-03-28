@@ -38,10 +38,17 @@ header {
     font-size: 1.6rem;
 }
 
-.hamburger div {
-    background: #ffffff; /* vita streck */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
-
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #003366;
+    margin: 3px 0;
+}
 /* HERO */
 .hero {
     text-align: center;
