@@ -7,104 +7,125 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">Stadin Jokapaikanhöylät Oy</div>
-        <nav>
-            <div class="menu" id="menu">
-                <a href="#palvelut">Palvelut</a>
-                <a href="#yhteystiedot">Yhteystiedot</a>
-                <a href="#meista">Meistä</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero-sektion -->
-    <section class="hero">
-        <h1>Luotettavaa palvelua Helsingissä</h1>
-        <p>Monipuoliset ratkaisut kaikenlaisiin tarpeisiin vuodesta 2010.</p>
-        <a href="#yhteystiedot" class="cta-button">Ota yhteyttä</a>
-    </section>
-
-    <!-- Tjänster -->
-    <section id="palvelut">
-        <h2>Palvelut</h2>
-        <div class="services">
-            <div class="service-item">
-                <div class="icon">🛠️</div>
-                <h3>Palvelu 1</h3>
-                <p>Kuvaus palvelusta 1</p>
-            </div>
-            <div class="service-item">
-                <div class="icon">🏗️</div>
-                <h3>Palvelu 2</h3>
-                <p>Kuvaus palvelusta 2</p>
-            </div>
-            <div class="service-item">
-                <div class="icon">🔧</div>
-                <h3>Palvelu 3</h3>
-                <p>Kuvaus palvelusta 3</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Om oss -->
-    <section id="meista">
-        <h2>Meistä</h2>
-        <p>Stadin Jokapaikanhöylät Oy on luotettava ja ammattitaitoinen yritys. Lorem ipsum dolor sit amet.</p>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials">
-        <h2>Asiakkaamme sanovat</h2>
-        <div class="testimonial-item">
-            <p>"Loistavaa palvelua ja nopea reagointi!"</p>
-            <span>- Matti M.</span>
-        </div>
-        <div class="testimonial-item">
-            <p>"Erittäin ammattitaitoinen tiimi."</p>
-            <span>- Liisa K.</span>
-        </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section id="yhteystiedot">
-        <h2>Yhteystiedot</h2>
-        <p>Voit ottaa meihin yhteyttä seuraavilla tavoilla:</p>
-        <ul>
-            <li>Sähköposti: info@stadinjokapaikanhoylat.fi</li>
-            <li>Puhelin: +358 40 123 4567</li>
-            <li>Osoite: Esimerkkikatu 1, 00100 Helsinki</li>
-        </ul>
-
-        <form id="contactForm">
-            <input type="text" placeholder="Nimi" required>
-            <input type="email" placeholder="Sähköposti" required>
-            <textarea placeholder="Viesti" rows="5" required></textarea>
-            <button type="submit">Lähetä</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Stadin Jokapaikanhöylät Oy</p>
-        <div class="footer-links">
-            <a href="#palvelut">Palvelut</a> |
-            <a href="#yhteystiedot">Yhteystiedot</a> |
+<header>
+    <div class="logo">Stadin Jokapaikanhöylät Oy</div>
+    <nav>
+        <div class="menu" id="menu">
+            <a href="#palvelut">Palvelut</a>
+            <a href="#yhteystiedot">Yhteystiedot</a>
             <a href="#meista">Meistä</a>
         </div>
-        <select class="lang-select" id="langSelect">
-            <option value="fi" selected>FI</option>
-            <option value="sv">SV</option>
-            <option value="en">EN</option>
-        </select>
-    </footer>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
 
-    <script src="js/script.js"></script>
+<!-- HERO -->
+<section class="hero">
+    <h1>Luotettavat palvelut Helsingissä</h1>
+    <p>Siivous, muutto, remontti ja puutarhatyöt – kaikki yhdestä paikasta.</p>
+    <a href="#yhteystiedot" class="cta-button">Pyydä tarjous</a>
+</section>
+
+<!-- IMAGE -->
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Palvelut" class="section-image">
+
+<!-- SERVICES -->
+<section id="palvelut">
+    <h2>Palvelut</h2>
+    <div class="services">
+
+        <div class="service-item">
+            <div class="icon">🧹</div>
+            <h3>Siivous</h3>
+            <p>Kotien ja yritysten siivouspalvelut.</p>
+        </div>
+
+        <div class="service-item">
+            <div class="icon">🚚</div>
+            <h3>Muutto</h3>
+            <p>Nopeat ja turvalliset muutot.</p>
+        </div>
+
+        <div class="service-item">
+            <div class="icon">🔨</div>
+            <h3>Remontti</h3>
+            <p>Pienet ja suuret remontit.</p>
+        </div>
+
+        <div class="service-item">
+            <div class="icon">🌿</div>
+            <h3>Puutarhatyöt</h3>
+            <p>Pihanhoito ja kausityöt.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="meista">
+    <h2>Meistä</h2>
+    <p>Stadin Jokapaikanhöylät Oy tarjoaa luotettavia ja monipuolisia palveluita Helsingissä. Panostamme laatuun ja asiakastyytyväisyyteen.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="yhteystiedot" class="contact-section">
+    <h2>Yhteystiedot</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <p><strong>Sähköposti:</strong> info@stadinjokapaikanhoylat.fi</p>
+            <p><strong>Puhelin:</strong> +358 40 123 4567</p>
+            <p><strong>Osoite:</strong> Helsinki, Suomi</p>
+        </div>
+
+        <!-- FORM (FORMspree) -->
+        <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="text" name="name" placeholder="Nimi" required>
+            <input type="email" name="email" placeholder="Sähköposti" required>
+            <input type="text" name="phone" placeholder="Puhelin" required>
+            <input type="text" name="address" placeholder="Osoite">
+            <textarea name="message" placeholder="Viesti" rows="5" required></textarea>
+            <button type="submit">Lähetä</button>
+        </form>
+
+    </div>
+
+    <!-- GOOGLE MAP -->
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Helsinki&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><strong>Stadin Jokapaikanhöylät Oy</strong></p>
+    <p>Helsinki, Suomi</p>
+    <p>📞 +358 40 123 4567</p>
+    <p>✉️ info@stadinjokapaikanhoylat.fi</p>
+    <p>Y-tunnus: 1234567-8</p>
+
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+
+    <p>© 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
