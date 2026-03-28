@@ -213,6 +213,49 @@ header {
     border-radius: 8px;
     margin: 20px 0;
 }
+/* ABOUT / Meistä */
+.about-section {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg'); /* Bild 1 */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* Overlay för texten */
+.about-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* mörk overlay för kontrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Text innehåll */
+.about-content {
+    position: relative;
+    z-index: 1; /* säkerställer att texten är ovanpå overlay */
+    max-width: 800px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 1rem;
+}
+
 
 /* SERVICES */
 .services {
@@ -335,5 +378,18 @@ footer {
     }
     .hero-lang {
         margin-bottom: 15px;
+    }
+}
+/* Mobilanpassning */
+@media (max-width: 768px) {
+    .about-section {
+        min-height: auto;
+        padding: 40px 15px;
+    }
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    .about-content p {
+        font-size: 0.95rem;
     }
 }
