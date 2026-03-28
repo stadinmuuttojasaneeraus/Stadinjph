@@ -146,6 +146,25 @@ button { width: 100%; padding: 10px; background: #003366; color: white; border: 
 footer { text-align: center; padding: 20px; background: #e6f0ff; }
 .social-links a { margin: 0 10px; }
 
+/* SERVICE PAGE */
+.service-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.service-page h1 {
+    margin-bottom: 15px;
+}
+
+.service-page h2 {
+    margin-top: 20px;
+}
+
+.service-page ul {
+    margin: 10px 0 20px 20px;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
     .menu { display: none; flex-direction: column; background: #003366; position: absolute; top: 60px; right: 0; width: 200px; padding: 10px; border-radius: 0 0 8px 8px; }
