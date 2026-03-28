@@ -16,33 +16,30 @@ body {
 
 /* HEADER */
 header {
-    background: #e6f0ff;
+    background: #003366; /* mörkblå */
+    color: #ffffff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.menu {
-    display: flex;
-    gap: 20px;
+    position: sticky; /* FIX */
+    top: 0;
+    z-index: 1000;
 }
 
 .menu a {
-    font-weight: bold;
+    font-weight: 700; /* fetare text */
+    color: #ffffff;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.logo {
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .hamburger div {
-    width: 25px;
-    height: 3px;
-    background: #003366;
-    margin: 3px 0;
+    background: #ffffff; /* vita streck */
 }
 
 /* HERO */
