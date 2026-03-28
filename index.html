@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadin Jokapaikanhöylät Oy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Stadin Jokapaikanhöylät Oy</div>
+        <nav>
+            <div class="menu" id="menu">
+                <a href="#palvelut">Palvelut</a>
+                <a href="#yhteystiedot">Yhteystiedot</a>
+                <a href="#meista">Meistä</a>
+            </div>
+            <select class="lang-select" id="langSelect">
+                <option value="fi" selected>FI</option>
+                <option value="sv">SV</option>
+                <option value="en">EN</option>
+            </select>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="palvelut">
+        <h2>Palvelut</h2>
+        <p>Tarjoamme monipuolisia palveluita eri aloilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <ul>
+            <li>Palvelu 1</li>
+            <li>Palvelu 2</li>
+            <li>Palvelu 3</li>
+        </ul>
+    </section>
+
+    <section id="meista">
+        <h2>Meistä</h2>
+        <p>Stadin Jokapaikanhöylät Oy on luotettava ja ammattitaitoinen yritys. Lorem ipsum dolor sit amet.</p>
+    </section>
+
+    <section id="yhteystiedot">
+        <h2>Yhteystiedot</h2>
+        <p>Voit ottaa meihin yhteyttä seuraavilla tavoilla:</p>
+        <ul>
+            <li>Sähköposti: info@stadinjokapaikanhoylat.fi</li>
+            <li>Puhelin: +358 40 123 4567</li>
+            <li>Osoite: Esimerkkikatu 1, 00100 Helsinki</li>
+        </ul>
+
+        <form id="contactForm">
+            <input type="text" placeholder="Nimi" required>
+            <input type="email" placeholder="Sähköposti" required>
+            <textarea placeholder="Viesti" rows="5" required></textarea>
+            <button type="submit">Lähetä</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
