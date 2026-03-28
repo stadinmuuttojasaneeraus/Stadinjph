@@ -385,26 +385,20 @@ footer {
 /* Mobilanpassning för Meistä / About */
 @media (max-width: 768px) {
     .about-section {
-        min-height: auto; /* låter sektionen växa med texten */
-        padding: 60px 15px; /* mer utrymme runt texten */
+        display: block;       /* låter sektionen växa naturligt */
+        min-height: auto;     
+        padding: 60px 15px;
     }
 
     .about-overlay {
-        padding: 20px 10px; /* säkerställer att overlay täcker texten */
-        align-items: flex-start; /* staplar texten från toppen */
+        position: relative;   /* slutar vara absolute */
+        background: rgba(0,0,0,0.5);
+        padding: 20px 10px;
+        text-align: left;
     }
 
     .about-content {
         max-width: 100%;
-        text-align: left; /* bättre läsbarhet på mobil */
-    }
-
-    .about-content h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .about-content p {
-        font-size: 0.95rem;
+        text-align: left;
     }
 }
