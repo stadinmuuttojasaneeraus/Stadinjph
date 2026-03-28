@@ -16,38 +16,51 @@ body {
 
 /* HEADER */
 header {
-    background: #003366; /* mörkblå */
+    background: #003366;      /* Blå bakgrund */
     color: #ffffff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    position: sticky; /* FIX */
+    position: sticky;          /* Sticky fix */
     top: 0;
-    z-index: 1000;
+    z-index: 1000;             /* Viktigt så den ligger över allt */
 }
 
-.menu a {
-    font-weight: 700; /* fetare text */
-    color: #ffffff;
-}
-
+/* Logo */
 .logo {
     font-weight: 700;
     font-size: 1.6rem;
 }
 
+/* Meny */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* HAMBURGER */
 .hamburger {
-    display: none;
+    display: none;             /* Visas bara på mobil */
     flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
     cursor: pointer;
 }
+
 .hamburger div {
-    width: 25px;
+    width: 100%;
     height: 3px;
-    background: #003366;
-    margin: 3px 0;
+    background: #ffffff;       /* Vita streck */
+    border-radius: 2px;
 }
 /* HERO */
 .hero {
@@ -136,24 +149,42 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
+    /* Dölj standardmeny */
     .menu {
         display: none;
         flex-direction: column;
-        background: #e6f0ff;
+        background: #003366;   /* Matcha headern */
         position: absolute;
-        top: 60px;
+        top: 60px;             /* Justera om header ändras i höjd */
         right: 0;
+        width: 200px;
         padding: 10px;
+        border-radius: 0 0 8px 8px;
     }
 
+    /* Visa meny när hamburgaren klickas */
     .menu.active {
         display: flex;
     }
 
+    /* Visa hamburger */
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
     }
 
+    .hamburger div {
+        width: 100%;
+        height: 3px;
+        background: #ffffff;    /* Vita streck syns mot blå bakgrund */
+        border-radius: 2px;
+    }
+
+    /* Services staplas på mobil */
     .services {
         flex-direction: column;
     }
