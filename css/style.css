@@ -134,12 +134,49 @@ header {
     border-radius: 5px;
 }
 
-/* Språkval */
-.hero-lang {
-    text-align: right;
-    margin-bottom: 15px;
+/* HERO */
+#hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80'); /* exempelbild städ/flytt */
+    background-size: cover;
+    background-position: center;
+    color: #003366;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    max-height: 600px;
+    padding: 20px;
 }
 
+/* Overlay */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255,255,255,0.5);
+    z-index: 0;
+}
+
+/* Hero container */
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Språkval */
+.hero-lang {
+    margin-bottom: 10px;
+}
 .hero-lang select {
     padding: 5px 8px;
     border-radius: 4px;
@@ -148,6 +185,25 @@ header {
     cursor: pointer;
     background: #003366;
     color: #ffffff;
+}
+
+/* Text + CTA */
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 
@@ -262,38 +318,22 @@ footer {
         flex-direction: column;
     }
 }   
-/* MOBILANPASSNING */
+/* Mobilanpassning */
 @media (max-width: 768px) {
     #hero {
-        min-height: auto; /* låt hero växa efter innehåll */
+        min-height: auto;
         padding: 30px 15px;
     }
-
-    .hero-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-logo img {
-        max-width: 180px;
-        margin-bottom: 20px;
-    }
-
     .hero-content h1 {
         font-size: 1.4rem;
     }
-
     .hero-content p {
         font-size: 0.9rem;
     }
-
     .cta-button {
         padding: 10px 20px;
     }
-
     .hero-lang {
-        text-align: center;
         margin-bottom: 15px;
     }
 }
