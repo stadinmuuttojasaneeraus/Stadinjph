@@ -8,23 +8,37 @@
 <link rel="stylesheet" href="css/services.css">
 </head>
 <body>
-
+    
 <header>
-    <div class="logo">
-    <img src="img/logo.png" alt="Stadin Jokapaikanhöylät Oy">
-</div>
-    <a href="index.html" class="back-button">Takaisin</a>
+    <nav class="header-nav-fixed">
+        <a href="index.html" class="back-button">Takaisin</a>
+        <a href="siivous.html">Siivous</a>
+        <a href="remontti.html">Remontti</a>
+        <a href="pihapalvelut.html">Pihapalvelut</a>
+    </nav>
 </header>
 
+<!-- HERO -->
+<section id="hero" style="background-image: url('https://images.unsplash.com/photo-1581092795368-30d541f9c7b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080');">
+    <div class="hero-overlay">
+        <h1>Muuttopalvelut Helsingissä</h1>
+        <p>Hoidamme muutot nopeasti, turvallisesti ja huolellisesti. Pakkausapu, kantopalvelu, kuljetus – kaikki yhdessä paketissa!</p>
+        <a href="#services" class="cta-button">Pyydä tarjous</a>
+
+        <div class="hero-services-images">
+            <img src="https://images.unsplash.com/photo-1599854578562-f529c7f4cbe4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Pakkausapu">
+            <img src="https://images.unsplash.com/photo-1581091215363-13f0e2d4d47c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Kantopalvelu">
+            <img src="https://images.unsplash.com/photo-1581092795368-30d541f9c7b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Kuljetus">
+            <img src="https://images.unsplash.com/photo-1581092795368-30d541f9c7b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=200" alt="Jälkisiivous">
+        </div>
+    </div>
+</section>
+
 <section class="service-page">
-    <h1>Muuttopalvelut</h1>
+    <h2>Muuttopalvelumme</h2>
+    <p>Hoidamme muutot kotiin ja toimistoon kokonaisvaltaisesti. Tiimimme varmistaa, että kaikki sujuu stressittömästi ja tehokkaasti.</p>
 
-    <p>
-        Hoidamme muutot nopeasti ja turvallisesti. Tarjoamme pakkausavun, kantopalvelun, kuljetuksen sekä tavaroiden poisviennin.
-        Teemme muuttopäivästäsi helpon ja stressittömän.
-    </p>
-
-    <h2>Hinnasto</h2>
+    <h3>Hinnasto</h3>
     <ul>
         <li>Muutto: alkaen 80€/h</li>
         <li>Pieni muutto: alkaen 150€</li>
@@ -34,5 +48,29 @@
     <a href="index.html#yhteystiedot" class="cta-button">Pyydä tarjous</a>
 </section>
 
-</body>
-</html>
+<section id="services" class="services-container">
+    <div class="service-item">
+        <div class="icon">📦</div>
+        <h3>Pakkausapu</h3>
+        <p>Autamme pakkaamaan tavarat turvallisesti ja tehokkaasti, jotta muutto sujuu ilman huolia.</p>
+        <a href="index.html#yhteystiedot" class="cta-button">Tilaa pakkausapu</a>
+    </div>
+    <div class="service-item">
+        <div class="icon">💪</div>
+        <h3>Kantopalvelu</h3>
+        <p>Kokeneet kantajat huolehtivat tavaroiden siirrosta nopeasti ja turvallisesti.</p>
+        <a href="index.html#yhteystiedot" class="cta-button">Tilaa kantopalvelu</a>
+    </div>
+    <div class="service-item">
+        <div class="icon">🚚</div>
+        <h3>Kuljetus</h3>
+        <p>Tarjoamme kalustoidut pakettiautot ja kuljetuksen uuteen kohteeseen sujuvasti.</p>
+        <a href="index.html#yhteystiedot" class="cta-button">Tilaa kuljetus</a>
+    </div>
+    <div class="service-item">
+        <div class="icon">🧹</div>
+        <h3>Jälkisiivous</h3>
+        <p>Siivoamme vanhat tilat muuttamisen jälkeen, jotta kaikki on valmista seuraaville asukkaille.</p>
+        <a href="index.html#yhteystiedot" class="cta-button">Tilaa siivous</a>
+    </div>
+</section>
