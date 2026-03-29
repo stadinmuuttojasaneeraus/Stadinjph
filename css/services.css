@@ -1,4 +1,49 @@
 /* =========================
+   HERO
+========================= */
+#hero {
+    position: relative;
+    background-image: url('../images/muutto.jpg'); /* byt bild här */
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 400px;
+    padding: 40px 20px;
+
+    color: #003366;
+}
+
+/* Overlay */
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.5);
+    z-index: 0;
+}
+
+/* Innehåll */
+.hero-container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* =========================
+
+/* =========================
    SERVICES CONTAINER
 ========================= */
 .services-container {
@@ -87,9 +132,37 @@
     color: #ffffff;
 }
 
-/* =========================
-   MOBILANPASSNING
+/*    MOBILANPASSNING
 ========================= */
+@media (max-width: 768px) {
+    #hero {
+        min-height: 250px;
+        padding: 30px 15px;
+    }
+
+    .hero-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-container p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        min-height: 200px;
+    }
+
+    .hero-container h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero-container p {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
