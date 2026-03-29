@@ -1,16 +1,12 @@
-/* =========================
-   SERVICES CONTAINER
-========================= */
 .services-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     padding: 20px 0;
 }
 
-/* =========================
-   SERVICE ITEM (kort)
-========================= */
+/* Kort */
 .service-item {
     flex: 1 1 250px;
     background: #e6f0ff;
@@ -18,7 +14,8 @@
     border-radius: 10px;
     text-align: center;
 
-    display: block;
+    display: flex;
+    flex-direction: column; /* VIKTIG */
     text-decoration: none;
     color: #003366;
 
@@ -41,6 +38,18 @@
 /* Text */
 .service-item p {
     font-size: 0.95rem;
+    flex-grow: 1; /* VIKTIG */
+}
+
+/* CTA i kort */
+.service-item .cta-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #003366;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* Hover */
@@ -54,9 +63,7 @@
     transform: scale(0.98);
 }
 
-/* =========================
-   BACK BUTTON
-========================= */
+/* Back knapp */
 .back-button {
     display: inline-block;
     margin: 20px 0;
@@ -67,7 +74,6 @@
     text-decoration: none;
     font-weight: 700;
     border: 2px solid #003366;
-    transition: all 0.3s ease;
 }
 
 .back-button:hover {
@@ -75,32 +81,14 @@
     color: #ffffff;
 }
 
-/* =========================
-   MOBILANPASSNING
-========================= */
+/* Mobil */
 @media (max-width: 768px) {
     .services-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .service-item {
         width: 100%;
-    }
-
-    .service-item .icon {
-        font-size: 2rem;
-    }
-
-    .service-item h3 {
-        font-size: 1.2rem;
-    }
-
-    .service-item p {
-        font-size: 0.9rem;
-    }
-
-    .back-button {
-        padding: 8px 15px;
-        font-size: 0.95rem;
     }
 }
