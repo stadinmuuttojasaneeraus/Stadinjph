@@ -1,8 +1,26 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { font-family: Arial, sans-serif; background: #ffffff; color: #003366; }
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* HEADER */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #003366;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
 header {
     background: #003366;
     color: #ffffff;
@@ -14,87 +32,159 @@ header {
     top: 0;
     z-index: 1000;
 }
-.logo { font-weight: 700; font-size: 1.6rem; }
-.menu { display: flex; gap: 20px; }
-.menu a { font-weight: 700; color: #ffffff; text-decoration: none; }
-.hamburger { display: none; flex-direction: column; justify-content: space-between; width: 25px; height: 20px; cursor: pointer; }
-.hamburger div { width: 100%; height: 3px; background: #ffffff; border-radius: 2px; }
 
-/* HERO Overlay */
+.logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+/* =========================
+   HERO (INDEX LIGHT VERSION)
+========================= */
 #hero {
     position: relative;
-    background-size: cover;
-    background-position: center;
+    min-height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
     padding: 40px 20px;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
     color: #003366;
 }
-#hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.5);
-    z-index: 0;
-}
+
 .hero-container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     max-width: 900px;
-    width: 100%;
-    gap: 20px;
 }
-.hero-container h1 { font-size: 2rem; margin-bottom: 10px; }
-.hero-container p { font-size: 1rem; margin-bottom: 15px; }
 
-/* BUTTONS */
+.hero-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SERVICES (INDEX CARDS)
+========================= */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 250px;
+    background: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #003366;
+    transition: 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-item .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ABOUT + CONTACT
+========================= */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
 .cta-button {
     display: inline-block;
     padding: 12px 25px;
     background: #003366;
     color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-}
-.back-button {
-    display: inline-block;
-    margin: 20px 0;
-    padding: 10px 20px;
-    background: #ffffff;
-    color: #003366;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 700;
-    border: 2px solid #003366;
-    transition: all 0.3s ease;
-}
-.back-button:hover {
-    background: #003366;
-    color: #ffffff;
 }
 
-/* FOOTER */
-footer { text-align: center; padding: 20px; background: #e6f0ff; }
-.social-links a { margin: 0 10px; }
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f2f2f2;
+}
 
-/* MEDIA QUERIES */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
-    .menu { display: none; flex-direction: column; background: #003366; position: absolute; top: 60px; right: 0; width: 200px; padding: 10px; border-radius: 0 0 8px 8px; }
-    .menu.active { display: flex; }
-    .hamburger { display: flex; }
-    #hero { min-height: 250px; padding: 30px 15px; }
-    .hero-container h1 { font-size: 1.6rem; }
-    .hero-container p { font-size: 0.95rem; }
-}
-@media (max-width: 480px) {
-    #hero { min-height: 200px; }
-    .hero-container h1 { font-size: 1.4rem; }
-    .hero-container p { font-size: 0.9rem; }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #003366;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #hero h1 {
+        font-size: 1.6rem;
+    }
 }
