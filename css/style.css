@@ -10,7 +10,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
@@ -196,5 +195,90 @@ footer {
 
     #hero h1 {
         font-size: 1.6rem;
+    }
+}
+/* =========================
+   CONTACT (PREMIUM LAYOUT)
+========================= */
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* FORMULÄR */
+.contact-container form {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* INPUT FIELDS */
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #003366;
+    box-shadow: 0 0 0 3px rgba(0,51,102,0.1);
+}
+
+/* KNAPP (form submit) */
+.contact-container button {
+    padding: 12px;
+    background: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-container button:hover {
+    background: #002244;
+}
+
+/* GOOGLE MAPS */
+.map {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    border: 0;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .map iframe {
+        min-height: 250px;
     }
 }
