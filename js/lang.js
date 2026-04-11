@@ -7,10 +7,12 @@ const translations = {
     heroCta: "Pyydä tarjous",
 
     servicesTitle: "Palvelut",
-    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
+    servicesText:
+      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.",
 
     aboutTitle: "Meistä",
-    aboutText: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa laadukkaita palveluita.",
+    aboutText:
+      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille.",
 
     contactTitle: "Yhteystiedot",
 
@@ -20,7 +22,7 @@ const translations = {
     message: "Viesti",
     submit: "Lähetä",
 
-    // SERVICE 1 - Kodin asennus
+    // SERVICE 1
     installTitle: "Kodin asennuspalvelut",
     installText: "Apua arjen pienissä askareissa.",
     install1: "Taulujen, hyllyjen ja peilien kiinnitys.",
@@ -29,7 +31,7 @@ const translations = {
     install4: "Verhotankojen, kiskojen ja valaisimien asennus.",
     installBtn: "Lue lisää",
 
-    // SERVICE 2 - Pihapalvelut
+    // SERVICE 2
     gardenTitle: "Pihapalvelut",
     gardenText: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
     garden1: "Pihan siivous ja lehtien haravointi.",
@@ -38,9 +40,9 @@ const translations = {
     garden4: "Lumityöt ja hiekoitus.",
     gardenBtn: "Lue lisää",
 
-    // SERVICE 3 - Remontti
+    // SERVICE 3
     remonttiTitle: "Remonttipalvelut",
-    remonttiText: "Teemme remontit siististi ja ammattitaidolla.",
+    remonttiText: "Teemme kodin remontit siististi ja ammattitaidolla.",
     remontti1: "Lattia-asennukset ja pintojen uusiminen.",
     remontti2: "Ovien, listojen ja kalusteiden asennus.",
     remontti3: "Kylpyhuoneen ja keittiön pienremontit.",
@@ -48,7 +50,7 @@ const translations = {
     remontti5: "Purku- ja korjaustyöt.",
     remonttiBtn: "Lue lisää",
 
-    // SERVICE 4 - Hautakivet
+    // SERVICE 4
     graveTitle: "Hautakivipalvelut",
     graveText: "Hoidamme hautakivien puhdistuksen ja ylläpidon.",
     grave1: "Hautakivien suoristus ja huolto.",
@@ -63,10 +65,12 @@ const translations = {
     heroCta: "Be om offert",
 
     servicesTitle: "Tjänster",
-    servicesText: "Vi erbjuder omfattande tjänster för hem och företag.",
+    servicesText:
+      "Stadin Handymannit Oy erbjuder omfattande tjänster för hem och företag.",
 
     aboutTitle: "Om oss",
-    aboutText: "Vi är ett serviceföretag i Helsingfors med fokus på kvalitet.",
+    aboutText:
+      "Vi är ett serviceföretag i Helsingfors med fokus på kvalitet och kundnöjdhet.",
 
     contactTitle: "Kontakt",
 
@@ -81,7 +85,7 @@ const translations = {
     install1: "Montering av tavlor, hyllor och speglar.",
     install2: "Montering och flytt av möbler.",
     install3: "Installation av hushållsapparater.",
-    install4: "Montering av gardinstänger och lampor.",
+    install4: "Gardinstänger och lampor.",
     installBtn: "Läs mer",
 
     gardenTitle: "Trädgårdstjänster",
@@ -93,19 +97,19 @@ const translations = {
     gardenBtn: "Läs mer",
 
     remonttiTitle: "Renoveringstjänster",
-    remonttiText: "Vi utför renoveringar professionellt.",
-    remontti1: "Golvläggning och ytrenovering.",
-    remontti2: "Dörrar och möbelmontering.",
-    remontti3: "Badrum och kök.",
-    remontti4: "Målning och ytarbete.",
+    remonttiText: "Professionella renoveringar.",
+    remontti1: "Golvläggning.",
+    remontti2: "Dörrar och möbler.",
+    remontti3: "Kök och badrum.",
+    remontti4: "Målning.",
     remontti5: "Rivning och reparation.",
     remonttiBtn: "Läs mer",
 
     graveTitle: "Gravvård",
-    graveText: "Skötsel och rengöring av gravstenar.",
-    grave1: "Rätning och service.",
-    grave2: "Rengöring av gravstenar.",
-    grave3: "Skötsel av gravplatser.",
+    graveText: "Skötsel av gravstenar.",
+    grave1: "Riktning och service.",
+    grave2: "Rengöring.",
+    grave3: "Underhåll av gravplats.",
     graveBtn: "Läs mer"
   },
 
@@ -115,10 +119,12 @@ const translations = {
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
-    servicesText: "We provide comprehensive home and business services.",
+    servicesText:
+      "We provide comprehensive services for homes and businesses.",
 
     aboutTitle: "About us",
-    aboutText: "We are a service company in Helsinki focused on quality.",
+    aboutText:
+      "We are a service company in Helsinki focused on quality and customer satisfaction.",
 
     contactTitle: "Contact",
 
@@ -133,23 +139,23 @@ const translations = {
     install1: "Mounting pictures, shelves and mirrors.",
     install2: "Furniture assembly and moving.",
     install3: "Appliance installation.",
-    install4: "Curtain rods and lighting.",
+    install4: "Curtains and lights.",
     installBtn: "Read more",
 
     gardenTitle: "Yard services",
     gardenText: "We keep your yard clean all year.",
-    garden1: "Yard cleaning and leaf raking.",
+    garden1: "Cleaning and leaves.",
     garden2: "Lawn and hedge trimming.",
-    garden3: "Tree cutting and clearing.",
-    garden4: "Snow removal and sanding.",
+    garden3: "Tree removal.",
+    garden4: "Snow and sanding.",
     gardenBtn: "Read more",
 
     remonttiTitle: "Renovation services",
     remonttiText: "Professional renovation work.",
     remontti1: "Floor installation.",
-    remontti2: "Doors and furniture installation.",
-    remontti3: "Kitchen and bathroom work.",
-    remontti4: "Painting and finishing.",
+    remontti2: "Doors and furniture.",
+    remontti3: "Kitchen and bathroom.",
+    remontti4: "Painting.",
     remontti5: "Demolition and repair.",
     remonttiBtn: "Read more",
 
@@ -176,7 +182,7 @@ function applyLang() {
   document.getElementById("hero-text").innerText = t.heroText;
   document.getElementById("hero-cta").innerText = t.heroCta;
 
-  // SERVICES HEADER
+  // SERVICES TOP
   document.getElementById("services-title").innerText = t.servicesTitle;
   document.getElementById("services-text").innerText = t.servicesText;
 
@@ -186,7 +192,6 @@ function applyLang() {
 
   // CONTACT
   document.getElementById("contact-title").innerText = t.contactTitle;
-
   document.getElementById("name").placeholder = t.name;
   document.getElementById("email").placeholder = t.email;
   document.getElementById("phone").placeholder = t.phone;
@@ -230,7 +235,6 @@ function applyLang() {
   document.getElementById("grave-btn").innerText = t.graveBtn;
 }
 
-// LOAD SAVED LANGUAGE
 window.addEventListener("load", () => {
   const saved = localStorage.getItem("lang");
   if (saved) currentLang = saved;
