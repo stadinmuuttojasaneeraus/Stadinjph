@@ -5,7 +5,7 @@ const translations = {
     heroCta: "Pyydä tarjous",
 
     servicesTitle: "Palvelut",
-    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
+    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.",
 
     aboutTitle: "Meistä",
     aboutText:
@@ -26,7 +26,7 @@ const translations = {
     heroCta: "Be om offert",
 
     servicesTitle: "Tjänster",
-    servicesText: "Stadin Handymannit Oy erbjuder omfattande tjänster för hem och företag.",
+    servicesText: "Stadin Handymannit Oy erbjuder omfattande tjänster för privatpersoner och företag: installationstjänster, gårdsarbeten och renoveringar. Vårt team garanterar att arbetet utförs snabbt och noggrant enligt kundens önskemål.",
 
     aboutTitle: "Om oss",
     aboutText:
@@ -47,7 +47,7 @@ const translations = {
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
-    servicesText: "Stadin Handymannit Oy offers comprehensive services for homes and businesses.",
+    servicesText: "Stadin Handymannit Oy offers comprehensive services for private individuals and businesses: installation services, yard work and renovations. Our team ensures work is done quickly and carefully according to customer needs.",
 
     aboutTitle: "About us",
     aboutText:
@@ -62,32 +62,7 @@ const translations = {
     submit: "Send"
   }
 };
-const translations = {
 
-  fi: {
-    servicesTitle: "Palvelut",
-    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan."
-  },
-
-  sv: {
-    servicesTitle: "Tjänster",
-    servicesText: "Stadin Handymannit Oy erbjuder omfattande tjänster för privatpersoner och företag: installationstjänster, gårdsarbeten och renoveringar. Vårt team garanterar att arbetet utförs snabbt och noggrant enligt kundens önskemål."
-  },
-
-  en: {
-    servicesTitle: "Services",
-    servicesText: "Stadin Handymannit Oy offers comprehensive services for private individuals and businesses: installation services, yard work and renovations. Our team ensures work is done quickly and carefully according to customer needs."
-  }
-
-};
-function setLang(lang) {
-
-  const t = translations[lang];
-
-  document.getElementById("services-title").innerText = t.servicesTitle;
-  document.getElementById("services-text").innerText = t.servicesText;
-
-}
 // default language
 let currentLang = "fi";
 
