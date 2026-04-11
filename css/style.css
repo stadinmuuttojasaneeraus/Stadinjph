@@ -336,17 +336,24 @@ body.hautakivipalvelut #hero {
 
 /* =========================
  IMAGE SECTION
-========================= */
+}======================== */
 .image-section {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
 .image-section img {
     width: 100%;
     height: auto;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 12px;
     display: block;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.image-section img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
 }
