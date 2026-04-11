@@ -8,7 +8,11 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
 }
 body {
     font-family: Arial, sans-serif;
