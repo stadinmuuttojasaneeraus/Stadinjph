@@ -3,39 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 🔥 SEO -->
-    <title>Stadin Handymannit Oy | Kodin palvelut Helsingissä</title>
-
-    <meta name="description" content="Stadin Handymannit Oy tarjoaa kodin asennukset, pihatyöt, remontit ja hautakivipalvelut Helsingissä ja pääkaupunkiseudulla.">
-    <meta name="keywords" content="pihapalvelut Helsinki, remontti Helsinki, kodin asennus, handyman Helsinki">
-    <meta name="robots" content="index, follow">
-
-    <!-- CSS -->
+    <title>Stadin Handymannit Oy</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- 🔥 SEO STRUCTURED DATA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Stadin Handymannit Oy",
-      "image": "images/logo.jpg",
-      "url": "https://din-domain.fi",
-      "telephone": "+358401234567",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Helsinki",
-        "addressCountry": "FI"
-      },
-      "description": "Monipuoliset kodin palvelut Helsingissä ja pääkaupunkiseudulla.",
-      "areaServed": "Helsinki",
-      "priceRange": "€€"
-    }
-    </script>
+    <link rel="stylesheet" href="css/services.css">
 </head>
-
-<body class="index">
+<body>
 
 <header>
     <div class="logo">Stadin Handymannit Oy</div>
@@ -46,7 +18,9 @@
             <a href="#yhteystiedot">Yhteystiedot</a>
         </div>
         <div class="hamburger" id="hamburger">
-            <div></div><div></div><div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </nav>
 </header>
@@ -54,73 +28,146 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-container">
-    <h1>Nopea ja luotettava monipalvelu Helsingissä</h1>
-    <p>Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.</p>
-    <a href="#palvelut" class="cta-button">Pyydä tarjous</a>
+    <div class="hero-lang">
+      <label for="langSelect">Kieli:</label>
+      <select id="langSelect">
+        <option value="fi" selected>FI</option>
+        <option value="sv">SV</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+
+    <div class="hero-content">
+      <h1>Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.</h1>
+      <p>Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti..</p>
+      <a href="#palvelut" class="cta-button">Pyydä tarjous</a>
+    </div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="palvelut" class="services-section">
     <h2>Palvelut</h2>
+    <p>Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.</p>
 
     <div class="services-container">
 
+        <!-- kodin asennupalvelut-->
         <a href="kodin-asennuspalvelut.html" class="service-item">
             <div class="icon">🏠</div>
-            <h3>Kodin asennuspalvelut</h3>
+            <h3>Kodin asennuspalvelut.</h3>
+            <p>Apua arjen pienissä askareissa. Autamme kaikenlaisissa kodin käytännön töissä:</p>
+<ul>
+    <li>Taulujen, hyllyjen ja peilien kiinnitys.          </li>
+    <li>Huonekalujen kokoaminen, siirto, purku ja pakkaus. </li>
+    <li>Kodinkoneiden asennus ja käyttöönotto.            </li>
+    <li>Verhotankojen, kiskojen ja valaisimen asennus.    </li>
+</ul>
+            <button class="cta-button">Lue lisää</button>
         </a>
 
+        <!-- pihapalvelut -->
         <a href="pihapalvelut.html" class="service-item">
             <div class="icon">🌿</div>
             <h3>Pihapalvelut</h3>
+            <p>Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.</p>
+<ul>    
+    <li>Pihan siivous ja lehtien haravointi.</li>
+    <li>Nurmikon ja pensaiden leikkaus.     </li>
+    <li>Puunkaato ja raivaus.               </li>
+    <li>Lumityöt ja hiekoitus.              </li>
+</ul>
+            <button class="cta-button">Lue lisää</button>
         </a>
 
+        <!-- Remontti -->
         <a href="remontti.html" class="service-item">
             <div class="icon">🔨</div>
-            <h3>Remontit</h3>
+            <h3>Remonttipalvelut</h3>
+            <p>Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla.</p>
+<ul>
+    <li>Lattia-asennukset ja pintojen uusiminen.</li>
+    <li>Ovien, listojen ja kalusteiden asennus. </li>
+    <li>Kylpyhuoneen ja keittiön pienremontit.  </li>
+    <li>Maalaus- ja pintaremontit.              </li>
+    <li>Purku- ja korjaustyöt.                  </li>
+</ul>
+            <button class="cta-button">Lue lisää</button>
         </a>
 
+        <!-- Hautakivipalvelut -->
         <a href="hautakivipalvelut.html" class="service-item">
             <div class="icon">🪦</div>
             <h3>Hautakivipalvelut</h3>
+            <p>Hoidamme hautakivien puhdistuksen, kunnostuksen ja ylläpidon arvokkaasti ja huolellisesti.</p>
+<ul>
+    <li>Hautakivien suoristus ja huolto.</li>
+    <li>Hautakivien puhdistus ja hoito. </li>
+    <li>Hautapaikan siistiminen ja ylläpito.</li>
+</ul>
+            <button class="cta-button">Lue lisää</button>
         </a>
 
     </div>
 </section>
 
-<!-- ABOUT -->
-<section id="meista">
-    <h2>Meistä</h2>
-    <p>Olemme Helsingissä toimiva monipalveluyritys...</p>
-</section>
-
-<!-- IMAGE -->
-<section class="image-section">
-    <img src="images/your-image.jpg" alt="Stadin Handymannit työssä Helsingissä">
+<!-- MEISTÄ -->
+<section id="meista" class="about-section">
+  <div class="about-overlay">
+    <div class="about-content">
+      <h2>Meistä</h2>
+      <p>Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys...</p>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="yhteystiedot">
+<section id="yhteystiedot" class="contact-section">
     <h2>Yhteystiedot</h2>
 
     <div class="contact-container">
         <div class="contact-info">
-            <p>Email: info@stadin-handymannit.fi</p>
-            <p>Tel: +358 40 123 4567</p>
+            <p><strong>Sähköposti:</strong> info@stadin-handymannit.fi</p>
+            <p><strong>Puhelin:</strong> +358 40 123 4567</p>
+            <p><strong>Osoite:</strong> Helsinki, Suomi</p>
         </div>
 
-        <form>
-            <input type="text" placeholder="Nimi">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Viesti"></textarea>
+        <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="text" name="name" placeholder="Nimi" required>
+            <input type="email" name="email" placeholder="Sähköposti" required>
+            <input type="text" name="phone" placeholder="Puhelin" required>
+            <input type="text" name="address" placeholder="Osoite">
+            <textarea name="message" placeholder="Viesti" rows="5" required></textarea>
             <button type="submit">Lähetä</button>
         </form>
     </div>
+
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Helsinki&output=embed"
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            loading="lazy">
+        </iframe>
+    </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Stadin Handymannit Oy</p>
+    <p><strong>Stadin Handymannit Oy</strong></p>
+    <p>Helsinki, Suomi</p>
+    <p>📞 +358 40 123 4567</p>
+    <p>✉️ info@stadin-handymannit.fi</p>
+    <p>Y-tunnus: 1234567-8</p>
+
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+
+    <p>© 2026</p>
 </footer>
 
 <script src="js/script.js"></script>
