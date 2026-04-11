@@ -358,3 +358,18 @@ body.hautakivipalvelut #hero {
     transition: 0.3s ease;
 }
 
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lang-switch a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.lang-switch a:hover {
+    transform: scale(1.2);
+}
