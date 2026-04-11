@@ -107,8 +107,8 @@
 <section id="meista" class="about-section">
   <div class="about-overlay">
     <div class="about-content">
-      <h2>Meistä</h2>
-      <p>Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Palveluihimme kuuluvat muun muassa kotipalvelut, pihatyöt sekä erilaiset remonttityöt.
+      <h2 id="about-title">Meistä</h2>
+      <p id="about-text">Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Palveluihimme kuuluvat muun muassa kotipalvelut, pihatyöt sekä erilaiset remonttityöt.
       Meillä on pitkä kokemus alalta, ja panostamme aina laadukkaaseen työnjälkeen sekä asiakastyytyväisyyteen. Toimintamme perustuu luotettavuuteen, joustavuuteen ja nopeaan palveluun – hoidamme työt sovitusti ja aikataulussa.
       Tavoitteenamme on tehdä arjesta helpompaa asiakkaillemme tarjoamalla sujuvaa ja vaivatonta palvelua kaikissa tilanteissa. Olipa kyseessä pieni korjaus tai laajempi projekti, voit luottaa meihin. Puhumme sujuvasti suomea ja ruotsia, ja kaikki työntekijämme ovat läpikäyneet turvallisuustarkastuksen asiakkaidemme mielenrauhan varmistamiseksi.</p>
     </div>
@@ -121,7 +121,7 @@
 
 <!-- CONTACT -->
 <section id="yhteystiedot" class="contact-section">
-    <h2>Yhteystiedot</h2>
+    <h2 id="contact-title">Yhteystiedot</h2>
 
     <div class="contact-container">
         <div class="contact-info">
@@ -131,12 +131,11 @@
         </div>
 
         <form action="https://formspree.io/f/your-id" method="POST">
-            <input type="text" name="name" placeholder="Nimi" required>
-            <input type="email" name="email" placeholder="Sähköposti" required>
-            <input type="text" name="phone" placeholder="Puhelin" required>
-            <input type="text" name="address" placeholder="Osoite">
-            <textarea name="message" placeholder="Viesti" rows="5" required></textarea>
-            <button type="submit">Lähetä</button>
+            <input type="text" id="name" name="name" placeholder="Nimi" required>
+<input type="email" id="email" name="email" placeholder="Sähköposti" required>
+<input type="text" id="phone" name="phone" placeholder="Puhelin" required>
+<textarea id="message" name="message" placeholder="Viesti" rows="5" required></textarea>
+<button type="submit" id="submit">Lähetä</button>
         </form>
     </div>
 
