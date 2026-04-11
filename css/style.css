@@ -358,31 +358,3 @@ body.hautakivipalvelut #hero {
     transition: 0.3s ease;
 }
 
-/* =========================
-   SEO SUPPORT (NO DESIGN IMPACT)
-========================= */
-
-.seo-intro {
-    font-size: 1rem;
-    color: #444;
-    margin: 10px 0 20px 0;
-}
-
-.seo-footer-links {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-}
-
-.seo-footer-links a {
-    color: #003366;
-    text-decoration: underline;
-}
-
-/* IMAGE SECTION RESPONSIVE SAFETY */
-.image-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-}
