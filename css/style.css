@@ -333,3 +333,39 @@ body.hautakivipalvelut #hero {
         padding: 30px 15px;
     }
 }
+/* =========================
+   CTA IMAGE SECTION
+========================= */
+
+.cta-image {
+    position: relative;
+    background-image: url("../images/cta.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 51, 102, 0.6);
+}
+
+.image-overlay {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.image-overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.image-overlay p {
+    margin-bottom: 20px;
+}
