@@ -206,86 +206,61 @@ function setLang(lang) {
 function applyLang() {
   const t = translations[currentLang];
 
+  let el;
+
   // HERO
-  document.getElementById("hero-title").innerText = t.heroTitle;
-  document.getElementById("hero-text").innerText = t.heroText;
-  document.getElementById("hero-cta").innerText = t.heroCta;
+  el = document.getElementById("hero-title");
+  if (el) el.innerText = t.heroTitle;
+
+  el = document.getElementById("hero-text");
+  if (el) el.innerText = t.heroText;
+
+  el = document.getElementById("hero-cta");
+  if (el) el.innerText = t.heroCta;
 
   // SERVICES HEADER
-  document.getElementById("services-title").innerText = t.servicesTitle;
-  document.getElementById("services-text").innerText = t.servicesText;
+  el = document.getElementById("services-title");
+  if (el) el.innerText = t.servicesTitle;
+
+  el = document.getElementById("services-text");
+  if (el) el.innerText = t.servicesText;
 
   // ABOUT
-  document.getElementById("about-title").innerText = t.aboutTitle;
-  document.getElementById("about-text").innerText = t.aboutText;
+  el = document.getElementById("about-title");
+  if (el) el.innerText = t.aboutTitle;
+
+  el = document.getElementById("about-text");
+  if (el) el.innerText = t.aboutText;
 
   // CONTACT
-  document.getElementById("contact-title").innerText = t.contactTitle;
+  el = document.getElementById("contact-title");
+  if (el) el.innerText = t.contactTitle;
 
-  document.getElementById("name").placeholder = t.name;
-  document.getElementById("email").placeholder = t.email;
-  document.getElementById("phone").placeholder = t.phone;
-  document.getElementById("message").placeholder = t.message;
-  document.getElementById("submit").innerText = t.submit;
+  el = document.getElementById("name");
+  if (el) el.placeholder = t.name;
 
-  // SERVICE 1
-  document.getElementById("service1-title").innerText = t.service1Title;
-  document.getElementById("service1-text").innerText = t.service1Text;
-  document.getElementById("service1-btn").innerText = t.service1Btn;
+  el = document.getElementById("email");
+  if (el) el.placeholder = t.email;
 
-  document.getElementById("service1-list").children[0].innerText = t.service1_1;
-  document.getElementById("service1-list").children[1].innerText = t.service1_2;
-  document.getElementById("service1-list").children[2].innerText = t.service1_3;
-  document.getElementById("service1-list").children[3].innerText = t.service1_4;
+  el = document.getElementById("phone");
+  if (el) el.placeholder = t.phone;
 
-  // SERVICE 2
-  document.getElementById("garden-title").innerText = t.gardenTitle;
-  document.getElementById("garden-text").innerText = t.gardenText;
-  document.getElementById("garden-btn").innerText = t.gardenBtn;
+  el = document.getElementById("message");
+  if (el) el.placeholder = t.message;
 
-  document.getElementById("garden-1").innerText = t.garden1;
-  document.getElementById("garden-2").innerText = t.garden2;
-  document.getElementById("garden-3").innerText = t.garden3;
-  document.getElementById("garden-4").innerText = t.garden4;
+  el = document.getElementById("submit");
+  if (el) el.innerText = t.submit;
 
-  // SERVICE 3
-  document.getElementById("remontti-title").innerText = t.remonttiTitle;
-  document.getElementById("remontti-text").innerText = t.remonttiText;
-  document.getElementById("remontti-btn").innerText = t.remonttiBtn;
+  // NAV
+  el = document.getElementById("nav-remontti");
+  if (el) el.innerText = t.navRemontti;
 
-  document.getElementById("remontti-1").innerText = t.remontti1;
-  document.getElementById("remontti-2").innerText = t.remontti2;
-  document.getElementById("remontti-3").innerText = t.remontti3;
-  document.getElementById("remontti-4").innerText = t.remontti4;
-  document.getElementById("remontti-5").innerText = t.remontti5;
+  el = document.getElementById("nav-garden");
+  if (el) el.innerText = t.navGarden;
 
-  // SERVICE 4
-  document.getElementById("grave-title").innerText = t.graveTitle;
-  document.getElementById("grave-text").innerText = t.graveText;
-  document.getElementById("grave-btn").innerText = t.graveBtn;
+  el = document.getElementById("nav-grave");
+  if (el) el.innerText = t.navGrave;
 
-  document.getElementById("grave-1").innerText = t.grave1;
-  document.getElementById("grave-2").innerText = t.grave2;
-  document.getElementById("grave-3").innerText = t.grave3;
-
-  // NAV SAFE VERSION kodin-asennuspalvelut
-let el;
-
-el = document.getElementById("nav-remontti");
-if (el) el.innerText = t.navRemontti;
-
-el = document.getElementById("nav-garden");
-if (el) el.innerText = t.navGarden;
-
-el = document.getElementById("nav-grave");
-if (el) el.innerText = t.navGrave;
-
-el = document.getElementById("nav-install");
-if (el) el.innerText = t.navInstall;
+  el = document.getElementById("nav-install");
+  if (el) el.innerText = t.navInstall;
 }
-
-window.addEventListener("load", () => {
-  const saved = localStorage.getItem("lang");
-  if (saved) currentLang = saved;
-  applyLang();
-});
