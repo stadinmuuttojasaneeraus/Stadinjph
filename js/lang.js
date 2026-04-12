@@ -236,17 +236,20 @@ function applyLang() {
   setText("service1-text", "service1Text");
   setText("service1-btn", "service1Btn");
 
-  setText("garden-title", "service2Title");
-  setText("garden-text", "service2Text");
-  setText("garden-btn", "service2Btn");
+setText("garden-1", "service2_1");
+setText("garden-2", "service2_2");
+setText("garden-3", "service2_3");
+setText("garden-4", "service2_4");
 
-  setText("remontti-title", "service3Title");
-  setText("remontti-text", "service3Text");
-  setText("remontti-btn", "service3Btn");
+setText("remontti-1", "service3_1");
+setText("remontti-2", "service3_2");
+setText("remontti-3", "service3_3");
+setText("remontti-4", "service3_4");
+setText("remontti-5", "service3_5");
 
-  setText("grave-title", "service4Title");
-  setText("grave-text", "service4Text");
-  setText("grave-btn", "service4Btn");
+setText("grave-1", "service4_1");
+setText("grave-2", "service4_2");
+setText("grave-3", "service4_3");
 
   // NAV
   setText("nav-remontti", "navRemontti");
