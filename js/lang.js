@@ -92,12 +92,6 @@ const translations = {
   }
 };
 
-function setLang(lang) {
-  currentLang = lang;
-  localStorage.setItem("lang", lang);
-  applyLang();
-}
-
 function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
@@ -107,13 +101,13 @@ function applyLang() {
     if (el && t[key]) el.innerText = t[key];
   };
 
-  // HERO
-  set("hero-title", "heroTitle");
-  set("hero-text", "heroText");
-  set("hero-cta", "heroCta");
+  // HERO (data-translate version)
+  document.querySelectorAll("[data-translate]").forEach(el => {
+    const key = el.getAttribute("data-translate");
+    if (t[key]) el.innerText = t[key];
+  });
 
-  // SERVICES
-  set("services-title", "servicesTitle");
+  // SERVICES TEXT
   set("services-text", "servicesText");
 
   // ABOUT
@@ -123,7 +117,7 @@ function applyLang() {
   // CONTACT
   set("contact-title", "contactTitle");
 
-  // SERVICE CARDS
+  // CARDS
   set("service1-title", "service1Title");
   set("service1-text", "service1Text");
   set("service1-btn", "service1Btn");
@@ -136,6 +130,12 @@ function applyLang() {
 
   set("grave-title", "graveTitle");
   set("grave-text", "graveText");
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  applyLang();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
