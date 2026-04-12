@@ -2,153 +2,117 @@ let currentLang = "fi";
 
 const translations = {
   fi: {
-    // HERO
-    "hero-title": "Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.",
-    "hero-text": "Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.",
-    "hero-cta": "Pyydä tarjous",
+    heroTitle: "Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.",
+    heroText: "Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.",
+    heroCta: "Pyydä tarjous",
 
-    // SERVICES
-    "services-title": "Palvelut",
-    "services-text":
-      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
+    servicesTitle: "Palvelut",
+    aboutTitle: "Meistä",
+    contactTitle: "Yhteystiedot",
 
-    // ABOUT (MEISTÄ)
-    "about-title": "Meistä",
-    "about-text":
-      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Meillä on pitkä kokemus alalta ja panostamme aina laadukkaaseen työnjälkeen sekä asiakastyytyväisyyteen.",
+    service1Title: "Kodin asennuspalvelut",
+    service1Btn: "Lue lisää",
 
-    // CONTACT
-    "contact-title": "Yhteystiedot",
+    gardenTitle: "Pihapalvelut",
+    gardenBtn: "Lue lisää",
+
+    remonttiTitle: "Remonttipalvelut",
+    remonttiBtn: "Lue lisää",
+
+    graveTitle: "Hautakivipalvelut",
+    graveBtn: "Lue lisää",
+
+    navRemontti: "Remontit",
+    navGarden: "Pihapalvelut",
+    navGrave: "Hautakivipalvelut",
+    navInstall: "Kodin asennuspalvelut",
+
     submit: "Lähetä",
 
-    // SERVICE CARDS
-    "service1-title": "Kodin asennuspalvelut",
-    "service1-text": "Apua arjen pienissä askareissa.",
-    "service1-btn": "Lue lisää",
+    section1Title: "Kokonaisratkaisu kodin asennuksiin",
+    section2Title: "Asennusapu ja pienet työt",
+    section3Title: "Raskaat ja vaativat asennukset",
+    section4Title: "Kodin asennuspalvelut",
+    section4Subtitle: "Hinnasto",
+    section4Cta: "Pyydä tarjous",
 
-    "service2-title": "Pihapalvelut",
-    "service2-text": "Hoidamme pihan siistiksi ympäri vuoden.",
-    "service2-btn": "Lue lisää",
-
-    "service3-title": "Remonttipalvelut",
-    "service3-text": "Teemme remontit siististi ja ammattitaidolla.",
-    "service3-btn": "Lue lisää",
-
-    "service4-title": "Hautakivipalvelut",
-    "service4-text": "Hautakivien huolto ja puhdistus.",
-    "service4-btn": "Lue lisää",
-
-    // SERVICE LISTS (INDEX)
-    "service1-1": "Taulujen, hyllyjen ja peilien kiinnitys.",
-    "service1-2": "Huonekalujen kokoaminen, siirto, purku ja pakkaus.",
-    "service1-3": "Kodinkoneiden asennus ja käyttöönotto.",
-    "service1-4": "Verhotankojen, kiskojen ja valaisimien asennus.",
-
-    "service2-1": "Pihan siivous ja lehtien haravointi.",
-    "service2-2": "Nurmikon ja pensaiden leikkaus.",
-    "service2-3": "Puunkaato ja raivaus.",
-    "service2-4": "Lumityöt ja hiekoitus.",
-
-    "service3-1": "Lattia-asennukset ja pintojen uusiminen.",
-    "service3-2": "Ovien, listojen ja kalusteiden asennus.",
-    "service3-3": "Kylpyhuoneen ja keittiön pienremontit.",
-    "service3-4": "Maalaus- ja pintaremontit.",
-    "service3-5": "Purku- ja korjaustyöt.",
-
-    "service4-1": "Hautakivien suoristus ja huolto.",
-    "service4-2": "Hautakivien puhdistus ja hoito.",
-    "service4-3": "Hautapaikan siistiminen ja ylläpito.",
-
-    // NAV
-    "nav-remontti": "Remontit",
-    "nav-garden": "Pihapalvelut",
-    "nav-grave": "Hautakivipalvelut",
-    "nav-install": "Kodin asennuspalvelut",
-
-    // KODIN-ASENNUSPALVELUT PAGE
-    "section1-title": "Kokonaisratkaisu kodin asennuksiin",
-    "section1-text":
-      "Haluatteko kodin kuntoon ilman stressiä? Tarjoamme kokonaisratkaisun asennuksiin Helsingissä ja pääkaupunkiseudulla.",
-    "section1-text2":
-      "Pyydä ilmainen tarjous – tulemme nopeasti paikalle ja hoidamme työn sovitusti.",
-
-    "section2-title": "Asennusapu ja pienet työt",
-    "section2-text":
-      "Hoidamme pienet asennukset nopeasti ja ammattitaidolla.",
-
-    "section3-title": "Raskaat ja vaativat asennukset",
-    "section3-text":
-      "Hoidamme vaativat asennukset turvallisesti ja oikeilla työvälineillä.",
-
-    "section4-title": "Kodin asennuspalvelut",
-    "section4-text":
-      "Nopea ja luotettava palvelu Helsingissä.",
-
-    "section4-subtitle": "Hinnasto",
-    "section4-1": "Asennustyöt: alkaen 80€/h",
-    "section4-2": "Pienet asennukset: alkaen 150€",
-    "section4-3": "Kodinkoneasennukset: sopimuksen mukaan",
-    "section4-4": "Yrityksille: sopimuksen mukaan",
-
-    "section4-cta": "Pyydä tarjous",
-    "back-button": "Takaisin"
+    backButton: "Takaisin"
   },
 
   sv: {
-    "hero-title": "Snabb och pålitlig service i Helsingfors.",
-    "hero-text": "Installationer, trädgård och renoveringar.",
-    "hero-cta": "Be om offert",
+    heroTitle: "Snabb och pålitlig service i Helsingfors.",
+    heroText: "Installationer och renoveringar.",
+    heroCta: "Be om offert",
 
-    "services-title": "Tjänster",
-    "services-text": "Vi erbjuder tjänster för hem och företag.",
+    servicesTitle: "Tjänster",
+    aboutTitle: "Om oss",
+    contactTitle: "Kontakt",
 
-    "about-title": "Om oss",
-    "about-text": "Vi är ett serviceföretag i Helsingfors.",
+    service1Title: "Heminstallationer",
+    service1Btn: "Läs mer",
 
-    "contact-title": "Kontakt",
+    gardenTitle: "Trädgårdstjänster",
+    gardenBtn: "Läs mer",
+
+    remonttiTitle: "Renovering",
+    remonttiBtn: "Läs mer",
+
+    graveTitle: "Gravvård",
+    graveBtn: "Läs mer",
+
+    navRemontti: "Renovering",
+    navGarden: "Trädgård",
+    navGrave: "Gravvård",
+    navInstall: "Installationer",
+
     submit: "Skicka",
 
-    "service1-title": "Heminstallationer",
-    "service2-title": "Trädgårdstjänster",
-    "service3-title": "Renovering",
-    "service4-title": "Gravvård",
+    section1Title: "Helhetslösning",
+    section2Title: "Småjobb",
+    section3Title: "Tunga arbeten",
+    section4Title: "Installationer",
+    section4Subtitle: "Pris",
+    section4Cta: "Be om offert",
 
-    "nav-remontti": "Renovering",
-    "nav-garden": "Trädgård",
-    "nav-grave": "Gravvård",
-    "nav-install": "Installationer",
-
-    "section1-title": "Helhetslösning",
-    "section2-title": "Småjobb",
-    "section3-title": "Tunga arbeten",
-    "section4-title": "Installationer",
-    "section4-subtitle": "Pris",
-    "section4-cta": "Be om offert",
-    "back-button": "Tillbaka"
+    backButton: "Tillbaka"
   },
 
   en: {
-    "hero-title": "Fast and reliable service in Helsinki.",
-    "hero-text": "Installations, yard work and renovations.",
-    "hero-cta": "Request a quote",
+    heroTitle: "Fast and reliable service in Helsinki.",
+    heroText: "Installations and renovations.",
+    heroCta: "Request a quote",
 
-    "services-title": "Services",
-    "about-title": "About",
-    "contact-title": "Contact",
+    servicesTitle: "Services",
+    aboutTitle: "About",
+    contactTitle: "Contact",
+
+    service1Title: "Home installations",
+    service1Btn: "Read more",
+
+    gardenTitle: "Yard services",
+    gardenBtn: "Read more",
+
+    remonttiTitle: "Renovations",
+    remonttiBtn: "Read more",
+
+    graveTitle: "Grave services",
+    graveBtn: "Read more",
+
+    navRemontti: "Renovations",
+    navGarden: "Yard",
+    navGrave: "Grave",
+    navInstall: "Installations",
+
     submit: "Send",
 
-    "nav-remontti": "Renovations",
-    "nav-garden": "Yard",
-    "nav-grave": "Grave",
-    "nav-install": "Installations",
+    section1Title: "Complete solution",
+    section2Title: "Small jobs",
+    section3Title: "Heavy work",
+    section4Title: "Installations",
+    section4Subtitle: "Pricing",
+    section4Cta: "Request quote",
 
-    "section1-title": "Complete solution",
-    "section2-title": "Small jobs",
-    "section3-title": "Heavy work",
-    "section4-title": "Installations",
-    "section4-subtitle": "Pricing",
-    "section4-cta": "Request quote",
-    "back-button": "Back"
+    backButton: "Back"
   }
 };
 
@@ -162,23 +126,14 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  // TEXT NODES
-  document.querySelectorAll("[id]").forEach(el => {
-    const key = el.id;
+  document.querySelectorAll("[data-translate]").forEach(el => {
+    const key = el.getAttribute("data-translate");
     if (t[key]) el.innerText = t[key];
   });
 
-  // PLACEHOLDERS (forms)
-  const inputs = {
-    name: "name",
-    email: "email",
-    phone: "phone",
-    message: "message"
-  };
-
-  Object.keys(inputs).forEach(id => {
-    const el = document.getElementById(id);
-    if (el && t[id]) el.placeholder = t[id];
+  document.querySelectorAll("[data-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-placeholder");
+    if (t[key]) el.placeholder = t[key];
   });
 }
 
