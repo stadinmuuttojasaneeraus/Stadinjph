@@ -8,30 +8,30 @@ const translations = {
 
     servicesTitle: "Palvelut",
     servicesText:
-      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin.",
+      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
 
     aboutTitle: "Meistä",
     aboutText:
-      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille.",
+      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys.",
 
     contactTitle: "Yhteystiedot",
+    submit: "Lähetä",
 
     name: "Nimi",
     email: "Sähköposti",
     phone: "Puhelin",
     message: "Viesti",
-    submit: "Lähetä",
 
     service1Title: "Kodin asennuspalvelut",
     service1Text: "Apua arjen pienissä askareissa.",
     service1Btn: "Lue lisää",
 
     gardenTitle: "Pihapalvelut",
-    gardenText: "Hoidamme pihan siistiksi ympäri vuoden.",
+    gardenText: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
     gardenBtn: "Lue lisää",
 
     remonttiTitle: "Remonttipalvelut",
-    remonttiText: "Teemme remontit ammattitaidolla.",
+    remonttiText: "Teemme remontit siististi ja ammattitaidolla.",
     remonttiBtn: "Lue lisää",
 
     graveTitle: "Hautakivipalvelut",
@@ -45,40 +45,45 @@ const translations = {
 
     section1Title: "Kokonaisratkaisu kodin asennuksiin",
     section1Text: "Haluatteko kodin kuntoon ilman stressiä?",
-    section1Text2: "Pyydä tarjous – tulemme nopeasti.",
+    section1Text2: "Pyydä ilmainen tarjous – tulemme nopeasti paikalle.",
 
     section2Title: "Asennusapu ja pienet työt",
-    section2Text: "Hoidamme pienet asennukset nopeasti.",
+    section2Text: "Hoidamme asennukset nopeasti ja helposti.",
 
     section3Title: "Raskaat ja vaativat asennukset",
-    section3Text: "Teemme myös vaativammat työt.",
+    section3Text: "Teemme myös vaativammat asennustyöt.",
 
     section4Title: "Kodin asennuspalvelut",
-    section4Text: "Tarjoamme nopeaa ja luotettavaa palvelua.",
+    section4Text: "Nopea ja luotettava palvelu.",
     section4Subtitle: "Hinnasto",
-    section4Cta: "Pyydä tarjous",
 
+    section4_1: "Asennustyöt: alkaen 80€/h",
+    section4_2: "Pienet asennukset: alkaen 150€",
+    section4_3: "Kodinkoneasennukset sopimuksen mukaan",
+    section4_4: "Yrityksille sopimuksen mukaan",
+
+    section4Cta: "Pyydä tarjous",
     backButton: "Takaisin"
   },
 
   sv: {
     heroTitle: "Snabb och pålitlig service i Helsingfors.",
-    heroText: "Installationer, trädgård och renoveringar.",
+    heroText: "Installationer och renoveringar.",
     heroCta: "Be om offert",
 
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder tjänster för hem och företag.",
 
     aboutTitle: "Om oss",
-    aboutText: "Serviceföretag i Helsingfors och huvudstadsregionen.",
+    aboutText: "Vi är ett serviceföretag i Helsingfors.",
 
     contactTitle: "Kontakt",
+    submit: "Skicka",
 
     name: "Namn",
     email: "E-post",
     phone: "Telefon",
     message: "Meddelande",
-    submit: "Skicka",
 
     service1Title: "Heminstallationer",
     service1Text: "Hjälp i vardagen.",
@@ -89,7 +94,7 @@ const translations = {
     gardenBtn: "Läs mer",
 
     remonttiTitle: "Renovering",
-    remonttiText: "Professionellt arbete.",
+    remonttiText: "Professionella renoveringar.",
     remonttiBtn: "Läs mer",
 
     graveTitle: "Gravvård",
@@ -106,7 +111,7 @@ const translations = {
     section1Text2: "Kontakta oss.",
 
     section2Title: "Småjobb",
-    section2Text: "Vi fixar små installationer.",
+    section2Text: "Snabba installationer.",
 
     section3Title: "Tunga arbeten",
     section3Text: "Vi hanterar svåra jobb.",
@@ -114,40 +119,45 @@ const translations = {
     section4Title: "Installationer",
     section4Text: "Snabb och säker service.",
     section4Subtitle: "Pris",
-    section4Cta: "Be om offert",
 
+    section4_1: "Från 80€/h",
+    section4_2: "Från 150€",
+    section4_3: "Enligt avtal",
+    section4_4: "Företag enligt avtal",
+
+    section4Cta: "Be om offert",
     backButton: "Tillbaka"
   },
 
   en: {
     heroTitle: "Fast and reliable service in Helsinki.",
-    heroText: "Installations, yard work and renovations.",
+    heroText: "Installations and renovations.",
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
     servicesText: "We provide home and business services.",
 
     aboutTitle: "About",
-    aboutText: "Service company in Helsinki and region.",
+    aboutText: "We are a service company in Helsinki.",
 
     contactTitle: "Contact",
+    submit: "Send",
 
     name: "Name",
     email: "Email",
     phone: "Phone",
     message: "Message",
-    submit: "Send",
 
     service1Title: "Home installations",
     service1Text: "Help with daily tasks.",
     service1Btn: "Read more",
 
     gardenTitle: "Yard services",
-    gardenText: "We take care of your yard.",
+    gardenText: "We take care of your yard year-round.",
     gardenBtn: "Read more",
 
     remonttiTitle: "Renovations",
-    remonttiText: "Professional work.",
+    remonttiText: "Professional renovation work.",
     remonttiBtn: "Read more",
 
     graveTitle: "Grave services",
@@ -164,7 +174,7 @@ const translations = {
     section1Text2: "Contact us.",
 
     section2Title: "Small jobs",
-    section2Text: "We handle small installations.",
+    section2Text: "Fast installations.",
 
     section3Title: "Heavy work",
     section3Text: "We handle demanding jobs.",
@@ -172,11 +182,97 @@ const translations = {
     section4Title: "Installations",
     section4Text: "Fast and reliable service.",
     section4Subtitle: "Pricing",
-    section4Cta: "Request quote",
 
+    section4_1: "From €80/h",
+    section4_2: "From €150",
+    section4_3: "By agreement",
+    section4_4: "Business by agreement",
+
+    section4Cta: "Request quote",
     backButton: "Back"
   }
 };
+
+function applyLang() {
+  try {
+    const t = translations[currentLang];
+    if (!t) return;
+
+    const setText = (id, key) => {
+      const el = document.getElementById(id);
+      if (el && t[key] !== undefined) el.innerText = t[key];
+    };
+
+    const setPlaceholder = (id, key) => {
+      const el = document.getElementById(id);
+      if (el && t[key] !== undefined) el.placeholder = t[key];
+    };
+
+    setText("hero-title", "heroTitle");
+    setText("hero-text", "heroText");
+    setText("hero-cta", "heroCta");
+
+    setText("services-title", "servicesTitle");
+    setText("services-text", "servicesText");
+
+    setText("about-title", "aboutTitle");
+    setText("about-text", "aboutText");
+
+    setText("contact-title", "contactTitle");
+    setText("submit", "submit");
+
+    setPlaceholder("name", "name");
+    setPlaceholder("email", "email");
+    setPlaceholder("phone", "phone");
+    setPlaceholder("message", "message");
+
+    setText("service1-title", "service1Title");
+    setText("service1-text", "service1Text");
+    setText("service1-btn", "service1Btn");
+
+    setText("garden-title", "gardenTitle");
+    setText("garden-text", "gardenText");
+    setText("garden-btn", "gardenBtn");
+
+    setText("remontti-title", "remonttiTitle");
+    setText("remontti-text", "remonttiText");
+    setText("remontti-btn", "remonttiBtn");
+
+    setText("grave-title", "graveTitle");
+    setText("grave-text", "graveText");
+    setText("grave-btn", "graveBtn");
+
+    setText("nav-remontti", "navRemontti");
+    setText("nav-garden", "navGarden");
+    setText("nav-grave", "navGrave");
+    setText("nav-install", "navInstall");
+
+    setText("section1-title", "section1Title");
+    setText("section1-text", "section1Text");
+    setText("section1-text2", "section1Text2");
+
+    setText("section2-title", "section2Title");
+    setText("section2-text", "section2Text");
+
+    setText("section3-title", "section3Title");
+    setText("section3-text", "section3Text");
+
+    setText("section4-title", "section4Title");
+    setText("section4-text", "section4Text");
+    setText("section4-subtitle", "section4Subtitle");
+
+    setText("section4-1", "section4_1");
+    setText("section4-2", "section4_2");
+    setText("section4-3", "section4_3");
+    setText("section4-4", "section4_4");
+
+    setText("section4-cta", "section4Cta");
+    setText("back-button", "backButton");
+
+  } catch (err) {
+    console.error("Language error:", err);
+  }
+}
 
 function setLang(lang) {
   currentLang = lang;
@@ -184,73 +280,7 @@ function setLang(lang) {
   applyLang();
 }
 
-function applyLang() {
-  const t = translations[currentLang];
-  if (!t) return;
-
-  const setText = (id, key) => {
-    const el = document.getElementById(id);
-    if (el && t[key]) el.innerText = t[key];
-  };
-
-  setText("hero-title", "heroTitle");
-  setText("hero-text", "heroText");
-  setText("hero-cta", "heroCta");
-
-  setText("services-title", "servicesTitle");
-  setText("services-text", "servicesText");
-
-  setText("about-title", "aboutTitle");
-  setText("about-text", "aboutText");
-
-  setText("contact-title", "contactTitle");
-  setText("submit", "submit");
-
-  ["name", "email", "phone", "message"].forEach(id => {
-    const el = document.getElementById(id);
-    if (el && t[id]) el.placeholder = t[id];
-  });
-
-  setText("service1-title", "service1Title");
-  setText("service1-text", "service1Text");
-  setText("service1-btn", "service1Btn");
-
-  setText("garden-title", "gardenTitle");
-  setText("garden-text", "gardenText");
-  setText("garden-btn", "gardenBtn");
-
-  setText("remontti-title", "remonttiTitle");
-  setText("remontti-text", "remonttiText");
-  setText("remontti-btn", "remonttiBtn");
-
-  setText("grave-title", "graveTitle");
-  setText("grave-text", "graveText");
-  setText("grave-btn", "graveBtn");
-
-  setText("nav-remontti", "navRemontti");
-  setText("nav-garden", "navGarden");
-  setText("nav-grave", "navGrave");
-  setText("nav-install", "navInstall");
-
-  setText("section1-title", "section1Title");
-  setText("section1-text", "section1Text");
-  setText("section1-text2", "section1Text2");
-
-  setText("section2-title", "section2Title");
-  setText("section2-text", "section2Text");
-
-  setText("section3-title", "section3Title");
-  setText("section3-text", "section3Text");
-
-  setText("section4-title", "section4Title");
-  setText("section4-text", "section4Text");
-  setText("section4-subtitle", "section4Subtitle");
-
-  setText("section4-cta", "section4Cta");
-  setText("back-button", "backButton");
-}
-
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("lang");
   if (saved) currentLang = saved;
   applyLang();
