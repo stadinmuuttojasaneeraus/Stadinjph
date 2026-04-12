@@ -96,28 +96,24 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  const set = (id, key) => {
-    const el = document.getElementById(id);
-    if (el && t[key]) el.innerText = t[key];
-  };
-
-  // HERO (data-translate version)
+  // 1. HERO + ALL data-translate (din bästa struktur)
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
     if (t[key]) el.innerText = t[key];
   });
 
-  // SERVICES TEXT
-  set("services-text", "servicesText");
+  const set = (id, key) => {
+    const el = document.getElementById(id);
+    if (el && t[key]) el.innerText = t[key];
+  };
 
-  // ABOUT
+  // 2. SERVICES TEXT + ABOUT + CONTACT TITLES
+  set("services-text", "servicesText");
   set("about-title", "aboutTitle");
   set("about-text", "aboutText");
-
-  // CONTACT
   set("contact-title", "contactTitle");
 
-  // CARDS
+  // 3. SERVICE CARDS
   set("service1-title", "service1Title");
   set("service1-text", "service1Text");
   set("service1-btn", "service1Btn");
@@ -130,8 +126,28 @@ function applyLang() {
 
   set("grave-title", "graveTitle");
   set("grave-text", "graveText");
-}
 
+  // 4. FORM PLACEHOLDERS (DET DU SAKNAR NU)
+  const placeholders = {
+    name: "name",
+    email: "email",
+    phone: "phone",
+    message: "message"
+  };
+
+  Object.keys(placeholders).forEach(id => {
+    const el = document.querySelector(`[name="${id}"]`);
+    if (el && t[placeholders[id]]) {
+      el.placeholder = t[placeholders[id]];
+    }
+  });
+
+  // 5. BUTTONS
+  const submitBtn = document.querySelector("button[type='submit']");
+  if (submitBtn && t.submit) {
+    submitBtn.innerText = t.submit;
+  }
+}
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
