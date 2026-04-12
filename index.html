@@ -6,21 +6,25 @@
     <title>Stadin Handymannit Oy</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
     <div class="logo">Stadin Handymannit Oy</div>
+
     <div class="lang-switch">
-  <span onclick="setLang('fi')">🇫🇮</span>
-  <span onclick="setLang('sv')">🇸🇪</span>
-  <span onclick="setLang('en')">🇬🇧</span>
+        <span onclick="setLang('fi')">🇫🇮</span>
+        <span onclick="setLang('sv')">🇸🇪</span>
+        <span onclick="setLang('en')">🇬🇧</span>
     </div>
+
     <nav>
         <div class="menu" id="menu">
-            <a href="#palvelut">Palvelut</a>
-            <a href="#meista">Meistä</a>
-            <a href="#yhteystiedot">Yhteystiedot</a>
+            <a href="#palvelut" id="nav-services">Palvelut</a>
+            <a href="#meista" id="nav-about">Meistä</a>
+            <a href="#yhteystiedot" id="nav-contact">Yhteystiedot</a>
         </div>
+
         <div class="hamburger" id="hamburger">
             <div></div>
             <div></div>
@@ -34,115 +38,135 @@
   <div class="hero-container">
 
     <div class="hero-content">
-  <h1 id="hero-title">Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.</h1>
-  <p id="hero-text">Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.</p>
-  <a href="#yhteystiedot" class="cta-button" id="hero-cta">Pyydä tarjous</a>
+      <h1 id="hero-title">
+        Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.
+      </h1>
+
+      <p id="hero-text">
+        Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.
+      </p>
+
+      <a href="#yhteystiedot" class="cta-button" id="hero-cta">
+        Pyydä tarjous
+      </a>
     </div>
+
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="palvelut" class="services-section">
+
     <h2 id="services-title">Palvelut</h2>
+
     <p id="services-text">
         Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.
     </p>
+
     <div class="services-container">
 
+        <!-- SERVICE 1 -->
         <a href="kodin-asennuspalvelut.html" class="service-item">
-    <div class="icon">🏠</div>
-    <h3 id="service1-title">Kodin asennuspalvelut.</h3>
-    <p id="service1-text">Apua arjen pienissä askareissa. Autamme kaikenlaisissa kodin käytännön töissä:</p>
-    <ul id="service1-list">
-        <li>Taulujen, hyllyjen ja peilien kiinnitys.</li>
-        <li>Huonekalujen kokoaminen, siirto, purku ja pakkaus.</li>
-        <li>Kodinkoneiden asennus ja käyttöönotto.</li>
-        <li>Verhotankojen, kiskojen ja valaisimen asennus.</li>
-    </ul>
-    <button class="cta-button" id="service1-btn">Lue lisää</button>
+
+            <div class="icon">🏠</div>
+
+            <h3 id="service1-title">Kodin asennuspalvelut</h3>
+
+            <p id="service1-text">
+                Apua arjen pienissä askareissa.
+            </p>
+
+            <ul>
+                <li id="service1-1">Taulujen, hyllyjen ja peilien kiinnitys.</li>
+                <li id="service1-2">Huonekalujen kokoaminen, siirto ja pakkaus.</li>
+                <li id="service1-3">Kodinkoneiden asennus ja käyttöönotto.</li>
+                <li id="service1-4">Verhotankojen ja valaisimien asennus.</li>
+            </ul>
+
+            <button class="cta-button" id="service1-btn">Lue lisää</button>
         </a>
 
+        <!-- SERVICE 2 -->
         <a href="pihapalvelut.html" class="service-item">
-    <div class="icon">🌿</div>
 
-    <h3 id="garden-title">Pihapalvelut</h3>
+            <div class="icon">🌿</div>
 
-    <p id="garden-text">
-        Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.
-    </p>
+            <h3 id="service2-title">Pihapalvelut</h3>
 
-    <ul id="garden-list">
-        <li id="garden-1">Pihan siivous ja lehtien haravointi.</li>
-        <li id="garden-2">Nurmikon ja pensaiden leikkaus.</li>
-        <li id="garden-3">Puunkaato ja raivaus.</li>
-        <li id="garden-4">Lumityöt ja hiekoitus.</li>
-    </ul>
+            <p id="service2-text">Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.</p>
 
-    <button class="cta-button" id="garden-btn">Lue lisää</button>
-</a>
+            <ul>
+                <li id="service2-1">Pihan siivous ja lehtien haravointi.</li>
+                <li id="service2-2">Nurmikon ja pensaiden leikkaus.</li>
+                <li id="service2-3">Puunkaato ja raivaus.</li>
+                <li id="service2-4">Lumityöt ja hiekoitus.</li>
+            </ul>
 
-        <a href="remontti.html" class="service-item">
-    <div class="icon">🔨</div>
-
-    <h3 id="remontti-title">Remonttipalvelut</h3>
-
-    <p id="remontti-text">
-        Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla.
-    </p>
-
-    <ul>
-        <li id="remontti-1">Lattia-asennukset ja pintojen uusiminen.</li>
-        <li id="remontti-2">Ovien, listojen ja kalusteiden asennus.</li>
-        <li id="remontti-3">Kylpyhuoneen ja keittiön pienremontit.</li>
-        <li id="remontti-4">Maalaus- ja pintaremontit.</li>
-        <li id="remontti-5">Purku- ja korjaustyöt.</li>
-    </ul>
-
-    <button class="cta-button" id="remontti-btn">Lue lisää</button>
+            <button class="cta-button" id="service2-btn">Lue lisää</button>
         </a>
 
-<a href="hautakivipalvelut.html" class="service-item">
-    <div class="icon">🪦</div>
+        <!-- SERVICE 3 -->
+        <a href="remontti.html" class="service-item">
 
-    <h3 id="grave-title">Hautakivipalvelut</h3>
+            <div class="icon">🔨</div>
 
-    <p id="grave-text">
-        Hoidamme hautakivien puhdistuksen, kunnostuksen ja ylläpidon arvokkaasti ja huolellisesti.
-    </p>
+            <h3 id="service3-title">Remonttipalvelut</h3>
 
-    <ul>
-        <li id="grave-1">Hautakivien suoristus ja huolto.</li>
-        <li id="grave-2">Hautakivien puhdistus ja hoito.</li>
-        <li id="grave-3">Hautapaikan siistiminen ja ylläpito.</li>
-    </ul>
+            <p id="service3-text">Teemme remontit siististi ja ammattitaidolla.</p>
 
-    <button class="cta-button" id="grave-btn">Lue lisää</button>
-</a>
+            <ul>
+                <li id="service3-1">Lattia-asennukset ja pintojen uusiminen.</li>
+                <li id="service3-2">Ovien ja kalusteiden asennus.</li>
+                <li id="service3-3">Kylpyhuone- ja keittiöremontit.</li>
+                <li id="service3-4">Maalaus- ja purkutyöt.</li>
+            </ul>
+
+            <button class="cta-button" id="service3-btn">Lue lisää</button>
+        </a>
+
+        <!-- SERVICE 4 -->
+        <a href="hautakivipalvelut.html" class="service-item">
+
+            <div class="icon">🪦</div>
+
+            <h3 id="service4-title">Hautakivipalvelut</h3>
+
+            <p id="service4-text">Hoidamme hautakivien puhdistuksen ja ylläpidon.</p>
+
+            <ul>
+                <li id="service4-1">Hautakivien suoristus ja huolto.</li>
+                <li id="service4-2">Hautakivien puhdistus ja hoito.</li>
+                <li id="service4-3">Hautapaikan siistiminen ja ylläpito.</li>
+            </ul>
+
+            <button class="cta-button" id="service4-btn">Lue lisää</button>
+        </a>
 
     </div>
 </section>
 
-<!-- MEISTÄ -->
+<!-- ABOUT -->
 <section id="meista" class="about-section">
-  <div class="about-overlay">
-    <div class="about-content">
-      <h2 id="about-title">Meistä</h2>
-      <p id="about-text">Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Palveluihimme kuuluvat muun muassa kotipalvelut, pihatyöt sekä erilaiset remonttityöt.
-      Meillä on pitkä kokemus alalta, ja panostamme aina laadukkaaseen työnjälkeen sekä asiakastyytyväisyyteen. Toimintamme perustuu luotettavuuteen, joustavuuteen ja nopeaan palveluun – hoidamme työt sovitusti ja aikataulussa.
-      Tavoitteenamme on tehdä arjesta helpompaa asiakkaillemme tarjoamalla sujuvaa ja vaivatonta palvelua kaikissa tilanteissa. Olipa kyseessä pieni korjaus tai laajempi projekti, voit luottaa meihin. Puhumme sujuvasti suomea ja ruotsia, ja kaikki työntekijämme ovat läpikäyneet turvallisuustarkastuksen asiakkaidemme mielenrauhan varmistamiseksi.</p>
-    </div>
-  </div>
-</section>
+    <div class="about-overlay">
+        <div class="about-content">
 
-<section class="image-section">
-    <img src="images/your-image.jpg" alt="Stadin Handymannit työssä">
+            <h2 id="about-title">Meistä</h2>
+
+            <p id="about-text">
+                Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys...
+            </p>
+
+        </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
 <section id="yhteystiedot" class="contact-section">
+
     <h2 id="contact-title">Yhteystiedot</h2>
 
     <div class="contact-container">
+
         <div class="contact-info">
             <p><strong>Sähköposti:</strong> info@stadin-handymannit.fi</p>
             <p><strong>Puhelin:</strong> +358 40 123 4567</p>
@@ -150,43 +174,24 @@
         </div>
 
         <form action="https://formspree.io/f/your-id" method="POST">
-            <input type="text" id="name" name="name" placeholder="Nimi" required>
-<input type="email" id="email" name="email" placeholder="Sähköposti" required>
-<input type="text" id="phone" name="phone" placeholder="Puhelin" required>
-<textarea id="message" name="message" placeholder="Viesti" rows="5" required></textarea>
-<button type="submit" id="submit">Lähetä</button>
+            <input type="text" id="name" placeholder="Nimi" required>
+            <input type="email" id="email" placeholder="Sähköposti" required>
+            <input type="text" id="phone" placeholder="Puhelin" required>
+            <textarea id="message" placeholder="Viesti" required></textarea>
+            <button type="submit" id="submit">Lähetä</button>
         </form>
+
     </div>
 
-    <div class="map">
-        <iframe 
-            src="https://www.google.com/maps?q=Helsinki&output=embed"
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            loading="lazy">
-        </iframe>
-    </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p><strong>Stadin Handymannit Oy</strong></p>
-    <p>Helsinki, Suomi</p>
-    <p>📞 +358 40 123 4567</p>
-    <p>✉️ info@stadin-handymannit.fi</p>
-    <p>Y-tunnus: 1234567-8</p>
-
-    <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-    </div>
-
-    <p>© 2026</p>
+    <p>© 2026 Stadin Handymannit Oy</p>
 </footer>
 
 <script src="js/script.js"></script>
 <script src="js/lang.js"></script>
+
 </body>
 </html>
