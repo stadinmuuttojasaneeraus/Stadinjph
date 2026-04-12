@@ -226,21 +226,22 @@ function applyLang() {
     setPlaceholder("phone", "phone");
     setPlaceholder("message", "message");
 
-    setText("service1-title", "service1Title");
-    setText("service1-text", "service1Text");
-    setText("service1-btn", "service1Btn");
+    // SERVICE CARDS (INDEX - SAFE VERSION)
+setText("service1-title", "service1Title");
+setText("service1-text", "service1Text");
+setText("service1-btn", "service1Btn");
 
-    setText("garden-title", "gardenTitle");
-    setText("garden-text", "gardenText");
-    setText("garden-btn", "gardenBtn");
+setText("garden-title", "service2Title");
+setText("garden-text", "service2Text");
+setText("garden-btn", "service2Btn");
 
-    setText("remontti-title", "remonttiTitle");
-    setText("remontti-text", "remonttiText");
-    setText("remontti-btn", "remonttiBtn");
+setText("remontti-title", "service3Title");
+setText("remontti-text", "service3Text");
+setText("remontti-btn", "service3Btn");
 
-    setText("grave-title", "graveTitle");
-    setText("grave-text", "graveText");
-    setText("grave-btn", "graveBtn");
+setText("grave-title", "service4Title");
+setText("grave-text", "service4Text");
+setText("grave-btn", "service4Btn");
 
     setText("nav-remontti", "navRemontti");
     setText("nav-garden", "navGarden");
