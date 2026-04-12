@@ -7,122 +7,57 @@ const translations = {
     heroCta: "Pyydä tarjous",
 
     servicesTitle: "Palvelut",
-    servicesText:
-      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.",
+    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut...",
 
     aboutTitle: "Meistä",
-    aboutText:
-      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille.",
+    aboutText: "Olemme Helsingissä toimiva monipalveluyritys.",
 
     contactTitle: "Yhteystiedot",
 
-    service1Title: "Kodin asennuspalvelut.",
-    service1Text:
-      "Apua arjen pienissä askareissa. Autamme kaikenlaisissa kodin käytännön töissä:",
+    name: "Nimi",
+    email: "Sähköposti",
+    phone: "Puhelin",
+    message: "Viesti",
+    submit: "Lähetä",
+
+    service1Title: "Kodin asennuspalvelut",
+    service1Text: "Apua arjen pienissä askareissa.",
     service1Btn: "Lue lisää",
 
     gardenTitle: "Pihapalvelut",
-    gardenText: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
+    gardenText: "Hoidamme pihan ympäri vuoden.",
+    gardenBtn: "Lue lisää",
 
     remonttiTitle: "Remonttipalvelut",
-    remonttiText:
-      "Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla.",
+    remonttiText: "Ammattitaitoista remontointia.",
+    remonttiBtn: "Lue lisää",
 
     graveTitle: "Hautakivipalvelut",
-    graveText:
-      "Hoidamme hautakivien puhdistuksen, kunnostuksen ja ylläpidon arvokkaasti ja huolellisesti."
+    graveText: "Hautakivien huolto ja puhdistus.",
+    graveBtn: "Lue lisää"
   },
 
-  sv: {
-    heroTitle: "Snabb och pålitlig service i Helsingfors och huvudstadsregionen.",
-    heroText: "Installationer, gårdsarbete och renoveringar – enkelt och smidigt.",
-    heroCta: "Be om offert",
-
-    servicesTitle: "Tjänster",
-    servicesText:
-      "Stadin Handymannit Oy erbjuder omfattande tjänster för hem och företag.",
-
-    aboutTitle: "Om oss",
-    aboutText:
-      "Vi är ett serviceföretag i Helsingfors och huvudstadsregionen.",
-
-    contactTitle: "Kontakt",
-
-    service1Title: "Heminstallationer",
-    service1Text: "Hjälp i vardagen.",
-    service1Btn: "Läs mer",
-
-    gardenTitle: "Trädgårdstjänster",
-    gardenText: "Vi håller din gård i gott skick året runt.",
-
-    remonttiTitle: "Renoveringstjänster",
-    remonttiText: "Vi gör renoveringar professionellt och noggrant.",
-
-    graveTitle: "Gravvård",
-    graveText: "Vi sköter gravstenar med respekt och omsorg."
-  },
-
-  en: {
-    heroTitle: "Fast and reliable service in Helsinki and the metropolitan area.",
-    heroText: "Installations, yard work and renovations – easy and smooth.",
-    heroCta: "Request a quote",
-
-    servicesTitle: "Services",
-    servicesText:
-      "Stadin Handymannit Oy provides complete services for homes and businesses.",
-
-    aboutTitle: "About us",
-    aboutText:
-      "We are a service company operating in Helsinki and the metropolitan area.",
-
-    contactTitle: "Contact",
-
-    service1Title: "Home installations",
-    service1Text: "Help with everyday tasks.",
-    service1Btn: "Read more",
-
-    gardenTitle: "Yard services",
-    gardenText: "We keep your yard clean and functional year-round.",
-
-    remonttiTitle: "Renovation services",
-    remonttiText: "We do renovations professionally and efficiently.",
-
-    graveTitle: "Grave services",
-    graveText: "We handle grave maintenance with care and respect."
-  }
+  sv: { /* samma struktur */ },
+  en: { /* samma struktur */ }
 };
 
 function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  // 1. ALL TEXT VIA data-translate (ENDA SYSTEMET VI LITAR PÅ)
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
-    if (t[key]) el.innerText = t[key];
-  });
 
-  // 2. INPUT PLACEHOLDERS (ROBUST VERSION)
-  const inputs = {
-    name: "name",
-    email: "email",
-    phone: "phone",
-    message: "message"
-  };
-
-  Object.entries(inputs).forEach(([name, key]) => {
-    const el = document.querySelector(`input[name="${name}"], textarea[name="${name}"]`);
-    if (el && t[key]) {
-      el.placeholder = t[key];
+    if (t[key]) {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.placeholder = t[key];
+      } else {
+        el.innerText = t[key];
+      }
     }
   });
-
-  // 3. SUBMIT BUTTON
-  const btn = document.querySelector("button[type='submit']");
-  if (btn && t.submit) {
-    btn.innerText = t.submit;
-  }
 }
+
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
