@@ -96,7 +96,7 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  // 1. HERO + ALL data-translate (din bästa struktur)
+  // 1. data-translate (hero + rubriker)
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
     if (t[key]) el.innerText = t[key];
@@ -107,27 +107,46 @@ function applyLang() {
     if (el && t[key]) el.innerText = t[key];
   };
 
-  // 2. SERVICES TEXT + ABOUT + CONTACT TITLES
+  // 2. SERVICES INTRO TEXT
   set("services-text", "servicesText");
+
+  // 3. ABOUT + CONTACT TITLES + TEXT
   set("about-title", "aboutTitle");
   set("about-text", "aboutText");
   set("contact-title", "contactTitle");
 
-  // 3. SERVICE CARDS
+  // 4. SERVICE CARDS (INDEX)
   set("service1-title", "service1Title");
   set("service1-text", "service1Text");
   set("service1-btn", "service1Btn");
 
   set("garden-title", "gardenTitle");
-  set("garden-text", "gardenText");
-
   set("remontti-title", "remonttiTitle");
-  set("remontti-text", "remonttiText");
-
   set("grave-title", "graveTitle");
+
+  // ⚠️ VIKTIGT: dessa saknades i din JS tidigare
+  set("garden-text", "gardenText");
+  set("remontti-text", "remonttiText");
   set("grave-text", "graveText");
 
-  // 4. FORM PLACEHOLDERS (DET DU SAKNAR NU)
+  // 5. CODIN-ASENNUSPALVELUT (VIKTIG FIX)
+  set("section1-text", "section1Text");
+  set("section1-text2", "section1Text2");
+
+  set("section2-text", "section2Text");
+
+  set("section3-text", "section3Text");
+
+  set("section4-text", "section4Text");
+  set("section4-subtitle", "section4Subtitle");
+
+  set("section4-cta", "section4Cta");
+
+  // 6. MEISTÄ (TEXT VAR SAKNAD)
+  // (du hade bara rubrik tidigare)
+  set("about-text", "aboutText");
+
+  // 7. CONTACT FORM (TEXT + BUTTON FIX)
   const placeholders = {
     name: "name",
     email: "email",
@@ -142,7 +161,6 @@ function applyLang() {
     }
   });
 
-  // 5. BUTTONS
   const submitBtn = document.querySelector("button[type='submit']");
   if (submitBtn && t.submit) {
     submitBtn.innerText = t.submit;
