@@ -62,17 +62,40 @@ const translations = {
     grave2: "Hautakivien puhdistus ja hoito.",
     grave3: "Hautapaikan siistiminen ja ylläpito.",
 
-    // kodin-asennuspalvelut header
+    // KODIN ASENNUS SIVU
+    section1Title: "Kokonaisratkaisu kodin asennuksiin",
+    section1Text: "Hoidamme kaiken huonekalujen kokoamisesta asennuksiin.",
+    section1Text2: "Pyydä ilmainen tarjous – tulemme nopeasti paikalle.",
+
+    section2Title: "Asennusapu ja pienet työt",
+    section2Text: "Teemme pienet asennukset nopeasti Helsingissä.",
+
+    section3Title: "Raskaat ja vaativat asennukset",
+    section3Text: "Hoidamme myös vaativat asennustyöt turvallisesti.",
+
+    section4Title: "Kodin asennuspalvelut",
+    section4Text: "Tarjoamme asennuspalvelut Helsingissä ja pääkaupunkiseudulla.",
+    section4Subtitle: "Hinnasto",
+
+    section4_1: "Asennustyöt: alkaen 80€/h",
+    section4_2: "Pienet asennukset: alkaen 150€",
+    section4_3: "Kodinkoneasennukset: sopimuksen mukaan",
+    section4_4: "Yrityksille: sopimuksen mukaan",
+
+    section4Cta: "Pyydä tarjous",
+
+    backButton: "Takaisin",
+
+    // NAV
     navRemontti: "Remontit",
     navGarden: "Pihapalvelut",
     navGrave: "Hautakivipalvelut",
-    navInstall: "Kodin asennuspalvelut",
-  
+    navInstall: "Kodin asennuspalvelut"
   },
 
   sv: {
     heroTitle: "Snabb och pålitlig mångservice i Helsingfors och huvudstadsregionen.",
-    heroText: "Installationer, trädgårdsarbete och renoveringar.",
+    heroText: "Installationer, trädgårdsarbete och renoveringar – enkelt och smidigt.",
     heroCta: "Be om offert",
 
     servicesTitle: "Tjänster",
@@ -80,7 +103,8 @@ const translations = {
       "Stadin Handymannit Oy erbjuder omfattande tjänster för hem och företag.",
 
     aboutTitle: "Om oss",
-    aboutText: "Vi är ett serviceföretag i Helsingfors med fokus på kvalitet.",
+    aboutText:
+      "Vi är ett mångserviceföretag i Helsingfors med lång erfarenhet.",
 
     contactTitle: "Kontakt",
 
@@ -126,16 +150,38 @@ const translations = {
     grave2: "Rengöring av gravstenar.",
     grave3: "Skötsel av gravplatser.",
 
-        // kodin-asennuspalvelut
+    section1Title: "Helhetslösning för installationer",
+    section1Text: "Vi hanterar allt från möbler till installationer.",
+    section1Text2: "Be om offert – vi kommer snabbt.",
+
+    section2Title: "Små installationer",
+    section2Text: "Snabba installationer i Helsingfors.",
+
+    section3Title: "Tunga installationer",
+    section3Text: "Säkra och professionella arbeten.",
+
+    section4Title: "Installationstjänster",
+    section4Text: "Vi erbjuder tjänster i Helsingfors.",
+    section4Subtitle: "Priser",
+
+    section4_1: "Arbete från 80€/h",
+    section4_2: "Små jobb från 150€",
+    section4_3: "Vitvaruinstallation enligt avtal",
+    section4_4: "Företagspriser enligt avtal",
+
+    section4Cta: "Be om offert",
+
+    backButton: "Tillbaka",
+
     navRemontti: "Renovering",
-navGarden: "Trädgårdstjänster",
-navGrave: "Gravvård",
-navInstall: "Heminstallationer",
+    navGarden: "Trädgård",
+    navGrave: "Gravvård",
+    navInstall: "Heminstallationer"
   },
 
   en: {
     heroTitle: "Fast and reliable multi-service in Helsinki.",
-    heroText: "Installations, yard work and renovations.",
+    heroText: "Installations, yard work and renovations – easy and smooth.",
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
@@ -143,7 +189,8 @@ navInstall: "Heminstallationer",
       "We provide comprehensive home and business services.",
 
     aboutTitle: "About us",
-    aboutText: "We are a service company in Helsinki focused on quality.",
+    aboutText:
+      "We are a service company in Helsinki focused on quality.",
 
     contactTitle: "Contact",
 
@@ -189,11 +236,33 @@ navInstall: "Heminstallationer",
     grave2: "Cleaning gravestones.",
     grave3: "Grave maintenance.",
 
-        // kodin-asennuspalvelut
-     navRemontti: "Renovations",
-navGarden: "Yard services",
-navGrave: "Grave services",
-navInstall: "Home installations",   
+    section1Title: "Full installation service",
+    section1Text: "We handle everything from furniture to installations.",
+    section1Text2: "Request a free quote – we arrive quickly.",
+
+    section2Title: "Small installation jobs",
+    section2Text: "Fast installations in Helsinki.",
+
+    section3Title: "Heavy installation work",
+    section3Text: "Safe and professional installations.",
+
+    section4Title: "Installation services",
+    section4Text: "We offer services in Helsinki and nearby areas.",
+    section4Subtitle: "Pricing",
+
+    section4_1: "Work from 80€/h",
+    section4_2: "Small jobs from 150€",
+    section4_3: "Appliance installation by agreement",
+    section4_4: "Corporate pricing by agreement",
+
+    section4Cta: "Request a quote",
+
+    backButton: "Back",
+
+    navRemontti: "Renovations",
+    navGarden: "Yard services",
+    navGrave: "Grave services",
+    navInstall: "Home installations"
   }
 };
 
@@ -209,58 +278,103 @@ function applyLang() {
   let el;
 
   // HERO
-  el = document.getElementById("hero-title");
-  if (el) el.innerText = t.heroTitle;
-
-  el = document.getElementById("hero-text");
-  if (el) el.innerText = t.heroText;
-
-  el = document.getElementById("hero-cta");
-  if (el) el.innerText = t.heroCta;
+  if (el = document.getElementById("hero-title")) el.innerText = t.heroTitle;
+  if (el = document.getElementById("hero-text")) el.innerText = t.heroText;
+  if (el = document.getElementById("hero-cta")) el.innerText = t.heroCta;
 
   // SERVICES HEADER
-  el = document.getElementById("services-title");
-  if (el) el.innerText = t.servicesTitle;
-
-  el = document.getElementById("services-text");
-  if (el) el.innerText = t.servicesText;
+  if (el = document.getElementById("services-title")) el.innerText = t.servicesTitle;
+  if (el = document.getElementById("services-text")) el.innerText = t.servicesText;
 
   // ABOUT
-  el = document.getElementById("about-title");
-  if (el) el.innerText = t.aboutTitle;
-
-  el = document.getElementById("about-text");
-  if (el) el.innerText = t.aboutText;
+  if (el = document.getElementById("about-title")) el.innerText = t.aboutTitle;
+  if (el = document.getElementById("about-text")) el.innerText = t.aboutText;
 
   // CONTACT
-  el = document.getElementById("contact-title");
-  if (el) el.innerText = t.contactTitle;
+  if (el = document.getElementById("contact-title")) el.innerText = t.contactTitle;
 
-  el = document.getElementById("name");
-  if (el) el.placeholder = t.name;
+  if (el = document.getElementById("name")) el.placeholder = t.name;
+  if (el = document.getElementById("email")) el.placeholder = t.email;
+  if (el = document.getElementById("phone")) el.placeholder = t.phone;
+  if (el = document.getElementById("message")) el.placeholder = t.message;
+  if (el = document.getElementById("submit")) el.innerText = t.submit;
 
-  el = document.getElementById("email");
-  if (el) el.placeholder = t.email;
+  // SERVICE NAV
+  if (el = document.getElementById("nav-remontti")) el.innerText = t.navRemontti;
+  if (el = document.getElementById("nav-garden")) el.innerText = t.navGarden;
+  if (el = document.getElementById("nav-grave")) el.innerText = t.navGrave;
+  if (el = document.getElementById("nav-install")) el.innerText = t.navInstall;
 
-  el = document.getElementById("phone");
-  if (el) el.placeholder = t.phone;
+  // SERVICE 1
+  if (el = document.getElementById("service1-title")) el.innerText = t.service1Title;
+  if (el = document.getElementById("service1-text")) el.innerText = t.service1Text;
+  if (el = document.getElementById("service1-btn")) el.innerText = t.service1Btn;
 
-  el = document.getElementById("message");
-  if (el) el.placeholder = t.message;
+  if (document.getElementById("service1-list")) {
+    const list = document.getElementById("service1-list").children;
+    if (list[0]) list[0].innerText = t.service1_1;
+    if (list[1]) list[1].innerText = t.service1_2;
+    if (list[2]) list[2].innerText = t.service1_3;
+    if (list[3]) list[3].innerText = t.service1_4;
+  }
 
-  el = document.getElementById("submit");
-  if (el) el.innerText = t.submit;
+  // SERVICE 2
+  if (el = document.getElementById("garden-title")) el.innerText = t.gardenTitle;
+  if (el = document.getElementById("garden-text")) el.innerText = t.gardenText;
+  if (el = document.getElementById("garden-btn")) el.innerText = t.gardenBtn;
 
-  // NAV
-  el = document.getElementById("nav-remontti");
-  if (el) el.innerText = t.navRemontti;
+  if (el = document.getElementById("garden-1")) el.innerText = t.garden1;
+  if (el = document.getElementById("garden-2")) el.innerText = t.garden2;
+  if (el = document.getElementById("garden-3")) el.innerText = t.garden3;
+  if (el = document.getElementById("garden-4")) el.innerText = t.garden4;
 
-  el = document.getElementById("nav-garden");
-  if (el) el.innerText = t.navGarden;
+  // SERVICE 3
+  if (el = document.getElementById("remontti-title")) el.innerText = t.remonttiTitle;
+  if (el = document.getElementById("remontti-text")) el.innerText = t.remonttiText;
+  if (el = document.getElementById("remontti-btn")) el.innerText = t.remonttiBtn;
 
-  el = document.getElementById("nav-grave");
-  if (el) el.innerText = t.navGrave;
+  if (el = document.getElementById("remontti-1")) el.innerText = t.remontti1;
+  if (el = document.getElementById("remontti-2")) el.innerText = t.remontti2;
+  if (el = document.getElementById("remontti-3")) el.innerText = t.remontti3;
+  if (el = document.getElementById("remontti-4")) el.innerText = t.remontti4;
+  if (el = document.getElementById("remontti-5")) el.innerText = t.remontti5;
 
-  el = document.getElementById("nav-install");
-  if (el) el.innerText = t.navInstall;
+  // SERVICE 4
+  if (el = document.getElementById("grave-title")) el.innerText = t.graveTitle;
+  if (el = document.getElementById("grave-text")) el.innerText = t.graveText;
+  if (el = document.getElementById("grave-btn")) el.innerText = t.graveBtn;
+
+  if (el = document.getElementById("grave-1")) el.innerText = t.grave1;
+  if (el = document.getElementById("grave-2")) el.innerText = t.grave2;
+  if (el = document.getElementById("grave-3")) el.innerText = t.grave3;
+
+  // KODIN ASENNUSSIVU
+  if (el = document.getElementById("section1-title")) el.innerText = t.section1Title;
+  if (el = document.getElementById("section1-text")) el.innerText = t.section1Text;
+  if (el = document.getElementById("section1-text2")) el.innerText = t.section1Text2;
+
+  if (el = document.getElementById("section2-title")) el.innerText = t.section2Title;
+  if (el = document.getElementById("section2-text")) el.innerText = t.section2Text;
+
+  if (el = document.getElementById("section3-title")) el.innerText = t.section3Title;
+  if (el = document.getElementById("section3-text")) el.innerText = t.section3Text;
+
+  if (el = document.getElementById("section4-title")) el.innerText = t.section4Title;
+  if (el = document.getElementById("section4-text")) el.innerText = t.section4Text;
+  if (el = document.getElementById("section4-subtitle")) el.innerText = t.section4Subtitle;
+
+  if (el = document.getElementById("section4-1")) el.innerText = t.section4_1;
+  if (el = document.getElementById("section4-2")) el.innerText = t.section4_2;
+  if (el = document.getElementById("section4-3")) el.innerText = t.section4_3;
+  if (el = document.getElementById("section4-4")) el.innerText = t.section4_4;
+
+  if (el = document.getElementById("section4-cta")) el.innerText = t.section4Cta;
+
+  if (el = document.getElementById("back-button")) el.innerText = t.backButton;
 }
+
+window.addEventListener("load", () => {
+  const saved = localStorage.getItem("lang");
+  if (saved) currentLang = saved;
+  applyLang();
+});
