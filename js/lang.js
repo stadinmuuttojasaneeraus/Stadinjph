@@ -1,81 +1,5 @@
 let currentLang = "fi";
 
-const translations = {
-  fi: {
-    heroTitle: "Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.",
-    heroText: "Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.",
-    heroCta: "Pyydä tarjous",
-service1Intro: "Apua arjen pienissä askareissa. Autamme kaikenlaisissa kodin käytännön töissä:",
-service1List1: "Taulujen, hyllyjen ja peilien kiinnitys.",
-service1List2: "Huonekalujen kokoaminen, siirto, purku ja pakkaus.",
-service1List3: "Kodinkoneiden asennus ja käyttöönotto.",
-service1List4: "Verhotankojen, kiskojen ja valaisimen asennus.",
-    servicesTitle: "Palvelut",
-    servicesText:
-      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
-
-    aboutTitle: "Meistä",
-    aboutText:
-      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys.",
-
-    contactTitle: "Yhteystiedot",
-
-    submit: "Lähetä",
-
-    service1Title: "Kodin asennuspalvelut",
-    service1Btn: "Lue lisää",
-
-    gardenTitle: "Pihapalvelut",
-    gardenBtn: "Lue lisää",
-
-    remonttiTitle: "Remonttipalvelut",
-    remonttiBtn: "Lue lisää",
-
-    graveTitle: "Hautakivipalvelut",
-    graveBtn: "Lue lisää",
-
-    name: "Nimi",
-    email: "Sähköposti",
-    phone: "Puhelin",
-    message: "Viesti"
-  },
-
-  sv: {
-    heroTitle: "Snabb och pålitlig service i Helsingfors och huvudstadsregionen.",
-    heroText: "Installationer, gårdsarbete och renoveringar.",
-    heroCta: "Be om offert",
-
-  service1Intro: "Hjälp med vardagliga uppgifter. Vi hjälper med alla typer av praktiska arbeten i hemmet:",
-  service1List1: "Montering av tavlor, hyllor och speglar.",
-  service1List2: "Montering, flytt, demontering och packning av möbler.",
-  service1List3: "Installation och driftsättning av hushållsapparater.",
-  service1List4: "Montering av gardinstänger, skenor och lampor.",
-
-    servicesTitle: "Tjänster",
-    servicesText: "Vi erbjuder omfattande tjänster.",
-
-    aboutTitle: "Om oss",
-    aboutText: "Serviceföretag i Helsingfors.",
-
-    contactTitle: "Kontakt",
-
-    submit: "Skicka",
-
-    service1Title: "Heminstallationer",
-    service1Btn: "Läs mer",
-
-    gardenTitle: "Trädgårdstjänster",
-    gardenBtn: "Läs mer",
-
-    remonttiTitle: "Renovering",
-    remonttiBtn: "Läs mer",
-
-    graveTitle: "Gravvård",
-    graveBtn: "Läs mer",
-
-    name: "Namn",
-    email: "E-post",
-  },
 
 const translations = {
   fi: {
@@ -190,7 +114,7 @@ const translations = {
     email: "Email",
     phone: "Phone",
     message: "Message"
-  
+  }
 };
 
 function applyLang() {
