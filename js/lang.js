@@ -96,74 +96,31 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  // 1. data-translate (hero + rubriker)
+  // 1. ALL TEXT VIA data-translate (ENDA SYSTEMET VI LITAR PÅ)
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
     if (t[key]) el.innerText = t[key];
   });
 
-  const set = (id, key) => {
-    const el = document.getElementById(id);
-    if (el && t[key]) el.innerText = t[key];
-  };
-
-  // 2. SERVICES INTRO TEXT
-  set("services-text", "servicesText");
-
-  // 3. ABOUT + CONTACT TITLES + TEXT
-  set("about-title", "aboutTitle");
-  set("about-text", "aboutText");
-  set("contact-title", "contactTitle");
-
-  // 4. SERVICE CARDS (INDEX)
-  set("service1-title", "service1Title");
-  set("service1-text", "service1Text");
-  set("service1-btn", "service1Btn");
-
-  set("garden-title", "gardenTitle");
-  set("remontti-title", "remonttiTitle");
-  set("grave-title", "graveTitle");
-
-  // ⚠️ VIKTIGT: dessa saknades i din JS tidigare
-  set("garden-text", "gardenText");
-  set("remontti-text", "remonttiText");
-  set("grave-text", "graveText");
-
-  // 5. CODIN-ASENNUSPALVELUT (VIKTIG FIX)
-  set("section1-text", "section1Text");
-  set("section1-text2", "section1Text2");
-
-  set("section2-text", "section2Text");
-
-  set("section3-text", "section3Text");
-
-  set("section4-text", "section4Text");
-  set("section4-subtitle", "section4Subtitle");
-
-  set("section4-cta", "section4Cta");
-
-  // 6. MEISTÄ (TEXT VAR SAKNAD)
-  // (du hade bara rubrik tidigare)
-  set("about-text", "aboutText");
-
-  // 7. CONTACT FORM (TEXT + BUTTON FIX)
-  const placeholders = {
+  // 2. INPUT PLACEHOLDERS (ROBUST VERSION)
+  const inputs = {
     name: "name",
     email: "email",
     phone: "phone",
     message: "message"
   };
 
-  Object.keys(placeholders).forEach(id => {
-    const el = document.querySelector(`[name="${id}"]`);
-    if (el && t[placeholders[id]]) {
-      el.placeholder = t[placeholders[id]];
+  Object.entries(inputs).forEach(([name, key]) => {
+    const el = document.querySelector(`input[name="${name}"], textarea[name="${name}"]`);
+    if (el && t[key]) {
+      el.placeholder = t[key];
     }
   });
 
-  const submitBtn = document.querySelector("button[type='submit']");
-  if (submitBtn && t.submit) {
-    submitBtn.innerText = t.submit;
+  // 3. SUBMIT BUTTON
+  const btn = document.querySelector("button[type='submit']");
+  if (btn && t.submit) {
+    btn.innerText = t.submit;
   }
 }
 function setLang(lang) {
