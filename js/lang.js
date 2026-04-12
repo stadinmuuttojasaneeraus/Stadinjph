@@ -12,7 +12,7 @@ const translations = {
 
     aboutTitle: "Meistä",
     aboutText:
-      "Olemme Helsingissä toimiva monipalveluyritys.",
+      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys.",
 
     contactTitle: "Yhteystiedot",
 
@@ -25,10 +25,6 @@ const translations = {
     service1Title: "Kodin asennuspalvelut",
     service1Text: "Apua arjen pienissä askareissa.",
     service1Btn: "Lue lisää",
-    service1_1: "Taulujen, hyllyjen ja peilien kiinnitys.",
-    service1_2: "Huonekalujen kokoaminen ja siirto.",
-    service1_3: "Kodinkoneiden asennus.",
-    service1_4: "Valaisimet ja verhotangot.",
 
     service2Title: "Pihapalvelut",
     service2Text: "Hoidamme pihan ympäri vuoden.",
@@ -47,39 +43,66 @@ const translations = {
     navGrave: "Hautakivipalvelut",
     navInstall: "Kodin asennuspalvelut",
 
-    // KODIN PAGE
+    // INDEX SERVICE LISTS
+    service1_1: "Taulujen, hyllyjen ja peilien kiinnitys.",
+    service1_2: "Huonekalujen kokoaminen, siirto, purku ja pakkaus.",
+    service1_3: "Kodinkoneiden asennus ja käyttöönotto.",
+    service1_4: "Verhotankojen ja valaisimien asennus.",
+
+    service2_1: "Pihan siivous ja lehtien haravointi.",
+    service2_2: "Nurmikon ja pensaiden leikkaus.",
+    service2_3: "Puunkaato ja raivaus.",
+    service2_4: "Lumityöt ja hiekoitus.",
+
+    service3_1: "Lattia-asennukset ja pintojen uusiminen.",
+    service3_2: "Ovien, listojen ja kalusteiden asennus.",
+    service3_3: "Kylpyhuoneen ja keittiön pienremontit.",
+    service3_4: "Maalaus- ja pintaremontit.",
+    service3_5: "Purku- ja korjaustyöt.",
+
+    service4_1: "Hautakivien suoristus ja huolto.",
+    service4_2: "Hautakivien puhdistus ja hoito.",
+    service4_3: "Hautapaikan siistiminen ja ylläpito.",
+
+    // KODIN-ASENNUSPALVELUT PAGE
     section1Title: "Kokonaisratkaisu kodin asennuksiin",
-    section1Text: "Haluatteko kodin kuntoon ilman stressiä?",
-    section1Text2: "Pyydä tarjous – tulemme nopeasti.",
+    section1Text:
+      "Haluatteko kodin kuntoon ilman stressiä? Tarjoamme kodin asennuspalvelut Helsingissä ja pääkaupunkiseudulla kokonaisratkaisuna – hoidamme kaiken huonekalujen kokoamisesta ja taulujen kiinnityksestä aina valaisimien ja kodinkoneiden asennuksiin.",
+    section1Text2:
+      "Pyydä ilmainen tarjous – tulemme nopeasti paikalle ja hoidamme työn sovitusti.",
 
     section2Title: "Asennusapu ja pienet työt",
-    section2Text: "Hoidamme pienet asennukset nopeasti.",
+    section2Text:
+      "Tarvitsetko apua yksittäisiin asennuksiin? Hoidamme asennustyöt nopeasti Helsingissä.",
 
     section3Title: "Raskaat ja vaativat asennukset",
-    section3Text: "Teemme myös vaativammat työt.",
+    section3Text:
+      "Hoidamme myös vaativammat asennukset turvallisesti ja ammattitaidolla.",
 
     section4Title: "Kodin asennuspalvelut",
-    section4Text: "Tarjoamme nopeaa ja luotettavaa palvelua.",
-    section4Subtitle: "Hinnasto",
-    section4_1: "Alkaen 80€/h",
-    section4_2: "Pienet työt alkaen 150€",
-    section4_3: "Sopimuksen mukaan",
-    section4_4: "Yrityksille sopimuksen mukaan",
-    section4Cta: "Pyydä tarjous",
+    section4Text:
+      "Tarjoamme kodin asennuspalvelut nopeasti ja luotettavasti.",
 
+    section4Subtitle: "Hinnasto",
+    section4_1: "Asennustyöt: alkaen 80€/h",
+    section4_2: "Pienet asennukset: alkaen 150€",
+    section4_3: "Kodinkoneasennukset: sopimuksen mukaan",
+    section4_4: "Yrityksille: sopimuksen mukaan",
+
+    section4Cta: "Pyydä tarjous",
     backButton: "Takaisin"
   },
 
   sv: {
-    heroTitle: "Snabb och pålitlig service i Helsingfors.",
-    heroText: "Installationer och renoveringar.",
+    heroTitle: "Snabb och pålitlig service i Helsingfors och huvudstadsregionen.",
+    heroText: "Installationer, trädgårdsarbete och renoveringar.",
     heroCta: "Be om offert",
 
     servicesTitle: "Tjänster",
-    servicesText: "Vi erbjuder tjänster för hem och företag.",
+    servicesText: "Vi erbjuder omfattande tjänster för hem och företag.",
 
     aboutTitle: "Om oss",
-    aboutText: "Serviceföretag i Helsingfors.",
+    aboutText: "Vi är ett serviceföretag i Helsingfors.",
 
     contactTitle: "Kontakt",
 
@@ -94,7 +117,7 @@ const translations = {
     service1Btn: "Läs mer",
 
     service2Title: "Trädgårdstjänster",
-    service2Text: "Vi sköter gården.",
+    service2Text: "Vi sköter din gård året runt.",
     service2Btn: "Läs mer",
 
     service3Title: "Renovering",
@@ -110,38 +133,31 @@ const translations = {
     navGrave: "Gravvård",
     navInstall: "Installationer",
 
-    section1Title: "Helhetslösning",
-    section1Text: "Vill du ha ett färdigt hem?",
-    section1Text2: "Kontakta oss.",
+    section1Title: "Helhetslösning för installationer",
+    section2Title: "Småjobb och hjälp",
+    section3Title: "Tunga installationer",
+    section4Title: "Installationstjänster",
+    section4Subtitle: "Prislista",
 
-    section2Title: "Småjobb",
-    section2Text: "Vi fixar små installationer.",
-
-    section3Title: "Tunga arbeten",
-    section3Text: "Vi hanterar svåra jobb.",
-
-    section4Title: "Installationer",
-    section4Text: "Snabb och säker service.",
-    section4Subtitle: "Pris",
     section4_1: "Från 80€/h",
     section4_2: "Från 150€",
     section4_3: "Enligt avtal",
     section4_4: "Företag enligt avtal",
-    section4Cta: "Be om offert",
 
+    section4Cta: "Be om offert",
     backButton: "Tillbaka"
   },
 
   en: {
-    heroTitle: "Fast and reliable service in Helsinki.",
-    heroText: "Installations and renovations.",
+    heroTitle: "Fast and reliable service in Helsinki and the metropolitan area.",
+    heroText: "Installations, yard work and renovations.",
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
-    servicesText: "We provide home and business services.",
+    servicesText: "We provide full home and business services.",
 
     aboutTitle: "About",
-    aboutText: "Service company in Helsinki.",
+    aboutText: "We are a service company based in Helsinki.",
 
     contactTitle: "Contact",
 
@@ -156,11 +172,11 @@ const translations = {
     service1Btn: "Read more",
 
     service2Title: "Yard services",
-    service2Text: "We take care of your yard.",
+    service2Text: "We take care of your yard all year.",
     service2Btn: "Read more",
 
     service3Title: "Renovations",
-    service3Text: "Professional work.",
+    service3Text: "Professional renovation work.",
     service3Btn: "Read more",
 
     service4Title: "Grave services",
@@ -172,25 +188,18 @@ const translations = {
     navGrave: "Grave",
     navInstall: "Installations",
 
-    section1Title: "Complete solution",
-    section1Text: "Want your home ready?",
-    section1Text2: "Contact us.",
-
-    section2Title: "Small jobs",
-    section2Text: "We handle small installations.",
-
-    section3Title: "Heavy work",
-    section3Text: "We handle demanding jobs.",
-
-    section4Title: "Installations",
-    section4Text: "Fast and reliable service.",
+    section1Title: "Complete installation solution",
+    section2Title: "Small jobs and help",
+    section3Title: "Heavy installations",
+    section4Title: "Installation services",
     section4Subtitle: "Pricing",
+
     section4_1: "From €80/h",
     section4_2: "From €150",
     section4_3: "By agreement",
     section4_4: "Business by agreement",
-    section4Cta: "Request quote",
 
+    section4Cta: "Request quote",
     backButton: "Back"
   }
 };
@@ -205,14 +214,12 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  let el;
-
   const setText = (id, key) => {
-    el = document.getElementById(id);
+    const el = document.getElementById(id);
     if (el && t[key]) el.innerText = t[key];
   };
 
-  // BASIC
+  // HERO + BASIC
   setText("hero-title", "heroTitle");
   setText("hero-text", "heroText");
   setText("hero-cta", "heroCta");
@@ -226,30 +233,43 @@ function applyLang() {
   setText("contact-title", "contactTitle");
   setText("submit", "submit");
 
-  ["name", "email", "phone", "message"].forEach(id => {
-    el = document.getElementById(id);
-    if (el && t[id]) el.placeholder = t[id];
-  });
-
-  // SERVICE CARDS (MATCHAR DIN HTML)
+  // SERVICE CARDS
   setText("service1-title", "service1Title");
   setText("service1-text", "service1Text");
   setText("service1-btn", "service1Btn");
 
-setText("garden-1", "service2_1");
-setText("garden-2", "service2_2");
-setText("garden-3", "service2_3");
-setText("garden-4", "service2_4");
+  setText("service2-title", "service2Title");
+  setText("service2-text", "service2Text");
+  setText("service2-btn", "service2Btn");
 
-setText("remontti-1", "service3_1");
-setText("remontti-2", "service3_2");
-setText("remontti-3", "service3_3");
-setText("remontti-4", "service3_4");
-setText("remontti-5", "service3_5");
+  setText("service3-title", "service3Title");
+  setText("service3-text", "service3Text");
+  setText("service3-btn", "service3Btn");
 
-setText("grave-1", "service4_1");
-setText("grave-2", "service4_2");
-setText("grave-3", "service4_3");
+  setText("service4-title", "service4Title");
+  setText("service4-text", "service4Text");
+  setText("service4-btn", "service4Btn");
+
+  // LISTS
+  setText("service1-1", "service1_1");
+  setText("service1-2", "service1_2");
+  setText("service1-3", "service1_3");
+  setText("service1-4", "service1_4");
+
+  setText("service2-1", "service2_1");
+  setText("service2-2", "service2_2");
+  setText("service2-3", "service2_3");
+  setText("service2-4", "service2_4");
+
+  setText("remontti-1", "service3_1");
+  setText("remontti-2", "service3_2");
+  setText("remontti-3", "service3_3");
+  setText("remontti-4", "service3_4");
+  setText("remontti-5", "service3_5");
+
+  setText("grave-1", "service4_1");
+  setText("grave-2", "service4_2");
+  setText("grave-3", "service4_3");
 
   // NAV
   setText("nav-remontti", "navRemontti");
