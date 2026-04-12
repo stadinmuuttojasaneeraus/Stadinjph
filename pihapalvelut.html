@@ -1,67 +1,141 @@
-<!DOCTYPE html><html lang="fi"><head>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pihapalvelut Helsingissä | Stadin Handymannit Oy</title>
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/services.css">
 </head>
+
 <body class="pihapalvelut">
-    <!-- HEADER --><header><div class="logo">Stadin Handymannit Oy</div>
 
-<!-- Hamburger-meny för undersidor --><nav>
-    <div class="menu" id="menu">
-        <a href="remontti.html">Remontit</a>
-        <a href="pihapalvelut.html">Pihapalvelut</a>
-        <a href="hautakivipalvelut.html">Hautakivipalvelut</a>
-        <a href="kodin-asennuspalvelut.html">Kodin asennuspalvelut</a>
+<!-- HEADER -->
+<header>
+    <div class="logo">Stadin Handymannit Oy</div>
+
+    <div class="lang-switch">
+        <span onclick="setLang('fi')">🇫🇮</span>
+        <span onclick="setLang('sv')">🇸🇪</span>
+        <span onclick="setLang('en')">🇬🇧</span>
     </div>
-    <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</nav></header>
-    <!-- HERO -->
-<section id="hero" style="background-image: url('images/pihapalvelu.jpg');">
+
+    <nav>
+        <div class="menu" id="menu"> 
+            <a href="remontti.html" data-translate="navRemontti">Remontit</a>
+            <a href="pihapalvelut.html" data-translate="navGarden">Pihapalvelut</a>
+            <a href="hautakivipalvelut.html" data-translate="navGrave">Hautakivipalvelut</a>
+            <a href="kodin-asennuspalvelut.html" data-translate="navInstall">Kodin asennuspalvelut</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" style="background-image: url('images/pihatyot.jpg');">
     <div class="hero-container">
-        <h1>Pihapalvelut Helsingissä</h1>
-        <p>Nopeat ja ammattitaitoiset pihatyöt pääkaupunkiseudulla – helposti ja vaivattomasti.</p>
+        <div class="hero-content">
+
+            <h1 data-translate="gardenTitle">
+                Pihapalvelut Helsingissä
+            </h1>
+
+            <p>
+                Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden – luotettavasti ja tehokkaasti.
+            </p>
+
+            <a href="index.html#yhteystiedot" class="cta-button" data-translate="section4Cta">
+                Pyydä tarjous
+            </a>
+
+        </div>
     </div>
-</section><!-- =========================
-     KOKONAISRATKAISU PIHAN HOITOON
-========================= --><section>
-    <h2>Kokonaisratkaisu pihan hoitoon</h2>
-    <p>Haluatteko pihan kuntoon ilman stressiä? <strong>Tarjoamme pihapalvelut Helsingissä ja pääkaupunkiseudulla kokonaisratkaisuna</strong> – hoidamme kaiken nurmikon leikkuusta ja pensaiden hoidosta aina pihan siivoukseen ja kausitöihin. Lopputuloksena siisti, toimiva ja viihtyisä piha.</p>
-    <p>Pyydä ilmainen tarjous – hoidamme työn nopeasti ja sovitusti.</p>
-</section><!-- =========================
-     PIHATYÖT JA YKSITTÄISET TEHTÄVÄT
-========================= --><section>
-    <h2>Pihatyöt ja apu yksittäisiin tehtäviin</h2>
-    <p>Tarvitsetko apua yksittäisiin pihatöihin? <strong>Hoidamme pihatyöt nopeasti Helsingissä</strong> – esimerkiksi nurmikon leikkuu, haravointi, pensaiden leikkaus tai pihan siivous. Tulemme paikalle silloin kun sinulle sopii.</p></p>
-</section><!-- =========================
-     RASKAAT JA VAATIVAT PIHATYÖT
-========================= --><section>
-    <h2>Raskaat ja vaativat pihatyöt</h2>
-    <p>Hoidamme myös vaativammat pihatyöt, kuten puunkaadon, raivauksen ja suuremmat pihan kunnostustyöt turvallisesti ja ammattitaidolla. Käytössämme on oikeat työvälineet ja kokemus haastaviin kohteisiin.</p></p>
-</section><!-- =========================
-     PIHAPALVELUT + HINNASTO
-========================= --><section class="service-page">
-    <h1>Pihapalvelut</h1><p>
-    <strong>Tarjoamme pihapalvelut Helsingissä ja pääkaupunkiseudulla nopeasti ja luotettavasti.</strong> Hoidamme nurmikon leikkuun, haravoinnin, pensaiden hoidon, puunkaadon sekä muut pihan työt.
-    Teemme pihastasi siistin ja helppohoitoisen ympäri vuoden.
-</p>
+</section>
 
-<h2>Hinnasto</h2>
-<ul>
-    <li>Pihatyöt: alkaen 60€/h</li>
-    <li>Pieni pihatyö: alkaen 120€</li>
-    <li>Puunkaato ja raivaus: sopimuksen mukaan</li>
-    <li>Yrityksille: sopimuksen mukaan</li>
-</ul>
+<!-- SECTION 1 -->
+<section>
 
-<a href="index.html#yhteystiedot" class="cta-button">Pyydä tarjous</a>
+    <h2>
+        Pihan hoito ympäri vuoden
+    </h2>
 
-</section><!-- FOOTER --><footer class="back-footer">
-    <a href="index.html" class="back-button">Takaisin</a>
-</footer><script src="js/script.js"></script></body>
+    <p>
+        Tarjoamme kattavat pihapalvelut Helsingissä ja pääkaupunkiseudulla. Huolehdimme pihasi siisteydestä ja toimivuudesta vuoden jokaisena vuodenaikana.
+    </p>
+
+</section>
+
+<!-- SECTION 2 -->
+<section>
+
+    <h2>
+        Pihatyöt ja huolto
+    </h2>
+
+    <p>
+        Teemme kaikki yleisimmät pihatyöt nopeasti ja huolellisesti – oli kyse sitten kevätsiivouksesta, kesän ylläpidosta tai syksyn lehtitöistä.
+    </p>
+
+    <ul>
+        <li>Pihan siivous ja lehtien haravointi</li>
+        <li>Nurmikon leikkaus</li>
+        <li>Pensaiden ja puiden hoito</li>
+        <li>Roskien ja oksien poiskuljetus</li>
+    </ul>
+
+</section>
+
+<!-- SECTION 3 -->
+<section>
+
+    <h2>
+        Talvityöt
+    </h2>
+
+    <p>
+        Talvella huolehdimme lumen poistosta ja turvallisuudesta. Teemme lumityöt nopeasti ja varmistamme, että kulkuväylät pysyvät turvallisina.
+    </p>
+
+    <ul>
+        <li>Lumityöt</li>
+        <li>Hiekoitus</li>
+        <li>Kulkuväylien puhtaanapito</li>
+    </ul>
+
+</section>
+
+<!-- CTA -->
+<section class="service-page">
+
+    <h2>
+        Tarvitsetko apua pihatöissä?
+    </h2>
+
+    <p>
+        Ota yhteyttä ja pyydä tarjous – hoidamme pihatyöt nopeasti ja luotettavasti.
+    </p>
+
+    <a href="index.html#yhteystiedot" class="cta-button" data-translate="section4Cta">
+        Pyydä tarjous
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="back-footer">
+    <a href="index.html" class="back-button" data-translate="backButton">
+        Takaisin
+    </a>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/lang.js"></script>
+
+</body>
 </html>
