@@ -2,14 +2,17 @@ let currentLang = "fi";
 
 const translations = {
   fi: {
+    // HERO (INDEX)
     heroTitle: "Nopea ja luotettava monipalvelu Helsingissä ja pääkaupunkiseudulla.",
     heroText: "Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.",
     heroCta: "Pyydä tarjous",
 
+    // SERVICES INDEX
     servicesTitle: "Palvelut",
     servicesText:
       "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit. Meidän ammattitaitoinen tiimi takaa, että työ tehdään nopeasti, huolellisesti ja asiakkaan toiveiden mukaan.",
 
+    // ABOUT + CONTACT
     aboutTitle: "Meistä",
     aboutText:
       "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille.",
@@ -26,67 +29,38 @@ const translations = {
     service1Title: "Kodin asennuspalvelut",
     service1Text: "Apua arjen pienissä askareissa.",
     service1Btn: "Lue lisää",
-
     service1_1: "Taulujen, hyllyjen ja peilien kiinnitys.",
-    service1_2: "Huonekalujen kokoaminen, siirto, purku ja pakkaus.",
+    service1_2: "Huonekalujen kokoaminen, siirto ja pakkaus.",
     service1_3: "Kodinkoneiden asennus ja käyttöönotto.",
-    service1_4: "Verhotankojen, kiskojen ja valaisimen asennus.",
+    service1_4: "Verhotankojen, kiskojen ja valaisimien asennus.",
 
     // SERVICE 2
-    gardenTitle: "Pihapalvelut",
-    gardenText: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
-    gardenBtn: "Lue lisää",
-
-    garden1: "Pihan siivous ja lehtien haravointi.",
-    garden2: "Nurmikon ja pensaiden leikkaus.",
-    garden3: "Puunkaato ja raivaus.",
-    garden4: "Lumityöt ja hiekoitus.",
+    service2Title: "Pihapalvelut",
+    service2Text: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
+    service2Btn: "Lue lisää",
+    service2_1: "Pihan siivous ja lehtien haravointi.",
+    service2_2: "Nurmikon ja pensaiden leikkaus.",
+    service2_3: "Puunkaato ja raivaus.",
+    service2_4: "Lumityöt ja hiekoitus.",
 
     // SERVICE 3
-    remonttiTitle: "Remonttipalvelut",
-    remonttiText: "Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla.",
-    remonttiBtn: "Lue lisää",
-
-    remontti1: "Lattia-asennukset ja pintojen uusiminen.",
-    remontti2: "Ovien, listojen ja kalusteiden asennus.",
-    remontti3: "Kylpyhuoneen ja keittiön pienremontit.",
-    remontti4: "Maalaus- ja pintaremontit.",
-    remontti5: "Purku- ja korjaustyöt.",
+    service3Title: "Remonttipalvelut",
+    service3Text: "Teemme remontit siististi ja ammattitaidolla.",
+    service3Btn: "Lue lisää",
+    service3_1: "Lattia-asennukset ja pintojen uusiminen.",
+    service3_2: "Ovien ja kalusteiden asennus.",
+    service3_3: "Kylpyhuone- ja keittiöremontit.",
+    service3_4: "Maalaus- ja purkutyöt.",
 
     // SERVICE 4
-    graveTitle: "Hautakivipalvelut",
-    graveText: "Hoidamme hautakivien puhdistuksen ja ylläpidon.",
-    graveBtn: "Lue lisää",
+    service4Title: "Hautakivipalvelut",
+    service4Text: "Hoidamme hautakivien puhdistuksen ja ylläpidon arvokkaasti.",
+    service4Btn: "Lue lisää",
+    service4_1: "Hautakivien suoristus ja huolto.",
+    service4_2: "Hautakivien puhdistus ja hoito.",
+    service4_3: "Hautapaikan siistiminen ja ylläpito.",
 
-    grave1: "Hautakivien suoristus ja huolto.",
-    grave2: "Hautakivien puhdistus ja hoito.",
-    grave3: "Hautapaikan siistiminen ja ylläpito.",
-
-    // KODIN ASENNUS SIVU
-    section1Title: "Kokonaisratkaisu kodin asennuksiin",
-    section1Text: "Hoidamme kaiken huonekalujen kokoamisesta asennuksiin.",
-    section1Text2: "Pyydä ilmainen tarjous – tulemme nopeasti paikalle.",
-
-    section2Title: "Asennusapu ja pienet työt",
-    section2Text: "Teemme pienet asennukset nopeasti Helsingissä.",
-
-    section3Title: "Raskaat ja vaativat asennukset",
-    section3Text: "Hoidamme myös vaativat asennustyöt turvallisesti.",
-
-    section4Title: "Kodin asennuspalvelut",
-    section4Text: "Tarjoamme asennuspalvelut Helsingissä ja pääkaupunkiseudulla.",
-    section4Subtitle: "Hinnasto",
-
-    section4_1: "Asennustyöt: alkaen 80€/h",
-    section4_2: "Pienet asennukset: alkaen 150€",
-    section4_3: "Kodinkoneasennukset: sopimuksen mukaan",
-    section4_4: "Yrityksille: sopimuksen mukaan",
-
-    section4Cta: "Pyydä tarjous",
-
-    backButton: "Takaisin",
-
-    // NAV
+    // NAV (kodin-asennus pages)
     navRemontti: "Remontit",
     navGarden: "Pihapalvelut",
     navGrave: "Hautakivipalvelut",
@@ -104,7 +78,7 @@ const translations = {
 
     aboutTitle: "Om oss",
     aboutText:
-      "Vi är ett mångserviceföretag i Helsingfors med lång erfarenhet.",
+      "Vi är ett mångserviceföretag i Helsingfors med fokus på kvalitet och kundnöjdhet.",
 
     contactTitle: "Kontakt",
 
@@ -115,82 +89,54 @@ const translations = {
     submit: "Skicka",
 
     service1Title: "Heminstallationer",
-    service1Text: "Hjälp med vardagliga sysslor.",
+    service1Text: "Hjälp i vardagen.",
     service1Btn: "Läs mer",
-
-    service1_1: "Montering av tavlor, hyllor och speglar.",
+    service1_1: "Montering av tavlor och hyllor.",
     service1_2: "Montering och flytt av möbler.",
-    service1_3: "Installation av hushållsapparater.",
-    service1_4: "Gardinstänger och lampor.",
+    service1_3: "Installation av vitvaror.",
+    service1_4: "Lampor och gardinstänger.",
 
-    gardenTitle: "Trädgårdstjänster",
-    gardenText: "Vi håller din gård i gott skick året runt.",
-    gardenBtn: "Läs mer",
+    service2Title: "Trädgårdstjänster",
+    service2Text: "Vi håller din gård i toppskick året runt.",
+    service2Btn: "Läs mer",
+    service2_1: "Rensning och lövkrattning.",
+    service2_2: "Gräsklippning och buskar.",
+    service2_3: "Trädfällning och röjning.",
+    service2_4: "Snöarbete och halkbekämpning.",
 
-    garden1: "Gårdsstädning och lövräfsning.",
-    garden2: "Gräsklippning och buskklippning.",
-    garden3: "Trädfällning och röjning.",
-    garden4: "Snöarbete och halkbekämpning.",
+    service3Title: "Renoveringstjänster",
+    service3Text: "Professionella renoveringar.",
+    service3Btn: "Läs mer",
+    service3_1: "Golvläggning och ytor.",
+    service3_2: "Dörrar och möbler.",
+    service3_3: "Kök och badrum.",
+    service3_4: "Målning och rivning.",
 
-    remonttiTitle: "Renoveringstjänster",
-    remonttiText: "Professionellt renoveringsarbete.",
-    remonttiBtn: "Läs mer",
-
-    remontti1: "Golvläggning och ytrenovering.",
-    remontti2: "Dörrar och möbelmontering.",
-    remontti3: "Kök och badrum.",
-    remontti4: "Målning och ytarbete.",
-    remontti5: "Rivning och reparation.",
-
-    graveTitle: "Gravvård",
-    graveText: "Skötsel av gravstenar.",
-    graveBtn: "Läs mer",
-
-    grave1: "Rätning och service.",
-    grave2: "Rengöring av gravstenar.",
-    grave3: "Skötsel av gravplatser.",
-
-    section1Title: "Helhetslösning för installationer",
-    section1Text: "Vi hanterar allt från möbler till installationer.",
-    section1Text2: "Be om offert – vi kommer snabbt.",
-
-    section2Title: "Små installationer",
-    section2Text: "Snabba installationer i Helsingfors.",
-
-    section3Title: "Tunga installationer",
-    section3Text: "Säkra och professionella arbeten.",
-
-    section4Title: "Installationstjänster",
-    section4Text: "Vi erbjuder tjänster i Helsingfors.",
-    section4Subtitle: "Priser",
-
-    section4_1: "Arbete från 80€/h",
-    section4_2: "Små jobb från 150€",
-    section4_3: "Vitvaruinstallation enligt avtal",
-    section4_4: "Företagspriser enligt avtal",
-
-    section4Cta: "Be om offert",
-
-    backButton: "Tillbaka",
+    service4Title: "Gravvård",
+    service4Text: "Skötsel av gravstenar.",
+    service4Btn: "Läs mer",
+    service4_1: "Service och rätning.",
+    service4_2: "Rengöring av gravstenar.",
+    service4_3: "Skötsel av gravplatser.",
 
     navRemontti: "Renovering",
-    navGarden: "Trädgård",
+    navGarden: "Trädgårdstjänster",
     navGrave: "Gravvård",
     navInstall: "Heminstallationer"
   },
 
   en: {
     heroTitle: "Fast and reliable multi-service in Helsinki.",
-    heroText: "Installations, yard work and renovations – easy and smooth.",
+    heroText: "Installations, yard work and renovations – simple and smooth.",
     heroCta: "Request a quote",
 
     servicesTitle: "Services",
     servicesText:
-      "We provide comprehensive home and business services.",
+      "We provide comprehensive services for homes and businesses.",
 
     aboutTitle: "About us",
     aboutText:
-      "We are a service company in Helsinki focused on quality.",
+      "We are a multi-service company in Helsinki focused on quality and customer satisfaction.",
 
     contactTitle: "Contact",
 
@@ -203,68 +149,42 @@ const translations = {
     service1Title: "Home installations",
     service1Text: "Help with everyday tasks.",
     service1Btn: "Read more",
-
-    service1_1: "Mounting pictures, shelves and mirrors.",
+    service1_1: "Mounting pictures and shelves.",
     service1_2: "Furniture assembly and moving.",
     service1_3: "Appliance installation.",
-    service1_4: "Curtain rods and lighting.",
+    service1_4: "Lighting and curtain rods.",
 
-    gardenTitle: "Yard services",
-    gardenText: "We keep your yard clean all year.",
-    gardenBtn: "Read more",
+    service2Title: "Yard services",
+    service2Text: "We keep your yard clean year-round.",
+    service2Btn: "Read more",
+    service2_1: "Yard cleaning and leaves.",
+    service2_2: "Lawn and hedge trimming.",
+    service2_3: "Tree cutting and clearing.",
+    service2_4: "Snow removal and sanding.",
 
-    garden1: "Yard cleaning and leaf raking.",
-    garden2: "Lawn and hedge trimming.",
-    garden3: "Tree cutting and clearing.",
-    garden4: "Snow removal and sanding.",
+    service3Title: "Renovation services",
+    service3Text: "Professional renovation work.",
+    service3Btn: "Read more",
+    service3_1: "Flooring and surfaces.",
+    service3_2: "Doors and furniture.",
+    service3_3: "Kitchen and bathroom work.",
+    service3_4: "Painting and demolition.",
 
-    remonttiTitle: "Renovation services",
-    remonttiText: "Professional renovation work.",
-    remonttiBtn: "Read more",
+    service4Title: "Grave services",
+    service4Text: "Care of gravestones.",
+    service4Btn: "Read more",
+    service4_1: "Service and straightening.",
+    service4_2: "Cleaning gravestones.",
+    service4_3: "Grave maintenance.",
 
-    remontti1: "Floor installation.",
-    remontti2: "Doors and furniture installation.",
-    remontti3: "Kitchen and bathroom work.",
-    remontti4: "Painting and finishing.",
-    remontti5: "Demolition and repair.",
-
-    graveTitle: "Grave services",
-    graveText: "Maintenance of gravestones.",
-    graveBtn: "Read more",
-
-    grave1: "Straightening and service.",
-    grave2: "Cleaning gravestones.",
-    grave3: "Grave maintenance.",
-
-    section1Title: "Full installation service",
-    section1Text: "We handle everything from furniture to installations.",
-    section1Text2: "Request a free quote – we arrive quickly.",
-
-    section2Title: "Small installation jobs",
-    section2Text: "Fast installations in Helsinki.",
-
-    section3Title: "Heavy installation work",
-    section3Text: "Safe and professional installations.",
-
-    section4Title: "Installation services",
-    section4Text: "We offer services in Helsinki and nearby areas.",
-    section4Subtitle: "Pricing",
-
-    section4_1: "Work from 80€/h",
-    section4_2: "Small jobs from 150€",
-    section4_3: "Appliance installation by agreement",
-    section4_4: "Corporate pricing by agreement",
-
-    section4Cta: "Request a quote",
-
-    backButton: "Back",
-
-    navRemontti: "Renovations",
+    navRemontti: "Renovation",
     navGarden: "Yard services",
     navGrave: "Grave services",
     navInstall: "Home installations"
   }
 };
+
+let currentLang = "fi";
 
 function setLang(lang) {
   currentLang = lang;
@@ -274,103 +194,73 @@ function setLang(lang) {
 
 function applyLang() {
   const t = translations[currentLang];
-
   let el;
 
   // HERO
-  if (el = document.getElementById("hero-title")) el.innerText = t.heroTitle;
-  if (el = document.getElementById("hero-text")) el.innerText = t.heroText;
-  if (el = document.getElementById("hero-cta")) el.innerText = t.heroCta;
+  el = document.getElementById("hero-title");
+  if (el) el.innerText = t.heroTitle;
 
-  // SERVICES HEADER
-  if (el = document.getElementById("services-title")) el.innerText = t.servicesTitle;
-  if (el = document.getElementById("services-text")) el.innerText = t.servicesText;
+  el = document.getElementById("hero-text");
+  if (el) el.innerText = t.heroText;
+
+  el = document.getElementById("hero-cta");
+  if (el) el.innerText = t.heroCta;
+
+  // SERVICES INDEX
+  el = document.getElementById("services-title");
+  if (el) el.innerText = t.servicesTitle;
+
+  el = document.getElementById("services-text");
+  if (el) el.innerText = t.servicesText;
 
   // ABOUT
-  if (el = document.getElementById("about-title")) el.innerText = t.aboutTitle;
-  if (el = document.getElementById("about-text")) el.innerText = t.aboutText;
+  el = document.getElementById("about-title");
+  if (el) el.innerText = t.aboutTitle;
+
+  el = document.getElementById("about-text");
+  if (el) el.innerText = t.aboutText;
 
   // CONTACT
-  if (el = document.getElementById("contact-title")) el.innerText = t.contactTitle;
+  el = document.getElementById("contact-title");
+  if (el) el.innerText = t.contactTitle;
 
-  if (el = document.getElementById("name")) el.placeholder = t.name;
-  if (el = document.getElementById("email")) el.placeholder = t.email;
-  if (el = document.getElementById("phone")) el.placeholder = t.phone;
-  if (el = document.getElementById("message")) el.placeholder = t.message;
-  if (el = document.getElementById("submit")) el.innerText = t.submit;
+  ["name", "email", "phone", "message"].forEach(id => {
+    el = document.getElementById(id);
+    if (el) el.placeholder = t[id];
+  });
 
-  // SERVICE NAV
-  if (el = document.getElementById("nav-remontti")) el.innerText = t.navRemontti;
-  if (el = document.getElementById("nav-garden")) el.innerText = t.navGarden;
-  if (el = document.getElementById("nav-grave")) el.innerText = t.navGrave;
-  if (el = document.getElementById("nav-install")) el.innerText = t.navInstall;
+  el = document.getElementById("submit");
+  if (el) el.innerText = t.submit;
 
-  // SERVICE 1
-  if (el = document.getElementById("service1-title")) el.innerText = t.service1Title;
-  if (el = document.getElementById("service1-text")) el.innerText = t.service1Text;
-  if (el = document.getElementById("service1-btn")) el.innerText = t.service1Btn;
+  // SERVICE CARDS (1–4)
+  const map = [
+    ["service1-title", "service1Title"],
+    ["service1-text", "service1Text"],
+    ["service1-btn", "service1Btn"],
 
-  if (document.getElementById("service1-list")) {
-    const list = document.getElementById("service1-list").children;
-    if (list[0]) list[0].innerText = t.service1_1;
-    if (list[1]) list[1].innerText = t.service1_2;
-    if (list[2]) list[2].innerText = t.service1_3;
-    if (list[3]) list[3].innerText = t.service1_4;
-  }
+    ["service2-title", "service2Title"],
+    ["service2-text", "service2Text"],
+    ["service2-btn", "service2Btn"],
 
-  // SERVICE 2
-  if (el = document.getElementById("garden-title")) el.innerText = t.gardenTitle;
-  if (el = document.getElementById("garden-text")) el.innerText = t.gardenText;
-  if (el = document.getElementById("garden-btn")) el.innerText = t.gardenBtn;
+    ["service3-title", "service3Title"],
+    ["service3-text", "service3Text"],
+    ["service3-btn", "service3Btn"],
 
-  if (el = document.getElementById("garden-1")) el.innerText = t.garden1;
-  if (el = document.getElementById("garden-2")) el.innerText = t.garden2;
-  if (el = document.getElementById("garden-3")) el.innerText = t.garden3;
-  if (el = document.getElementById("garden-4")) el.innerText = t.garden4;
+    ["service4-title", "service4Title"],
+    ["service4-text", "service4Text"],
+    ["service4-btn", "service4Btn"]
+  ];
 
-  // SERVICE 3
-  if (el = document.getElementById("remontti-title")) el.innerText = t.remonttiTitle;
-  if (el = document.getElementById("remontti-text")) el.innerText = t.remonttiText;
-  if (el = document.getElementById("remontti-btn")) el.innerText = t.remonttiBtn;
+  map.forEach(([id, key]) => {
+    el = document.getElementById(id);
+    if (el) el.innerText = t[key];
+  });
 
-  if (el = document.getElementById("remontti-1")) el.innerText = t.remontti1;
-  if (el = document.getElementById("remontti-2")) el.innerText = t.remontti2;
-  if (el = document.getElementById("remontti-3")) el.innerText = t.remontti3;
-  if (el = document.getElementById("remontti-4")) el.innerText = t.remontti4;
-  if (el = document.getElementById("remontti-5")) el.innerText = t.remontti5;
-
-  // SERVICE 4
-  if (el = document.getElementById("grave-title")) el.innerText = t.graveTitle;
-  if (el = document.getElementById("grave-text")) el.innerText = t.graveText;
-  if (el = document.getElementById("grave-btn")) el.innerText = t.graveBtn;
-
-  if (el = document.getElementById("grave-1")) el.innerText = t.grave1;
-  if (el = document.getElementById("grave-2")) el.innerText = t.grave2;
-  if (el = document.getElementById("grave-3")) el.innerText = t.grave3;
-
-  // KODIN ASENNUSSIVU
-  if (el = document.getElementById("section1-title")) el.innerText = t.section1Title;
-  if (el = document.getElementById("section1-text")) el.innerText = t.section1Text;
-  if (el = document.getElementById("section1-text2")) el.innerText = t.section1Text2;
-
-  if (el = document.getElementById("section2-title")) el.innerText = t.section2Title;
-  if (el = document.getElementById("section2-text")) el.innerText = t.section2Text;
-
-  if (el = document.getElementById("section3-title")) el.innerText = t.section3Title;
-  if (el = document.getElementById("section3-text")) el.innerText = t.section3Text;
-
-  if (el = document.getElementById("section4-title")) el.innerText = t.section4Title;
-  if (el = document.getElementById("section4-text")) el.innerText = t.section4Text;
-  if (el = document.getElementById("section4-subtitle")) el.innerText = t.section4Subtitle;
-
-  if (el = document.getElementById("section4-1")) el.innerText = t.section4_1;
-  if (el = document.getElementById("section4-2")) el.innerText = t.section4_2;
-  if (el = document.getElementById("section4-3")) el.innerText = t.section4_3;
-  if (el = document.getElementById("section4-4")) el.innerText = t.section4_4;
-
-  if (el = document.getElementById("section4-cta")) el.innerText = t.section4Cta;
-
-  if (el = document.getElementById("back-button")) el.innerText = t.backButton;
+  // NAV
+  ["nav-remontti", "nav-garden", "nav-grave", "nav-install"].forEach(id => {
+    el = document.getElementById(id);
+    if (el) el.innerText = t[id.replace("nav-", "nav")];
+  });
 }
 
 window.addEventListener("load", () => {
