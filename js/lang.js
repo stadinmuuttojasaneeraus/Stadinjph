@@ -7,38 +7,100 @@ const translations = {
     heroCta: "Pyydä tarjous",
 
     servicesTitle: "Palvelut",
-    servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut...",
+    servicesText:
+      "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
 
     aboutTitle: "Meistä",
-    aboutText: "Olemme Helsingissä toimiva monipalveluyritys.",
+    aboutText:
+      "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys.",
 
     contactTitle: "Yhteystiedot",
+
+    submit: "Lähetä",
+
+    service1Title: "Kodin asennuspalvelut",
+    service1Btn: "Lue lisää",
+
+    gardenTitle: "Pihapalvelut",
+    gardenBtn: "Lue lisää",
+
+    remonttiTitle: "Remonttipalvelut",
+    remonttiBtn: "Lue lisää",
+
+    graveTitle: "Hautakivipalvelut",
+    graveBtn: "Lue lisää",
 
     name: "Nimi",
     email: "Sähköposti",
     phone: "Puhelin",
-    message: "Viesti",
-    submit: "Lähetä",
-
-    service1Title: "Kodin asennuspalvelut",
-    service1Text: "Apua arjen pienissä askareissa.",
-    service1Btn: "Lue lisää",
-
-    gardenTitle: "Pihapalvelut",
-    gardenText: "Hoidamme pihan ympäri vuoden.",
-    gardenBtn: "Lue lisää",
-
-    remonttiTitle: "Remonttipalvelut",
-    remonttiText: "Ammattitaitoista remontointia.",
-    remonttiBtn: "Lue lisää",
-
-    graveTitle: "Hautakivipalvelut",
-    graveText: "Hautakivien huolto ja puhdistus.",
-    graveBtn: "Lue lisää"
+    message: "Viesti"
   },
 
-  sv: { /* samma struktur */ },
-  en: { /* samma struktur */ }
+  sv: {
+    heroTitle: "Snabb och pålitlig service i Helsingfors och huvudstadsregionen.",
+    heroText: "Installationer, gårdsarbete och renoveringar.",
+    heroCta: "Be om offert",
+
+    servicesTitle: "Tjänster",
+    servicesText: "Vi erbjuder omfattande tjänster.",
+
+    aboutTitle: "Om oss",
+    aboutText: "Serviceföretag i Helsingfors.",
+
+    contactTitle: "Kontakt",
+
+    submit: "Skicka",
+
+    service1Title: "Heminstallationer",
+    service1Btn: "Läs mer",
+
+    gardenTitle: "Trädgårdstjänster",
+    gardenBtn: "Läs mer",
+
+    remonttiTitle: "Renovering",
+    remonttiBtn: "Läs mer",
+
+    graveTitle: "Gravvård",
+    graveBtn: "Läs mer",
+
+    name: "Namn",
+    email: "E-post",
+    phone: "Telefon",
+    message: "Meddelande"
+  },
+
+  en: {
+    heroTitle: "Fast and reliable service in Helsinki.",
+    heroText: "Installations, yard work and renovations.",
+    heroCta: "Request a quote",
+
+    servicesTitle: "Services",
+    servicesText: "We provide home and business services.",
+
+    aboutTitle: "About us",
+    aboutText: "Service company in Helsinki.",
+
+    contactTitle: "Contact",
+
+    submit: "Send",
+
+    service1Title: "Home installations",
+    service1Btn: "Read more",
+
+    gardenTitle: "Yard services",
+    gardenBtn: "Read more",
+
+    remonttiTitle: "Renovations",
+    remonttiBtn: "Read more",
+
+    graveTitle: "Grave services",
+    graveBtn: "Read more",
+
+    name: "Name",
+    email: "Email",
+    phone: "Phone",
+    message: "Message"
+  }
 };
 
 function applyLang() {
@@ -47,13 +109,15 @@ function applyLang() {
 
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
-
     if (t[key]) {
-      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-        el.placeholder = t[key];
-      } else {
-        el.innerText = t[key];
-      }
+      el.innerText = t[key];
+    }
+  });
+
+  document.querySelectorAll("[data-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-placeholder");
+    if (t[key]) {
+      el.placeholder = t[key];
     }
   });
 }
