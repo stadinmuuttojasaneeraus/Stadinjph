@@ -50,7 +50,7 @@ service1List4: "Verhotankojen, kiskojen ja valaisimen asennus.",
   service1List2: "Montering, flytt, demontering och packning av möbler.",
   service1List3: "Installation och driftsättning av hushållsapparater.",
   service1List4: "Montering av gardinstänger, skenor och lampor.",
-}
+
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
 
@@ -75,7 +75,7 @@ service1List4: "Verhotankojen, kiskojen ja valaisimen asennus.",
 
     name: "Namn",
     email: "E-post",
-let currentLang = "fi";
+  },
 
 const translations = {
   fi: {
@@ -190,7 +190,7 @@ const translations = {
     email: "Email",
     phone: "Phone",
     message: "Message"
-  }
+  
 };
 
 function applyLang() {
