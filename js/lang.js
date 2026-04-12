@@ -60,7 +60,14 @@ const translations = {
 
     grave1: "Hautakivien suoristus ja huolto.",
     grave2: "Hautakivien puhdistus ja hoito.",
-    grave3: "Hautapaikan siistiminen ja ylläpito."
+    grave3: "Hautapaikan siistiminen ja ylläpito.",
+
+    // kodin-asennuspalvelut header
+    navRemontti: "Remontit",
+    navGarden: "Pihapalvelut",
+    navGrave: "Hautakivipalvelut",
+    navInstall: "Kodin asennuspalvelut",
+  
   },
 
   sv: {
@@ -117,7 +124,13 @@ const translations = {
 
     grave1: "Rätning och service.",
     grave2: "Rengöring av gravstenar.",
-    grave3: "Skötsel av gravplatser."
+    grave3: "Skötsel av gravplatser.",
+
+        // kodin-asennuspalvelut
+    navRemontti: "Renovering",
+navGarden: "Trädgårdstjänster",
+navGrave: "Gravvård",
+navInstall: "Heminstallationer",
   },
 
   en: {
@@ -174,7 +187,13 @@ const translations = {
 
     grave1: "Straightening and service.",
     grave2: "Cleaning gravestones.",
-    grave3: "Grave maintenance."
+    grave3: "Grave maintenance.",
+
+        // kodin-asennuspalvelut
+     navRemontti: "Renovations",
+navGarden: "Yard services",
+navGrave: "Grave services",
+navInstall: "Home installations",   
   }
 };
 
@@ -248,6 +267,21 @@ function applyLang() {
   document.getElementById("grave-1").innerText = t.grave1;
   document.getElementById("grave-2").innerText = t.grave2;
   document.getElementById("grave-3").innerText = t.grave3;
+
+  // NAV SAFE VERSION kodin-asennuspalvelut
+let el;
+
+el = document.getElementById("nav-remontti");
+if (el) el.innerText = t.navRemontti;
+
+el = document.getElementById("nav-garden");
+if (el) el.innerText = t.navGarden;
+
+el = document.getElementById("nav-grave");
+if (el) el.innerText = t.navGrave;
+
+el = document.getElementById("nav-install");
+if (el) el.innerText = t.navInstall;
 }
 
 window.addEventListener("load", () => {
