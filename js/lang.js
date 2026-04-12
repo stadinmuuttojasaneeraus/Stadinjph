@@ -184,7 +184,6 @@ const translations = {
   }
 };
 
-let currentLang = "fi";
 
 function setLang(lang) {
   currentLang = lang;
@@ -257,10 +256,17 @@ function applyLang() {
   });
 
   // NAV
-  ["nav-remontti", "nav-garden", "nav-grave", "nav-install"].forEach(id => {
-    el = document.getElementById(id);
-    if (el) el.innerText = t[id.replace("nav-", "nav")];
-  });
+  el = document.getElementById("nav-remontti");
+if (el) el.innerText = t.navRemontti;
+
+el = document.getElementById("nav-garden");
+if (el) el.innerText = t.navGarden;
+
+el = document.getElementById("nav-grave");
+if (el) el.innerText = t.navGrave;
+
+el = document.getElementById("nav-install");
+if (el) el.innerText = t.navInstall;
 }
 
 window.addEventListener("load", () => {
