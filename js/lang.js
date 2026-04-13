@@ -57,6 +57,18 @@ const translations = {
     service1Title: "Kodin asennuspalvelut",
     service1Btn: "Lue lisää",
 
+    section4Intro: "Apua arjen pienissä askareissa – nopeat ja ammattitaitoiset asennukset pääkaupunkiseudulla.",
+    section1Text1: "Haluatteko kodin kuntoon ilman stressiä? Tarjoamme kodin asennuspalvelut Helsingissä ja pääkaupunkiseudulla kokonaisratkaisuna – hoidamme kaiken huonekalujen kokoamisesta ja taulujen kiinnityksestä aina valaisimien ja kodinkoneiden asennuksiin. Lopputuloksena siisti ja käyttövalmis koti.",
+    section1Text2: "Pyydä ilmainen tarjous – tulemme nopeasti paikalle ja hoidamme työn sovitusti.",
+    section2Text: "Tarvitsetko apua yksittäisiin asennuksiin? Hoidamme asennustyöt nopeasti Helsingissä – esimerkiksi verhotankojen ja kiskojen asennus, hyllyjen ja peilien kiinnitys sekä huonekalujen kokoaminen. Tulemme paikalle silloin kun sinulle sopii.",
+    section3Text: "Hoidamme myös vaativammat asennukset, kuten kodinkoneiden asennukset ja painavien huonekalujen siirrot turvallisesti ja ammattitaidolla. Käytössämme on oikeat työvälineet ja kokemus haastaviin kohteisiin.",
+    section4Text: "Tarjoamme kodin asennuspalvelut Helsingissä ja pääkaupunkiseudulla nopeasti ja luotettavasti. Hoidamme huonekalujen kokoamisen, taulujen ja hyllyjen kiinnityksen, valaisimien asennukset sekä kodinkoneiden käyttöönoton. Teemme kodistasi toimivan ja valmiin arkeen.",
+
+    price1: "Asennustyöt: alkaen 80€/h",
+    price2: "Pienet asennukset: alkaen 150€",
+    price3: "Kodinkoneasennukset: sopimuksen mukaan",
+    price4: "Yrityksille: sopimuksen mukaan",
+    
     gardenTitle: "Pihapalvelut",
     gardenBtn: "Lue lisää",
 
@@ -70,6 +82,8 @@ const translations = {
     email: "Sähköposti",
     phone: "Puhelin",
     message: "Viesti"
+
+    
   },
 
   sv: {
@@ -126,6 +140,18 @@ const translations = {
     service1Title: "Heminstallationer",
     service1Btn: "Läs mer",
 
+    section4Intro: "Hjälp med vardagliga uppgifter – snabba och professionella installationer i huvudstadsregionen.",
+    section1Text1: "Vill ni få hemmet i ordning utan stress? Vi erbjuder heminstallationstjänster i Helsingfors och huvudstadsregionen som en helhetslösning – vi sköter allt från montering av möbler och upphängning av tavlor till installation av belysning och hushållsapparater. Resultatet är ett snyggt och färdigt hem.",
+    section1Text2: "Be om en kostnadsfri offert – vi kommer snabbt på plats och utför arbetet enligt överenskommelse.",
+    section2Text: "Behöver du hjälp med enskilda installationer? Vi utför installationsarbeten snabbt i Helsingfors – till exempel montering av gardinstänger och skenor, upphängning av hyllor och speglar samt montering av möbler. Vi kommer när det passar dig.",
+    section3Text: "Vi utför även mer krävande installationer, såsom installation av hushållsapparater och flytt av tunga möbler, på ett säkert och professionellt sätt. Vi har rätt verktyg och erfarenhet för utmanande uppdrag.",
+    section4Text: "Vi erbjuder heminstallationstjänster i Helsingfors och huvudstadsregionen snabbt och pålitligt. Vi sköter montering av möbler, upphängning av tavlor och hyllor, installation av belysning samt igångsättning av hushållsapparater. Vi gör ditt hem funktionellt och redo för vardagen.",
+
+    price1: "Installationsarbete: från 80€/h",
+    price2: "Små installationer: från 150€",
+    price3: "Installation av hushållsapparater: enligt avtal",
+    price4: "För företag: enligt avtal",
+    
     gardenTitle: "Trädgårdstjänster",
     gardenBtn: "Läs mer",
 
@@ -139,6 +165,8 @@ const translations = {
     email: "E-post",
     phone: "Telefon",
     message: "Meddelande"
+
+    
   },
 
   en: {
@@ -196,6 +224,18 @@ const translations = {
     service1Title: "Home installations",
     service1Btn: "Read more",
 
+    section4Intro: "Help with everyday tasks – fast and professional installations in the metropolitan area.",
+    section1Text1: "Do you want your home in order without stress? We offer home installation services in Helsinki and the metropolitan area as a complete solution – we handle everything from furniture assembly and mounting pictures to installing lighting and household appliances. The result is a clean and ready-to-use home.",
+    section1Text2: "Request a free quote – we arrive quickly and complete the work as agreed.",
+    section2Text: "Do you need help with individual installations? We carry out installation work quickly in Helsinki – for example installing curtain rods and rails, mounting shelves and mirrors, and assembling furniture. We come at a time that suits you.",
+    section3Text: "We also handle more demanding installations, such as installing household appliances and moving heavy furniture, safely and professionally. We have the right tools and experience for challenging tasks.",
+    section4Text: "We provide home installation services in Helsinki and the metropolitan area quickly and reliably. We handle furniture assembly, mounting pictures and shelves, installing lighting, and setting up household appliances. We make your home functional and ready for everyday life.",
+
+    price1: "Installation work: from €80/hour",
+    price2: "Small installations: from €150",
+    price3: "Appliance installation: by agreement",
+    price4: "For companies: by agreement",
+    
     gardenTitle: "Yard services",
     gardenBtn: "Read more",
 
