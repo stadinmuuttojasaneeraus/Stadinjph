@@ -43,6 +43,12 @@ const translations = {
     emailLabel: "Sähköposti:",
     phoneLabel: "Puhelin:",
     addressLabel: "Osoite:",
+
+    footerLocation: "Helsinki, Suomi",
+    footerBusinessId: "Y-tunnus: 1234567-8",
+    facebook: "Facebook",
+    instagram: "Instagram",
+    linkedin: "LinkedIn",
     
     service1Title: "Kodin asennuspalvelut",
     service1Btn: "Lue lisää",
@@ -107,6 +113,12 @@ const translations = {
     emailLabel: "E-post:",
     phoneLabel: "Telefon:",
     addressLabel: "Adress:",
+
+    footerLocation: "Helsingfors, Finland",
+    footerBusinessId: "FO-nummer: 1234567-8",
+    facebook: "Facebook",
+    instagram: "Instagram",
+    linkedin: "LinkedIn",
     
     service1Title: "Heminstallationer",
     service1Btn: "Läs mer",
@@ -162,6 +174,12 @@ const translations = {
     emailLabel: "Email:",
     phoneLabel: "Phone:",
     addressLabel: "Address:",
+
+    footerLocation: "Helsinki, Finland",
+    footerBusinessId: "Business ID: 1234567-8",
+    facebook: "Facebook",
+    instagram: "Instagram",
+    linkedin: "LinkedIn",
     
     service1Title: "Home installations",
     service1Btn: "Read more",
