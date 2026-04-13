@@ -64,6 +64,12 @@ const translations = {
     section3Text: "Hoidamme myös vaativammat asennukset, kuten kodinkoneiden asennukset ja painavien huonekalujen siirrot turvallisesti ja ammattitaidolla. Käytössämme on oikeat työvälineet ja kokemus haastaviin kohteisiin.",
     section4Text: "Tarjoamme kodin asennuspalvelut Helsingissä ja pääkaupunkiseudulla nopeasti ja luotettavasti. Hoidamme huonekalujen kokoamisen, taulujen ja hyllyjen kiinnityksen, valaisimien asennukset sekä kodinkoneiden käyttöönoton. Teemme kodistasi toimivan ja valmiin arkeen.",
 
+    section1Title: "Kokonaisratkaisu kodin asennuksiin",
+    section2Title: "Asennusapu ja pienet työt",
+    section3Title: "Raskaat ja vaativat asennukset",
+    section4Title: "Kodin asennuspalvelut",
+    section4Subtitle: "Hinnasto",
+    
     price1: "Asennustyöt: alkaen 80€/h",
     price2: "Pienet asennukset: alkaen 150€",
     price3: "Kodinkoneasennukset: sopimuksen mukaan",
@@ -147,6 +153,12 @@ const translations = {
     section3Text: "Vi utför även mer krävande installationer, såsom installation av hushållsapparater och flytt av tunga möbler, på ett säkert och professionellt sätt. Vi har rätt verktyg och erfarenhet för utmanande uppdrag.",
     section4Text: "Vi erbjuder heminstallationstjänster i Helsingfors och huvudstadsregionen snabbt och pålitligt. Vi sköter montering av möbler, upphängning av tavlor och hyllor, installation av belysning samt igångsättning av hushållsapparater. Vi gör ditt hem funktionellt och redo för vardagen.",
 
+    section1Title: "Helhetslösningar för heminstallationer",
+    section2Title: "Installationshjälp och småarbeten",
+    section3Title: "Tunga och krävande installationer",
+    section4Title: "Hemininstallationstjänster",
+    section4Subtitle: "Prislista",
+    
     price1: "Installationsarbete: från 80€/h",
     price2: "Små installationer: från 150€",
     price3: "Installation av hushållsapparater: enligt avtal",
@@ -231,6 +243,12 @@ const translations = {
     section3Text: "We also handle more demanding installations, such as installing household appliances and moving heavy furniture, safely and professionally. We have the right tools and experience for challenging tasks.",
     section4Text: "We provide home installation services in Helsinki and the metropolitan area quickly and reliably. We handle furniture assembly, mounting pictures and shelves, installing lighting, and setting up household appliances. We make your home functional and ready for everyday life.",
 
+    section1Title: "Complete home installation solutions",
+    section2Title: "Installation help and small jobs",
+    section3Title: "Heavy and demanding installations",
+    section4Title: "Home installation services",
+    section4Subtitle: "Pricing",
+    
     price1: "Installation work: from €80/hour",
     price2: "Small installations: from €150",
     price3: "Appliance installation: by agreement",
