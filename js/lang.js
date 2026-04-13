@@ -13,6 +13,19 @@ const translations = {
     service1List3: "Kodinkoneiden asennus ja käyttöönotto.",
     service1List4: "Verhotankojen, kiskojen ja valaisimen asennus.",
 
+    gardenText: "Hoidamme pihan siistiksi ja toimivaksi ympäri vuoden.",
+    gardenList1: "Pihan siivous ja lehtien haravointi.",
+    gardenList2: "Nurmikon ja pensaiden leikkaus.",
+    gardenList3: "Puunkaato ja raivaus.",
+    gardenList4: "Lumityöt ja hiekoitus.",
+
+    remonttiText: "Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla.",
+    remonttiList1: "Lattia-asennukset ja pintojen uusiminen.",
+    remonttiList2: "Ovien, listojen ja kalusteiden asennus.",
+    remonttiList3: "Kylpyhuoneen ja keittiön pienremontit.",
+    remonttiList4: "Maalaus- ja pintaremontit.",
+    remonttiList5: "Purku- ja korjaustyöt.",
+    
     servicesTitle: "Palvelut",
     servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
 
@@ -51,6 +64,18 @@ const translations = {
     service1List3: "Installation och driftsättning av hushållsapparater.",
     service1List4: "Montering av gardinstänger, skenor och lampor.",
 
+    gardenText: "Vi håller din gård ren och fungerande året runt.",     gardenList1: "Rensning av gården och lövkrattning.",
+    gardenList2: "Gräsklippning och beskärning av buskar.",
+    gardenList3: "Trädfällning och röjningsarbete.",
+    gardenList4: "Snöröjning och halkbekämpning.",
+
+    remonttiText: "Vi gör renoveringar snyggt, effektivt och professionellt.",
+    remonttiList1: "Golvläggning och ytrenovering.",
+    remonttiList2: "Montering av dörrar, lister och möbler.",
+    remonttiList3: "Små badrums- och köksrenoveringar.",
+    remonttiList4: "Målning och ytrenovering.",
+    remonttiList5: "Rivnings- och reparationsarbeten.",
+    
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
 
@@ -89,6 +114,19 @@ const translations = {
     service1List3: "Installation and setup of home appliances.",
     service1List4: "Installation of curtain rods, rails and lighting.",
 
+    gardenText: "We keep your yard clean and functional year-round.",
+    gardenList1: "Yard cleaning and leaf raking.",
+    gardenList2: "Lawn mowing and bush trimming.",
+    gardenList3: "Tree removal and clearing work.",
+    gardenList4: "Snow removal and sanding.",
+
+    remonttiText: "We carry out renovations cleanly, efficiently and professionally.",
+    remonttiList1: "Floor installation and surface renewal.",
+    remonttiList2: "Installation of doors, trims and furniture.",
+    remonttiList3: "Small bathroom and kitchen renovations.",
+    remonttiList4: "Painting and surface renovation.",
+    remonttiList5: "Demolition and repair work.",
+    
     servicesTitle: "Services",
     servicesText: "We provide home and business services.",
 
