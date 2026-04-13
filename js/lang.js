@@ -25,6 +25,11 @@ const translations = {
     remonttiList3: "Kylpyhuoneen ja keittiön pienremontit.",
     remonttiList4: "Maalaus- ja pintaremontit.",
     remonttiList5: "Purku- ja korjaustyöt.",
+
+    graveText: "Hoidamme hautakivien puhdistuksen, kunnostuksen ja ylläpidon arvokkaasti ja huolellisesti.",
+    graveList1: "Hautakivien suoristus ja huolto.",
+    graveList2: "Hautakivien puhdistus ja hoito.",
+    graveList3: "Hautapaikan siistiminen ja ylläpito.",
     
     servicesTitle: "Palvelut",
     servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
@@ -75,6 +80,16 @@ const translations = {
     remonttiList3: "Små badrums- och köksrenoveringar.",
     remonttiList4: "Målning och ytrenovering.",
     remonttiList5: "Rivnings- och reparationsarbeten.",
+
+    graveText: "Vi sköter rengöring, renovering och underhåll av gravstenar med värdighet och omsorg.",
+    graveList1: "Justering och underhåll av gravstenar.",
+    graveList2: "Rengöring och skötsel av gravstenar.",
+    graveList3: "Skötsel och underhåll av gravplatsen.",
+
+    graveText: "We handle cleaning, restoration and maintenance of gravestones with care and respect.",
+    graveList1: "Alignment and maintenance of gravestones.",
+    graveList2: "Cleaning and care of gravestones.",
+    graveList3: "Upkeep and maintenance of the grave site.",
     
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
