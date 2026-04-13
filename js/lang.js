@@ -103,6 +103,34 @@ const translations = {
     remonttiTitle: "Remonttipalvelut",
     remonttiBtn: "Lue lisää",
 
+    remonttiHeroTitle: "Remonttipalvelut Helsingissä",
+remonttiHeroText: "Teemme kodin remontit siististi, tehokkaasti ja ammattitaidolla – pienistä töistä suurempiin projekteihin.",
+remonttiHeroCta: "Pyydä tarjous",
+
+remonttiSection1Title: "Kaikki remontit yhdestä paikasta",
+remonttiSection1Text: "Tarjoamme remonttipalvelut Helsingissä ja pääkaupunkiseudulla kokonaisratkaisuna. Hoidamme projektit suunnittelusta toteutukseen asti – helposti ja luotettavasti.",
+
+remonttiSection2Title: "Sisäremontit",
+remonttiSection2Text: "Toteutamme kodin sisäremontit huolellisesti ja laadukkaasti. Huolehdimme siististä työnjäljestä ja toimivista ratkaisuista.",
+
+remonttiList1: "Lattia-asennukset ja pintojen uusiminen",
+remonttiList2: "Maalaus- ja pintaremontit",
+remonttiList3: "Listojen ja ovien asennus",
+remonttiList4: "Kalusteasennukset",
+
+remonttiSection3Title: "Keittiö ja kylpyhuone",
+remonttiSection3Text: "Teemme pienemmät keittiö- ja kylpyhuoneremontit ammattitaidolla. Huolehdimme, että lopputulos on toimiva ja kestävä.",
+
+remonttiList5: "Keittiön päivitykset ja asennukset",
+remonttiList6: "Kylpyhuoneen pienremontit",
+remonttiList7: "Kalusteiden vaihto",
+
+remonttiPriceTitle: "Hinnasto",
+remonttiPrice1: "Remonttityöt: alkaen 80€/h",
+remonttiPrice2: "Pienremontit: alkaen 150€",
+remonttiPrice3: "Keittiö ja kylpyhuone: sopimuksen mukaan",
+remonttiPrice4: "Yrityksille: sopimuksen mukaan",
+    
     graveTitle: "Hautakivipalvelut",
     graveBtn: "Lue lisää",
 
@@ -214,6 +242,34 @@ gardenCta: "Be om offert",
     remonttiTitle: "Renovering",
     remonttiBtn: "Läs mer",
 
+    remonttiHeroTitle: "Renoveringstjänster i Helsingfors",
+remonttiHeroText: "Vi utför renoveringar snyggt, effektivt och professionellt – från små arbeten till större projekt.",
+remonttiHeroCta: "Be om offert",
+
+remonttiSection1Title: "Alla renoveringar från samma leverantör",
+remonttiSection1Text: "Vi erbjuder renoveringstjänster i Helsingfors och huvudstadsregionen som helhetslösning. Vi sköter projekt från planering till färdigställande – enkelt och pålitligt.",
+
+remonttiSection2Title: "Inomhusrenoveringar",
+remonttiSection2Text: "Vi utför inomhusrenoveringar noggrant och med hög kvalitet. Vi säkerställer ett snyggt och hållbart resultat.",
+
+remonttiList1: "Golvläggning och ytrenovering",
+remonttiList2: "Målning och ytbehandling",
+remonttiList3: "Montering av lister och dörrar",
+remonttiList4: "Montering av möbler och inredning",
+
+remonttiSection3Title: "Kök och badrum",
+remonttiSection3Text: "Vi utför mindre köks- och badrumsrenoveringar professionellt. Vi säkerställer funktionella och hållbara lösningar.",
+
+remonttiList5: "Uppgraderingar och installationer i kök",
+remonttiList6: "Mindre badrumsrenoveringar",
+remonttiList7: "Byte av inredning och möbler",
+
+remonttiPriceTitle: "Prislista",
+remonttiPrice1: "Renoveringsarbete: från 80€/h",
+remonttiPrice2: "Smårenoveringar: från 150€",
+remonttiPrice3: "Kök och badrum: enligt överenskommelse",
+remonttiPrice4: "Företag: offert enligt behov",
+    
     graveTitle: "Gravvård",
     graveBtn: "Läs mer",
 
@@ -326,6 +382,34 @@ gardenCta: "Request a quote",
     remonttiTitle: "Renovations",
     remonttiBtn: "Read more",
 
+    remonttiHeroTitle: "Renovation services in Helsinki",
+remonttiHeroText: "We carry out renovations cleanly, efficiently, and professionally – from small jobs to larger projects.",
+remonttiHeroCta: "Request a quote",
+
+remonttiSection1Title: "All renovation services in one place",
+remonttiSection1Text: "We provide renovation services in Helsinki and the metropolitan area as a complete solution. We handle projects from planning to completion – easily and reliably.",
+
+remonttiSection2Title: "Interior renovations",
+remonttiSection2Text: "We carry out interior renovations carefully and with high quality. We ensure a clean and durable result.",
+
+remonttiList1: "Floor installation and surface renovation",
+remonttiList2: "Painting and surface finishing",
+remonttiList3: "Installation of doors and moldings",
+remonttiList4: "Furniture and interior installation",
+
+remonttiSection3Title: "Kitchen and bathroom",
+remonttiSection3Text: "We perform smaller kitchen and bathroom renovations professionally. We ensure functional and long-lasting solutions.",
+
+remonttiList5: "Kitchen upgrades and installations",
+remonttiList6: "Small bathroom renovations",
+remonttiList7: "Replacement of fixtures and furniture",
+
+remonttiPriceTitle: "Pricing",
+remonttiPrice1: "Renovation work: from 80€/h",
+remonttiPrice2: "Small renovations: from 150€",
+remonttiPrice3: "Kitchen & bathroom: by agreement",
+remonttiPrice4: "Companies: custom quote",
+    
     graveTitle: "Grave services",
     graveBtn: "Read more",
 
