@@ -40,6 +40,10 @@ const translations = {
     contactTitle: "Yhteystiedot",
     submit: "Lähetä",
 
+    emailLabel: "Sähköposti:",
+    phoneLabel: "Puhelin:",
+    addressLabel: "Osoite:",
+    
     service1Title: "Kodin asennuspalvelut",
     service1Btn: "Lue lisää",
 
@@ -100,6 +104,10 @@ const translations = {
     contactTitle: "Kontakt",
     submit: "Skicka",
 
+    emailLabel: "E-post:",
+    phoneLabel: "Telefon:",
+    addressLabel: "Adress:",
+    
     service1Title: "Heminstallationer",
     service1Btn: "Läs mer",
 
@@ -151,6 +159,10 @@ const translations = {
     contactTitle: "Contact",
     submit: "Send",
 
+    emailLabel: "Email:",
+    phoneLabel: "Phone:",
+    addressLabel: "Address:",
+    
     service1Title: "Home installations",
     service1Btn: "Read more",
 
