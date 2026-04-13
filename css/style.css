@@ -389,12 +389,12 @@ body.hautakivipalvelut #hero {
     width: 260px;
     height: 100%;
     background: #003366;
+    display: flex;
     flex-direction: column;
     padding: 80px 20px;
-    transition: 0.3s;
+    transition: 0.3s ease;
     z-index: 1000;
 }
-
 /* ACTIVE MENU */
 .menu.active {
     right: 0;
