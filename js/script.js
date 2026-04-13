@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("menu");
-const overlay = document.getElementById("menuOverlay");
+const overlay = document.getElementById("overlay");
 
 hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
