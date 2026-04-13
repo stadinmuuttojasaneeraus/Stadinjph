@@ -35,8 +35,8 @@ const translations = {
     servicesText: "Stadin Handymannit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
 
     aboutTitle: "Meistä",
-    aboutText: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys.",
-
+    aboutText: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Palveluihimme kuuluvat muun muassa kotipalvelut, pihatyöt sekä erilaiset remonttityöt. Meillä on pitkä kokemus alalta, ja panostamme aina laadukkaaseen työnjälkeen sekä asiakastyytyväisyyteen. Toimintamme perustuu luotettavuuteen, joustavuuteen ja nopeaan palveluun – hoidamme työt sovitusti ja aikataulussa. Tavoitteenamme on tehdä arjesta helpompaa asiakkaillemme tarjoamalla sujuvaa ja vaivatonta palvelua kaikissa tilanteissa. Olipa kyseessä pieni korjaus tai laajempi projekti, voit luottaa meihin. Puhumme sujuvasti suomea ja ruotsia, ja kaikki työntekijämme ovat läpikäyneet turvallisuustarkastuksen asiakkaidemme mielenrauhan varmistamiseksi.",
+    
     contactTitle: "Yhteystiedot",
     submit: "Lähetä",
 
@@ -95,7 +95,7 @@ const translations = {
     servicesText: "Vi erbjuder omfattande tjänster.",
 
     aboutTitle: "Om oss",
-    aboutText: "Serviceföretag i Helsingfors.",
+    aboutText: "Vi är ett mångsidigt serviceföretag i Helsingfors och huvudstadsregionen som erbjuder tjänster till både privatpersoner och företag. Våra tjänster inkluderar bland annat hemtjänster, gårdsarbete och olika renoveringsarbeten. Vi har lång erfarenhet inom branschen och satsar alltid på hög kvalitet och kundnöjdhet. Vår verksamhet bygger på pålitlighet, flexibilitet och snabb service – vi utför arbetet enligt överenskommelse och i tid. Vårt mål är att göra vardagen enklare för våra kunder genom att erbjuda smidig och bekymmersfri service i alla situationer. Oavsett om det gäller en liten reparation eller ett större projekt kan du lita på oss. Vi talar flytande finska och svenska, och alla våra anställda har genomgått säkerhetskontroller för kundernas trygghet.",
 
     contactTitle: "Kontakt",
     submit: "Skicka",
@@ -146,7 +146,7 @@ const translations = {
     servicesText: "We provide home and business services.",
 
     aboutTitle: "About us",
-    aboutText: "Service company in Helsinki.",
+    aboutText: "We are a versatile service company operating in Helsinki and the metropolitan area, providing a wide range of services for both private customers and businesses. Our services include home services, yard work and various renovation projects. We have extensive experience in the field and always focus on high-quality work and customer satisfaction. Our operations are based on reliability, flexibility and fast service – we complete our work as agreed and on schedule. Our goal is to make everyday life easier for our customers by offering smooth and hassle-free service in all situations. Whether it is a small repair or a larger project, you can rely on us. We speak fluent Finnish and Swedish, and all our employees have passed security checks to ensure peace of mind for our customers.",
 
     contactTitle: "Contact",
     submit: "Send",
