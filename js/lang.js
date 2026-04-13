@@ -7,6 +7,10 @@ const translations = {
     heroText: "Kodin asennukset, pihatyöt ja remontit – helposti ja sujuvasti.",
     heroCta: "Pyydä tarjous",
 
+    navServices: "Palvelut",
+    navAbout: "Meistä",
+    navContact: "Yhteystiedot",
+    
     service1Intro: "Apua arjen pienissä askareissa. Autamme kaikenlaisissa kodin käytännön töissä:",
     service1List1: "Taulujen, hyllyjen ja peilien kiinnitys.",
     service1List2: "Huonekalujen kokoaminen, siirto, purku ja pakkaus.",
@@ -73,6 +77,10 @@ const translations = {
     heroText: "Installationer, gårdsarbete och renoveringar.",
     heroCta: "Be om offert",
 
+    navServices: "Tjänster",
+    navAbout: "Om oss",
+    navContact: "Kontakt",
+    
     service1Intro: "Hjälp med vardagliga uppgifter. Vi hjälper med alla typer av praktiska arbeten i hemmet:",
     service1List1: "Montering av tavlor, hyllor och speglar.",
     service1List2: "Montering, flytt, demontering och packning av möbler.",
@@ -143,6 +151,10 @@ const translations = {
     heroText: "Installations, yard work and renovations.",
     heroCta: "Request a quote",
 
+    navServices: "Services",
+    navAbout: "About",
+    navContact: "Contact",
+    
     service1Intro: "Help with everyday tasks. We assist with all kinds of practical work at home:",
     service1List1: "Installation of paintings, shelves and mirrors.",
     service1List2: "Furniture assembly, moving, disassembly and packing.",
