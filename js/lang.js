@@ -133,7 +133,30 @@ remonttiPrice4: "Yrityksille: sopimuksen mukaan",
     
     graveTitle: "Hautakivipalvelut",
     graveBtn: "Lue lisää",
+graveHeroTitle: "Hautakivipalvelut Helsingissä",
+graveHeroText: "Hoidamme hautakivien puhdistuksen, kunnostuksen ja ylläpidon arvokkaasti ja huolellisesti.",
+graveCta: "Pyydä tarjous",
 
+graveSection1Title: "Hautakivien huolto ja kunnostus",
+graveSection1Text: "Tarjoamme hautakivipalvelut Helsingissä ja pääkaupunkiseudulla ammattitaidolla ja kunnioittavasti. Huolehdimme, että hautakivi säilyy siistinä ja arvokkaana vuodesta toiseen.",
+
+graveSection2Title: "Puhdistus ja hoito",
+graveSection2Text: "Puhdistamme hautakivet hellävaraisesti mutta tehokkaasti. Poistamme sammaleen, lian ja epäpuhtaudet turvallisilla menetelmillä.",
+graveList1: "Hautakivien pesu",
+graveList2: "Sammaleen ja lian poisto",
+graveList3: "Pintojen suojaus",
+
+graveSection3Title: "Suoristus ja ylläpito",
+graveSection3Text: "Korjaamme vinossa olevat hautakivet ja huolehdimme hautapaikan siisteydestä. Työ tehdään aina kunnioittavasti.",
+graveList4: "Hautakivien oikaisu",
+graveList5: "Hautapaikan siistiminen",
+graveList6: "Ylläpitopalvelut",
+
+gravePriceTitle: "Hinnasto",
+gravePrice1: "Hautakiven puhdistus: alkaen 100€",
+gravePrice2: "Hautakiven oikaisu: alkaen 150€",
+gravePrice3: "Huolto ja ylläpito: sopimuksen mukaan",
+    
     name: "Nimi",
     email: "Sähköposti",
     phone: "Puhelin",
@@ -272,7 +295,30 @@ remonttiPrice4: "Företag: offert enligt behov",
     
     graveTitle: "Gravvård",
     graveBtn: "Läs mer",
+graveHeroTitle: "Gravvårdstjänster i Helsingfors",
+graveHeroText: "Vi sköter rengöring, restaurering och underhåll av gravstenar med respekt och omsorg.",
+graveCta: "Be om offert",
 
+graveSection1Title: "Underhåll och restaurering av gravstenar",
+graveSection1Text: "Vi erbjuder gravvårdstjänster i Helsingfors och huvudstadsregionen med hög professionalitet och respekt.",
+
+graveSection2Title: "Rengöring och skötsel",
+graveSection2Text: "Vi rengör gravstenar skonsamt men effektivt och tar bort mossa, smuts och beläggningar.",
+graveList1: "Rengöring av gravstenar",
+graveList2: "Borttagning av mossa och smuts",
+graveList3: "Ytskydd",
+
+graveSection3Title: "Justering och underhåll",
+graveSection3Text: "Vi riktar sneda gravstenar och håller gravplatsen i gott skick med respektfull hantering.",
+graveList4: "Justering av gravstenar",
+graveList5: "Skötsel av gravplats",
+graveList6: "Underhållstjänster",
+
+gravePriceTitle: "Priser",
+gravePrice1: "Rengöring av gravsten: från 100€",
+gravePrice2: "Justering av gravsten: från 150€",
+gravePrice3: "Underhåll: enligt överenskommelse",
+    
     name: "Namn",
     email: "E-post",
     phone: "Telefon",
@@ -412,7 +458,30 @@ remonttiPrice4: "Companies: custom quote",
     
     graveTitle: "Grave services",
     graveBtn: "Read more",
+graveHeroTitle: "Grave Care Services in Helsinki",
+graveHeroText: "We provide cleaning, restoration and maintenance of gravestones with care and respect.",
+graveCta: "Request a quote",
 
+graveSection1Title: "Maintenance and restoration of gravestones",
+graveSection1Text: "We offer professional grave care services in Helsinki and the capital region.",
+
+graveSection2Title: "Cleaning and care",
+graveSection2Text: "We gently but effectively clean gravestones and remove moss, dirt and buildup.",
+graveList1: "Cleaning of gravestones",
+graveList2: "Removal of moss and dirt",
+graveList3: "Surface protection",
+
+graveSection3Title: "Alignment and maintenance",
+graveSection3Text: "We fix tilted gravestones and maintain grave sites with respect and care.",
+graveList4: "Gravestone alignment",
+graveList5: "Grave site maintenance",
+graveList6: "Maintenance services",
+
+gravePriceTitle: "Pricing",
+gravePrice1: "Gravestone cleaning: from 100€",
+gravePrice2: "Gravestone alignment: from 150€",
+gravePrice3: "Maintenance: by agreement",
+    
     name: "Name",
     email: "Email",
     phone: "Phone",
