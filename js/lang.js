@@ -104,11 +104,6 @@ const translations = {
     graveList2: "Rengöring och skötsel av gravstenar.",
     graveList3: "Skötsel och underhåll av gravplatsen.",
 
-    graveText: "We handle cleaning, restoration and maintenance of gravestones with care and respect.",
-    graveList1: "Alignment and maintenance of gravestones.",
-    graveList2: "Cleaning and care of gravestones.",
-    graveList3: "Upkeep and maintenance of the grave site.",
-    
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
 
@@ -173,6 +168,11 @@ const translations = {
     remonttiList3: "Small bathroom and kitchen renovations.",
     remonttiList4: "Painting and surface renovation.",
     remonttiList5: "Demolition and repair work.",
+
+    graveText: "We handle cleaning, restoration and maintenance of gravestones with care and respect.",
+    graveList1: "Alignment and maintenance of gravestones.",
+    graveList2: "Cleaning and care of gravestones.",
+    graveList3: "Upkeep and maintenance of the grave site.",
     
     servicesTitle: "Services",
     servicesText: "We provide home and business services.",
