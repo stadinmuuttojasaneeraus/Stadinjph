@@ -1,14 +1,3 @@
-// =========================
-// HAMBURGER MENU
-// =========================
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('menu');
-
-    if (hamburger && menu) {
-        hamburger.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
 
         // Stäng meny när man klickar på en länk (mobil UX)
         menu.querySelectorAll('a').forEach(link => {
