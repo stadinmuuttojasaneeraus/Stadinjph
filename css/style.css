@@ -41,19 +41,6 @@ header {
     font-size: 1.6rem;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
 .hamburger {
     display: flex; /* ÄNDRA denna rad */
     flex-direction: column;
@@ -182,21 +169,7 @@ footer {
    MOBILE
 ========================= */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #003366;
-        flex-direction: column;
-        width: 200px;
-        padding: 10px;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
+    
     .hamburger {
         display: flex;
     }
@@ -382,6 +355,7 @@ body.hautakivipalvelut #hero {
     transform: scale(1.2);
 }
 /* SIDEMENU */
+/* SIDEBAR MENU */
 .menu {
     position: fixed;
     top: 0;
@@ -391,13 +365,20 @@ body.hautakivipalvelut #hero {
     background: #003366;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 80px 20px;
     transition: 0.3s ease;
     z-index: 1000;
 }
-/* ACTIVE MENU */
+
 .menu.active {
     right: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 /* OVERLAY */
