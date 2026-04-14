@@ -29,17 +29,6 @@ header {
     z-index: 1000;
 }
 
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-}
-
 /* =========================
    HERO (SERVICES DARK VERSION)
 ========================= */
@@ -140,20 +129,7 @@ li {
    MOBILE
 ========================= */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: #003366;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 10px;
-    }
-
-    .menu.active {
-        display: flex;
-    }
+    
 
     #hero h1 {
         font-size: 1.6rem;
