@@ -183,6 +183,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+footer {
+    box-shadow: 0 -10px 25px rgba(0,0,0,0.15);
+}
 /* =========================
    MOBILE
 ========================= */
