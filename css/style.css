@@ -511,24 +511,3 @@ section:hover {
         transform: none; /* undviker “skak” på mobil */
     }
 }
-/* =========================
-   BRAND LOGO (SAFE FIX)
-========================= */
-
-.brand-section {
-    width: 100vw;
-    height: 120px;
-
-    background-image: url("../images/logo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    display: block;
-
-    /* viktigaste fixen ↓ */
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-}
