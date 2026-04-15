@@ -64,10 +64,19 @@ header {
 ========================= */
 .brand-section {
     width: 100%;
-    height: clamp(120px, 15vw, 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: #ffffff;
+}
 
-    background: url("/images/logo.jpg") center center / contain no-repeat;
-    background-color: #ffffff;
+/* LOGGA */
+.brand-section img {
+    width: 100%;
+    max-width: 600px; /* kontroll på storlek */
+    height: auto;
+    object-fit: contain;
 }
 /* =========================
    HERO (INDEX LIGHT VERSION)
