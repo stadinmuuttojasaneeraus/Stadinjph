@@ -60,6 +60,31 @@ header {
 }
 
 /* =========================
+   BRAND SECTION (LOGO BAKGRUND)
+========================= */
+.brand-section {
+    position: relative;
+    width: 100%;
+    height: clamp(100px, 12vw, 180px);
+    background: url("../images/logo.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 51, 102, 0.25);
+}
+
+@media (max-width: 768px) {
+    .brand-section {
+        height: 110px;
+    }
+}
+/* =========================
    HERO (INDEX LIGHT VERSION)
 ========================= */
 #hero {
