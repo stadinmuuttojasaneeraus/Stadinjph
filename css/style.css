@@ -64,19 +64,9 @@ header {
 ========================= */
 .brand-section {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    background: #ffffff;
-}
-
-/* LOGGA */
-.brand-section img {
-    width: 100%;
-    max-width: 600px; /* kontroll på storlek */
-    height: auto;
-    object-fit: contain;
+    height: clamp(80px, 15vw, 160px); /* kontrollerad höjd */
+    background: url("../images/logo.jpg") center/contain no-repeat;
+    background-color: #ffffff; /* fallback om loggan är transparent */
 }
 /* =========================
    HERO (INDEX LIGHT VERSION)
