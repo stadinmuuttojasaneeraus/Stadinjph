@@ -64,12 +64,9 @@ header {
 ========================= */
 .brand-section {
     width: 100%;
-    height: 140px; /* stabil höjd */
-    background-image: url("../images/logo.jpg");
-    background-size: contain; /* viktig för logga */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffffff; /* fallback */
+    height: 140px;
+    background: #ffffff url("../images/logo.jpg") center/contain no-repeat;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 /* =========================
    HERO (INDEX LIGHT VERSION)
