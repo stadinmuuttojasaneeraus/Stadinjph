@@ -64,9 +64,10 @@ header {
 ========================= */
 .brand-section {
     width: 100%;
-    height: clamp(120px, 15vw, 220px);
+    height: clamp(120px, 15vw, 200px);
 
-    background: url("/images/logo.jpg") center/cover no-repeat;
+    background: url("/images/logo.jpg") center center / contain no-repeat;
+    background-color: #ffffff;
 }
 /* =========================
    HERO (INDEX LIGHT VERSION)
