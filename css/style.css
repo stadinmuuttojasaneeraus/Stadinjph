@@ -50,8 +50,8 @@ header {
     display: flex; /* ÄNDRA denna rad */
     flex-direction: column;
     justify-content: space-between;
-    width: 25px;
-    height: 20px;
+    width: 32px;
+    height: 26px;
     cursor: pointer;
     z-index: 1100;
 }
