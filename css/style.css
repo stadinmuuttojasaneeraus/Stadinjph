@@ -42,7 +42,7 @@ header {
 }
 /* LOGO IMAGE */
 .logo img {
-    height: 70px;
+    height: 90px;
     width: auto;
     display: block;
 }
@@ -208,7 +208,7 @@ footer {
 }
 /* LOGO MOBILE */
     .logo img {
-        height: 55px;
+        height: 65px;
     }
 }
 /* =========================
