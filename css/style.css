@@ -40,7 +40,12 @@ header {
     font-weight: 700;
     font-size: 1.6rem;
 }
-
+/* LOGO IMAGE */
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
 .hamburger {
     display: flex; /* ÄNDRA denna rad */
     flex-direction: column;
@@ -201,7 +206,11 @@ footer {
         font-size: 1.6rem;
     }
 }
-
+/* LOGO MOBILE */
+    .logo img {
+        height: 30px;
+    }
+}
 /* =========================
    CONTACT (PREMIUM LAYOUT)
 ========================= */
