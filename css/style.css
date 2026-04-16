@@ -504,7 +504,16 @@ section:hover {
     background: radial-gradient(circle at top, rgba(0,51,102,0.05), transparent 60%);
     pointer-events: none;
 }
-
+#about {
+    background-image: url("../images/hero-index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#about .about-overlay {
+    background: rgba(0, 51, 102, 0.6);
+    padding: 60px 20px;
+}
 /* =========================
    MOBILE IMPROVEMENTS
 ========================= */
@@ -517,5 +526,10 @@ section:hover {
 
     .service-item:hover {
         transform: none; /* undviker “skak” på mobil */
+    }
+}
+
+    #about .about-overlay {
+        padding: 40px 15px;
     }
 }
