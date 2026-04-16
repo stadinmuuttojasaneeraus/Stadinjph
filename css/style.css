@@ -528,9 +528,8 @@ section:hover {
     }
 
     .service-item:hover {
-        transform: none; /* undviker “skak” på mobil */
+        transform: none;
     }
-}
 
     #about .about-overlay {
         padding: 40px 15px;
