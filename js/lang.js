@@ -50,7 +50,13 @@ backButton: "← Takaisin",
     taxBenefit: "Osa palveluistamme oikeuttaa kotitalousvähennykseen.",  // fi
  
     aboutTitle: "Meistä",
-    aboutText: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipalveluyritys, joka tarjoaa monipuolisia palveluita kotitalouksille ja yrityksille. Palveluihimme kuuluvat muun muassa kotipalvelut, pihatyöt sekä erilaiset remonttityöt. Meillä on pitkä kokemus alalta, ja panostamme aina laadukkaaseen työnjälkeen sekä asiakastyytyväisyyteen. Toimintamme perustuu luotettavuuteen, joustavuuteen ja nopeaan palveluun – hoidamme työt sovitusti ja aikataulussa. Tavoitteenamme on tehdä arjesta helpompaa asiakkaillemme tarjoamalla sujuvaa ja vaivatonta palvelua kaikissa tilanteissa. Olipa kyseessä pieni korjaus tai laajempi projekti, voit luottaa meihin. Puhumme sujuvasti suomea ja ruotsia, ja kaikki työntekijämme ovat läpikäyneet turvallisuustarkastuksen asiakkaidemme mielenrauhan varmistamiseksi.",
+    
+    aboutText1: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipuolinen ja luotettava monipalveluyritys, joka palvelee sekä kotitalouksia että yrityksiä. Yhdistämme vahvan ammatillisen osaamisen, koulutuksen kiinteistöhuollon ja rakennusalan tehtävistä sekä vuosien käytännön kokemuksen laadukkaista ja kestävistä ratkaisuista.",
+
+    aboutText2: "Tiimimme on koulutettu sekä kiinteistönhoidon että rakennusalan työtehtäviin, ja meillä on pitkä kokemus monipuolisten projektien toteuttamisesta aina pienistä korjauksista laajempiin kokonaisuuksiin. Työmme perustuu huolellisuuteen, ammattiylpeyteen ja tarkkaan työnjälkeen. Palvelemme asiakkaitamme sujuvasti suomeksi ja ruotsiksi sekä tarvittaessa myös englanniksi.",
+
+    aboutText3: "Asiakaspalvelu on meille yhtä tärkeää kuin itse työ. Toimimme rehellisesti, joustavasti ja nopeasti – olemme helposti tavoitettavissa ja reagoimme tarpeisiin ilman viiveitä. Tavoitteenamme on tehdä arjesta helpompaa tarjoamalla varmaa, ammattitaitoista ja ihmisläheistä palvelua, johon voi aina luottaa.",
+   
     insurance: "Olemme vakuutettu vastuuvakuutuksella kaikissa töissämme.",  
                   
                 
@@ -225,7 +231,12 @@ backButton: "← Tillbaka",
     taxBenefit: "Vissa av våra tjänster berättigar till hushållsavdrag.",
     
     aboutTitle: "Om oss",
-    aboutText: "Vi är ett mångsidigt serviceföretag i Helsingfors och huvudstadsregionen som erbjuder tjänster till både privatpersoner och företag. Våra tjänster inkluderar bland annat hemtjänster, gårdsarbete och olika renoveringsarbeten. Vi har lång erfarenhet inom branschen och satsar alltid på hög kvalitet och kundnöjdhet. Vår verksamhet bygger på pålitlighet, flexibilitet och snabb service – vi utför arbetet enligt överenskommelse och i tid. Vårt mål är att göra vardagen enklare för våra kunder genom att erbjuda smidig och bekymmersfri service i alla situationer. Oavsett om det gäller en liten reparation eller ett större projekt kan du lita på oss. Vi talar flytande finska och svenska, och alla våra anställda har genomgått säkerhetskontroller för kundernas trygghet.",
+    
+     aboutText1: "Vi är ett mångsidigt och pålitligt serviceföretag verksamt i Helsingfors och huvudstadsregionen, som betjänar både privatpersoner och företag. Vi kombinerar stark yrkeskompetens, utbildning inom fastighetsskötsel och byggbranschen samt många års praktisk erfarenhet av hållbara och kvalitativa lösningar.",
+
+    aboutText2: "Vårt team är utbildat inom både fastighetsskötsel och byggarbeten, och vi har lång erfarenhet av att genomföra allt från mindre reparationer till större projekt. Vårt arbete präglas av noggrannhet, yrkesstolthet och hög kvalitet. Vi betjänar våra kunder flytande på svenska och finska samt vid behov även på engelska.",
+
+    aboutText3: "För oss är kundservice lika viktig som själva arbetet. Vi arbetar ärligt, flexibelt och effektivt – vi är lättillgängliga och reagerar snabbt på våra kunders behov. Vårt mål är att göra vardagen enklare genom att erbjuda pålitlig, professionell och personlig service som du alltid kan lita på.",
       
     insurance: "Vi har ansvarsförsäkring för alla arbeten.",
     
@@ -401,7 +412,12 @@ backButton: "← Back",
     taxBenefit: "Some of our services are eligible for household tax credit.",
     
     aboutTitle: "About us",
-    aboutText: "We are a versatile service company operating in Helsinki and the metropolitan area, providing a wide range of services for both private customers and businesses. Our services include home services, yard work and various renovation projects. We have extensive experience in the field and always focus on high-quality work and customer satisfaction. Our operations are based on reliability, flexibility and fast service – we complete our work as agreed and on schedule. Our goal is to make everyday life easier for our customers by offering smooth and hassle-free service in all situations. Whether it is a small repair or a larger project, you can rely on us. We speak fluent Finnish and Swedish, and all our employees have passed security checks to ensure peace of mind for our customers.",
+
+   aboutText1: "We are a versatile and reliable service company operating in Helsinki and the greater metropolitan area, serving both private customers and businesses. We combine strong professional expertise, education in property maintenance and construction, and years of hands-on experience in delivering durable, high-quality solutions.",
+
+aboutText2: "Our team is trained in both property maintenance and construction work, with extensive experience in projects ranging from small repairs to larger renovations. Our work is defined by precision, professional pride, and high-quality results. We serve our customers fluently in Finnish and Swedish, and also in English when needed.",
+
+aboutText3: "For us, customer service is just as important as the work itself. We operate with honesty, flexibility, and efficiency – we are easy to reach and respond quickly to our customers’ needs. Our goal is to make everyday life easier by providing reliable, professional, and personable service you can always trust.", 
     
 insurance: "We have liability insurance for all our work.",
     
