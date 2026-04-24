@@ -48,7 +48,20 @@ backButton: "← Takaisin",
     servicesTitle: "Palvelut",
     servicesText: "Stadin Fixarit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
     taxBenefit: "Osa palveluistamme oikeuttaa kotitalousvähennykseen.",  // fi
- 
+ trustTitle: "Miksi valita meidät",
+
+trust1Title: "🗣 Kommunikointi",
+trust1Text: "Palvelemme sujuvasti suomeksi ja ruotsiksi sekä tarvittaessa englanniksi.",
+
+trust2Title: "🎓 Ammattitaito",
+trust2Text: "Suomessa koulutettu ja kokenut henkilöstö kiinteistö- ja rakennusalan tehtäviin.",
+
+trust3Title: "🛡 Laatutakuu",
+trust3Text: "Kaikilla töillämme on aina laatutakuu ja vastuullinen työnjälki.",
+
+trust4Title: "⚡ Luotettavuus ja nopeus",
+trust4Text: "Toimimme nopeasti ja luotettavasti sekä tarjoamme rehellisen ja läpinäkyvän hinnoittelun ilman yllätyksiä.",
+    
     aboutTitle: "Meistä",
     
     aboutText1: "Olemme Helsingissä ja pääkaupunkiseudulla toimiva monipuolinen ja luotettava monipalveluyritys, joka palvelee sekä kotitalouksia että yrityksiä. Yhdistämme vahvan ammatillisen osaamisen, koulutuksen kiinteistöhuollon ja rakennusalan tehtävistä sekä vuosien käytännön kokemuksen laadukkaista ja kestävistä ratkaisuista.",
@@ -229,6 +242,19 @@ backButton: "← Tillbaka",
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
     taxBenefit: "Vissa av våra tjänster berättigar till hushållsavdrag.",
+    trustTitle: "Varför välja oss",
+
+trust1Title: "🗣 Kommunikation",
+trust1Text: "Vi betjänar våra kunder flytande på svenska och finska samt vid behov även på engelska.",
+
+trust2Title: "🎓 Yrkeskompetens",
+trust2Text: "Vårt team är utbildat i Finland och har lång erfarenhet inom fastighetsskötsel och byggarbeten.",
+
+trust3Title: "🛡 Kvalitetsgaranti",
+trust3Text: "Vi lämnar alltid garanti på vårt arbete och står bakom kvaliteten.",
+
+trust4Title: "⚡ Pålitlighet och snabbhet",
+trust4Text: "Vi arbetar snabbt och pålitligt med ärlig och transparent prissättning – inga överraskningar.",
     
     aboutTitle: "Om oss",
     
@@ -410,6 +436,19 @@ backButton: "← Back",
     servicesTitle: "Services",
     servicesText: "We provide home and business services.",
     taxBenefit: "Some of our services are eligible for household tax credit.",
+    trustTitle: "Why choose us",
+
+trust1Title: "🗣 Communication",
+trust1Text: "We serve our customers fluently in Finnish and Swedish, and also in English when needed.",
+
+trust2Title: "🎓 Professional expertise",
+trust2Text: "Our team is trained in Finland and has extensive experience in property maintenance and construction.",
+
+trust3Title: "🛡 Quality guarantee",
+trust3Text: "We always stand behind our work and provide a quality guarantee.",
+
+trust4Title: "⚡ Reliability and speed",
+trust4Text: "We work quickly and reliably with honest and transparent pricing – no surprises.",
     
     aboutTitle: "About us",
 
