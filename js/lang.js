@@ -48,17 +48,23 @@ backButton: "← Takaisin",
     servicesTitle: "Palvelut",
     servicesText: "Stadin Fixarit Oy tarjoaa kattavat palvelut yksityisten ja yritysten tarpeisiin: asennuspalvelut, pihapalvelut ja remontit.",
     taxBenefit: "Osa palveluistamme oikeuttaa kotitalousvähennykseen.",  // fi
- trustTitle: "Miksi valita meidät",
 
+    businessIntroTitle: "Yrityspalvelut",
+    businessIntroText: "Tarjoamme yrityksille joustavia ja luotettavia palveluja kiinteistöjen, asennusten ja remonttien tarpeisiin.",
+    businessLabel: "Yrityksille",
+    businessHighlightTitle: "Palvelut yrityksille",
+    businessHighlightText: "Tarjoamme yrityksille nopeaa ja luotettavaa apua asennuksiin, huoltoon ja remontteihin – joustavasti ja ammattitaidolla.",
+    businessCardTitle: "Yritysratkaisut",
+    businessCardText: "Luotettava kumppani yrityksesi arkeen ja kiinteistöjen ylläpitoon. Hoidamme työt nopeasti ja tehokkaasti.",
+    businessCardCta: "Siirry yrityspalveluihin",
+    
+trustTitle: "Miksi valita meidät",
 trust1Title: "🗣 Kommunikointi",
 trust1Text: "Palvelemme sujuvasti suomeksi ja ruotsiksi sekä tarvittaessa englanniksi.",
-
 trust2Title: "🎓 Ammattitaito",
 trust2Text: "Suomessa koulutettu ja kokenut henkilöstö kiinteistö- ja rakennusalan tehtäviin.",
-
 trust3Title: "🛡 Laatutakuu",
 trust3Text: "Kaikilla töillämme on aina laatutakuu ja vastuullinen työnjälki.",
-
 trust4Title: "⚡ Luotettavuus ja nopeus",
 trust4Text: "Toimimme nopeasti ja luotettavasti sekä tarjoamme rehellisen ja läpinäkyvän hinnoittelun ilman yllätyksiä.",
     
@@ -242,29 +248,31 @@ backButton: "← Tillbaka",
     servicesTitle: "Tjänster",
     servicesText: "Vi erbjuder omfattande tjänster.",
     taxBenefit: "Vissa av våra tjänster berättigar till hushållsavdrag.",
-    trustTitle: "Varför välja oss",
-
+    
+businessIntroTitle: "Företagstjänster",
+businessIntroText: "Vi erbjuder flexibla och pålitliga tjänster för företag inom installationer, fastighetsskötsel och renovering.",
+businessLabel: "För företag",
+businessHighlightTitle: "Tjänster för företag",
+businessHighlightText: "Vi erbjuder företag snabb och pålitlig hjälp med installationer, underhåll och renoveringar – flexibelt och professionellt.",
+businessCardTitle: "Företagslösningar",
+businessCardText: "En pålitlig partner för din verksamhet och fastighetsunderhåll. Vi arbetar snabbt och effektivt utan krångel.",
+businessCardCta: "Gå till företagstjänster",    
+trustTitle: "Varför välja oss",
 trust1Title: "🗣 Kommunikation",
 trust1Text: "Vi betjänar våra kunder flytande på svenska och finska samt vid behov även på engelska.",
-
 trust2Title: "🎓 Yrkeskompetens",
 trust2Text: "Vårt team är utbildat i Finland och har lång erfarenhet inom fastighetsskötsel och byggarbeten.",
-
 trust3Title: "🛡 Kvalitetsgaranti",
 trust3Text: "Vi lämnar alltid garanti på vårt arbete och står bakom kvaliteten.",
-
 trust4Title: "⚡ Pålitlighet och snabbhet",
 trust4Text: "Vi arbetar snabbt och pålitligt med ärlig och transparent prissättning – inga överraskningar.",
     
-    aboutTitle: "Om oss",
-    
-     aboutText1: "Vi är ett mångsidigt och pålitligt serviceföretag verksamt i Helsingfors och huvudstadsregionen, som betjänar både privatpersoner och företag. Vi kombinerar stark yrkeskompetens, utbildning inom fastighetsskötsel och byggbranschen samt många års praktisk erfarenhet av hållbara och kvalitativa lösningar.",
-
-    aboutText2: "Vårt team är utbildat inom både fastighetsskötsel och byggarbeten, och vi har lång erfarenhet av att genomföra allt från mindre reparationer till större projekt. Vårt arbete präglas av noggrannhet, yrkesstolthet och hög kvalitet. Vi betjänar våra kunder flytande på svenska och finska samt vid behov även på engelska.",
-
-    aboutText3: "För oss är kundservice lika viktig som själva arbetet. Vi arbetar ärligt, flexibelt och effektivt – vi är lättillgängliga och reagerar snabbt på våra kunders behov. Vårt mål är att göra vardagen enklare genom att erbjuda pålitlig, professionell och personlig service som du alltid kan lita på.",
+aboutTitle: "Om oss",
+aboutText1: "Vi är ett mångsidigt och pålitligt serviceföretag verksamt i Helsingfors och huvudstadsregionen, som betjänar både privatpersoner och företag. Vi kombinerar stark yrkeskompetens, utbildning inom fastighetsskötsel och byggbranschen samt många års praktisk erfarenhet av hållbara och kvalitativa lösningar.",
+aboutText2: "Vårt team är utbildat inom både fastighetsskötsel och byggarbeten, och vi har lång erfarenhet av att genomföra allt från mindre reparationer till större projekt. Vårt arbete präglas av noggrannhet, yrkesstolthet och hög kvalitet. Vi betjänar våra kunder flytande på svenska och finska samt vid behov även på engelska.",
+aboutText3: "För oss är kundservice lika viktig som själva arbetet. Vi arbetar ärligt, flexibelt och effektivt – vi är lättillgängliga och reagerar snabbt på våra kunders behov. Vårt mål är att göra vardagen enklare genom att erbjuda pålitlig, professionell och personlig service som du alltid kan lita på.",
       
-    insurance: "Vi har ansvarsförsäkring för alla arbeten.",
+insurance: "Vi har ansvarsförsäkring för alla arbeten.",
     
     contactTitle: "Kontakt",
     submit: "Skicka",
@@ -381,6 +389,8 @@ gravePriceTitle: "Priser",
 gravePrice1: "Rengöring av gravsten: från 100€",
 gravePrice2: "Justering av gravsten: från 150€",
 gravePrice3: "Underhåll: enligt överenskommelse",
+
+
     
     name: "Namn",
     email: "E-post",
@@ -437,7 +447,16 @@ backButton: "← Back",
     servicesText: "We provide home and business services.",
     taxBenefit: "Some of our services are eligible for household tax credit.",
     trustTitle: "Why choose us",
-
+    
+businessIntroTitle: "Business services",
+businessIntroText: "We provide flexible and reliable services for companies in installations, property maintenance and renovations.",
+businessLabel: "For businesses",
+businessHighlightTitle: "Business services",
+businessHighlightText: "We provide fast and reliable help for businesses with installations, maintenance and renovations – flexible and professional.",
+businessCardTitle: "Business solutions",
+businessCardText: "A reliable partner for your operations and property maintenance. We deliver fast and efficient service with no hassle.",
+businessCardCta: "Go to business services",
+    
 trust1Title: "🗣 Communication",
 trust1Text: "We serve our customers fluently in Finnish and Swedish, and also in English when needed.",
 
@@ -575,7 +594,8 @@ gravePriceTitle: "Pricing",
 gravePrice1: "Gravestone cleaning: from 100€",
 gravePrice2: "Gravestone alignment: from 150€",
 gravePrice3: "Maintenance: by agreement",
-    
+
+
     name: "Name",
     email: "Email",
     phone: "Phone",
