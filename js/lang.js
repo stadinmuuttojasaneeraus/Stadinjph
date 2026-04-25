@@ -633,3 +633,30 @@ window.addEventListener("DOMContentLoaded", () => {
   if (saved) currentLang = saved;
   applyLang();
 });
+
+function setLang(lang) {
+    currentLang = lang;
+
+    const elements = document.querySelectorAll("[data-translate]");
+    
+    elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        if (translations[lang] && translations[lang][key]) {
+            el.innerText = translations[lang][key];
+        }
+    });
+
+    const placeholders = document.querySelectorAll("[data-placeholder]");
+    
+    placeholders.forEach(el => {
+        const key = el.getAttribute("data-placeholder");
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
+}
+
+// Kör direkt när sidan laddas
+document.addEventListener("DOMContentLoaded", function () {
+    setLang(currentLang);
+});
