@@ -481,12 +481,14 @@ section:hover {
 }
 
 /* =========================
-   MEISTÄ / ABOUT PREMIUM FEEL
+   MEISTÄ / ABOUT SECTION
 ========================= */
 
 #about {
     position: relative;
     padding: 60px 20px;
+    background: #003366; /* samma blå som header */
+    color: #ffffff;
 }
 
 #about p {
@@ -494,28 +496,13 @@ section:hover {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
-}
-
-/* liten “story highlight” känsla */
-#about::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top, rgba(0,51,102,0.05), transparent 60%);
-    pointer-events: none;
-}
-#about {
-    position: relative;
-    background: url("../images/about.jpg") center/cover no-repeat;
     color: #ffffff;
 }
+
+/* säkerställer att innehåll ligger ovanför ev. andra layers */
 #about .about-content {
     position: relative;
     z-index: 2;
-}
-#about .about-overlay {
-    background: rgba(0, 51, 102, 0.6);
-    padding: 60px 20px;
 }
 /* =========================
    MOBILE IMPROVEMENTS
