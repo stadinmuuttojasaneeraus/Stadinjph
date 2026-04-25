@@ -644,3 +644,9 @@ document.addEventListener("DOMContentLoaded", () => {
   currentLang = "fi";
   applyLang();
 });
+/* =========================
+   DEBUG ERROR CATCH
+========================= */
+window.onerror = function(message, source, lineno, colno, error) {
+  alert(message + " på rad " + lineno);
+};
