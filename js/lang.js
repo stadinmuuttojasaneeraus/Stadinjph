@@ -605,6 +605,8 @@ gravePrice3: "Maintenance: by agreement",
   }
 };
 
+let currentLang = "fi";
+
 function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
@@ -630,35 +632,14 @@ function setLang(lang) {
   applyLang();
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("lang");
-  if (saved) currentLang = saved;
+
+  if (saved) {
+    currentLang = saved;
+  } else {
+    currentLang = "fi"; // default finska första gången
+  }
+
   applyLang();
-});
-
-function setLang(lang) {
-    currentLang = lang;
-
-    const elements = document.querySelectorAll("[data-translate]");
-    
-    elements.forEach(el => {
-        const key = el.getAttribute("data-translate");
-        if (translations[lang] && translations[lang][key]) {
-            el.innerText = translations[lang][key];
-        }
-    });
-
-    const placeholders = document.querySelectorAll("[data-placeholder]");
-    
-    placeholders.forEach(el => {
-        const key = el.getAttribute("data-placeholder");
-        if (translations[lang] && translations[lang][key]) {
-            el.placeholder = translations[lang][key];
-        }
-    });
-}
-
-// Kör direkt när sidan laddas
-document.addEventListener("DOMContentLoaded", function () {
-    setLang(currentLang);
 });
