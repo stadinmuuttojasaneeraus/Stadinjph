@@ -681,3 +681,7 @@ function setLang(lang) {
 document.addEventListener("DOMContentLoaded", () => {
   applyLang();
 });
+// säker re-render efter allt har laddats
+window.addEventListener("load", () => {
+  applyLang();
+});
