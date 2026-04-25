@@ -250,10 +250,12 @@ backButton: "← Tillbaka",
     
 businessTitle: "Företagstjänster",
 businessIntroText: "Vi erbjuder företag flexibla och pålitliga tjänster för både akuta behov och långsiktiga projekt.",
+
 businessList1: "Löpande och kontinuerligt fastighetsunderhåll",
 businessList2: "Fastighetsskötsel och servicearbeten",
 businessList3: "Renoveringar och reparationsarbeten",
 businessList4: "Trädgårdsarbeten och skötsel av utomhusområden",
+
 businessCta: "Gå till företagstjänster",
     
 trustTitle: "Varför välja oss",
@@ -447,12 +449,14 @@ backButton: "← Back",
     taxBenefit: "Some of our services are eligible for household tax credit.",
     trustTitle: "Why choose us",
     
-businessTitle: "Business services",
-businessIntroText: "We offer flexible and reliable services for companies for both urgent needs and long-term projects.",
+businessTitle: "Business Services",
+businessIntroText: "We offer companies flexible and reliable services for both urgent needs and long-term projects.",
+
 businessList1: "Ongoing and continuous property maintenance",
-businessList2: "Property care and maintenance services",
-businessList3: "Renovations and repair works",
-businessList4: "Garden work and outdoor area maintenance",
+businessList2: "Property management and service work",
+businessList3: "Renovations and repair work",
+businessList4: "Outdoor maintenance and landscaping",
+
 businessCta: "Go to business services",
     
 trust1Title: "🗣 Communication",
