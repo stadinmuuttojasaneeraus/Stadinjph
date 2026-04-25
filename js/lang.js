@@ -605,8 +605,6 @@ gravePrice3: "Maintenance: by agreement",
   }
 };
 
-let currentLang = "fi";
-
 /* =========================
    APPLY TRANSLATIONS
 ========================= */
