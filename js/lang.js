@@ -610,38 +610,53 @@ gravePrice3: "Maintenance: by agreement",
 ========================= */
 
 // START: alltid finska som default vid första laddning
-let currentLang = localStorage.getItem("lang");
 
-// om inget sparat språk finns → finska
-if (!currentLang) {
-  currentLang = "fi";
-}
+let currentLang = localStorage.getItem("lang") || "fi";
 
-// säkerhetscheck (om något trasigt sparats)
 if (!["fi", "sv", "en"].includes(currentLang)) {
   currentLang = "fi";
   localStorage.setItem("lang", "fi");
 }
 
 /* =========================
-   APPLY TRANSLATIONS
+   TRANSLATIONS
 ========================= */
+
+const translations = {
+  fi: { /* DIN NUVARANDE FI HÄR OÄNDRAD */ },
+  sv: { /* DIN NUVARANDE SV HÄR OÄNDRAD */ },
+  en: { /* DIN NUVARANDE EN HÄR OÄNDRAD */ }
+};
+
+/* =========================
+   APPLY LANGUAGE
+========================= */
+
 function applyLang() {
   const t = translations[currentLang];
-  if (!t) return;
 
-  // TEXT
+  if (!t) {
+    console.warn("Missing language:", currentLang);
+    return;
+  }
+
+  // TEXT CONTENT
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
-    if (t[key]) {
-      el.innerText = t[key];
+
+    if (t[key] !== undefined) {
+      el.textContent = t[key];
+    } else {
+      el.textContent = ""; // fallback
+      console.warn("Missing key:", key, "in", currentLang);
     }
   });
 
   // PLACEHOLDERS
   document.querySelectorAll("[data-placeholder]").forEach(el => {
     const key = el.getAttribute("data-placeholder");
-    if (t[key]) {
+
+    if (t[key] !== undefined) {
       el.placeholder = t[key];
     }
   });
@@ -650,6 +665,7 @@ function applyLang() {
 /* =========================
    SWITCH LANGUAGE
 ========================= */
+
 function setLang(lang) {
   if (!["fi", "sv", "en"].includes(lang)) return;
 
@@ -661,6 +677,7 @@ function setLang(lang) {
 /* =========================
    INIT
 ========================= */
+
 document.addEventListener("DOMContentLoaded", () => {
   applyLang();
 });
