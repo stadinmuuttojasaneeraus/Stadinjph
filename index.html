@@ -332,7 +332,17 @@
     <p>© 2026</p>
 </footer>
 
-<script src="js/lang.js"></script>
 <script src="js/script.js"></script>
+<script src="js/lang.js"></script>
+
+<!-- TEST-KNAPPAR (tillfälligt) -->
+<button onclick="alert(localStorage.getItem('lang'))">
+  Kolla språk
+</button>
+
+<button onclick="localStorage.removeItem('lang'); location.reload();">
+  Reset språk
+</button>
+</body>
 </body>
 </html>
