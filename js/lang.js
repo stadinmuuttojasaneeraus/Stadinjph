@@ -605,28 +605,57 @@ gravePrice3: "Maintenance: by agreement",
   }
 };
 
-let currentLang = "fi";
+/* =========================
+   LANGUAGE SYSTEM
+========================= */
 
-function initLang() {
-  const saved = localStorage.getItem("lang");
+// Default + safe load
+let currentLang = localStorage.getItem("lang");
 
-  // ONLY allow fi/sv/en (stoppar skräp)
-  if (saved === "fi" || saved === "sv" || saved === "en") {
-    currentLang = saved;
-  } else {
-    currentLang = "fi";
-    localStorage.setItem("lang", "fi");
-  }
-
-  applyLang();
+// fallback till finska om något är fel
+if (!currentLang || !["fi", "sv", "en"].includes(currentLang)) {
+  currentLang = "fi";
+  localStorage.setItem("lang", "fi");
 }
 
-document.addEventListener("DOMContentLoaded", initLang);
+/* =========================
+   APPLY TRANSLATIONS
+========================= */
+function applyLang() {
+  const t = translations[currentLang];
+  if (!t) return;
 
+  // TEXT CONTENT
+  document.querySelectorAll("[data-translate]").forEach(el => {
+    const key = el.getAttribute("data-translate");
+    if (t[key]) {
+      el.innerText = t[key];
+    }
+  });
+
+  // PLACEHOLDERS
+  document.querySelectorAll("[data-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-placeholder");
+    if (t[key]) {
+      el.placeholder = t[key];
+    }
+  });
+}
+
+/* =========================
+   SWITCH LANGUAGE
+========================= */
 function setLang(lang) {
-  if (lang !== "fi" && lang !== "sv" && lang !== "en") return;
+  if (!["fi", "sv", "en"].includes(lang)) return;
 
   currentLang = lang;
   localStorage.setItem("lang", lang);
   applyLang();
 }
+
+/* =========================
+   INIT ON LOAD
+========================= */
+document.addEventListener("DOMContentLoaded", () => {
+  applyLang();
+});
