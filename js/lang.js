@@ -605,50 +605,28 @@ gravePrice3: "Maintenance: by agreement",
   }
 };
 
-/* =========================
-   LANGUAGE SYSTEM (FIXED)
-========================= */
-
-/* Always start in Finnish */
 let currentLang = "fi";
 
-/* Apply translations */
-function applyLang() {
-  const t = translations[currentLang];
-  if (!t) return;
+function initLang() {
+  const saved = localStorage.getItem("lang");
 
-  document.querySelectorAll("[data-translate]").forEach(el => {
-    const key = el.getAttribute("data-translate");
-    if (t[key]) {
-      el.innerText = t[key];
-    }
-  });
+  // ONLY allow fi/sv/en (stoppar skräp)
+  if (saved === "fi" || saved === "sv" || saved === "en") {
+    currentLang = saved;
+  } else {
+    currentLang = "fi";
+    localStorage.setItem("lang", "fi");
+  }
 
-  document.querySelectorAll("[data-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-placeholder");
-    if (t[key]) {
-      el.placeholder = t[key];
-    }
-  });
+  applyLang();
 }
 
-/* Change language manually */
+document.addEventListener("DOMContentLoaded", initLang);
+
 function setLang(lang) {
+  if (lang !== "fi" && lang !== "sv" && lang !== "en") return;
+
   currentLang = lang;
   localStorage.setItem("lang", lang);
   applyLang();
 }
-
-/* Initialize safely */
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang");
-
-  if (savedLang) {
-    currentLang = savedLang;
-  } else {
-    localStorage.setItem("lang", "fi");
-    currentLang = "fi";
-  }
-
-  applyLang();
-});
