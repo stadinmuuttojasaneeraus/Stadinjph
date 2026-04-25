@@ -1,3 +1,9 @@
+const siteConfig = {
+  name: "Stadin Fixarit Oy",
+  email: "info@stadin-fixarit.fi",
+  phone: "+358 46 803 6951",
+  city: "Helsinki"
+};
 document.addEventListener("DOMContentLoaded", function () {
 
     const hamburger = document.getElementById("hamburger");
