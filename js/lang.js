@@ -607,10 +607,14 @@ gravePrice3: "Maintenance: by agreement",
 
 let currentLang = "fi";
 
+/* =========================
+   APPLY TRANSLATIONS
+========================= */
 function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
+  // TEXT
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
     if (t[key]) {
@@ -618,6 +622,7 @@ function applyLang() {
     }
   });
 
+  // PLACEHOLDERS
   document.querySelectorAll("[data-placeholder]").forEach(el => {
     const key = el.getAttribute("data-placeholder");
     if (t[key]) {
@@ -626,20 +631,18 @@ function applyLang() {
   });
 }
 
+/* =========================
+   SWITCH LANGUAGE (MANUAL ONLY)
+========================= */
 function setLang(lang) {
   currentLang = lang;
-  localStorage.setItem("lang", lang);
   applyLang();
 }
 
+/* =========================
+   ALWAYS FORCE FINNISH ON LOAD
+========================= */
 document.addEventListener("DOMContentLoaded", () => {
-  const saved = localStorage.getItem("lang");
-
-  if (saved) {
-    currentLang = saved;
-  } else {
-    currentLang = "fi"; // default finska första gången
-  }
-
+  currentLang = "fi";
   applyLang();
 });
