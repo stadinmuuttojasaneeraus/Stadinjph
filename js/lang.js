@@ -609,11 +609,16 @@ gravePrice3: "Maintenance: by agreement",
    LANGUAGE SYSTEM
 ========================= */
 
-// Default + safe load
+// START: alltid finska som default vid första laddning
 let currentLang = localStorage.getItem("lang");
 
-// fallback till finska om något är fel
-if (!currentLang || !["fi", "sv", "en"].includes(currentLang)) {
+// om inget sparat språk finns → finska
+if (!currentLang) {
+  currentLang = "fi";
+}
+
+// säkerhetscheck (om något trasigt sparats)
+if (!["fi", "sv", "en"].includes(currentLang)) {
   currentLang = "fi";
   localStorage.setItem("lang", "fi");
 }
@@ -625,7 +630,7 @@ function applyLang() {
   const t = translations[currentLang];
   if (!t) return;
 
-  // TEXT CONTENT
+  // TEXT
   document.querySelectorAll("[data-translate]").forEach(el => {
     const key = el.getAttribute("data-translate");
     if (t[key]) {
@@ -654,7 +659,7 @@ function setLang(lang) {
 }
 
 /* =========================
-   INIT ON LOAD
+   INIT
 ========================= */
 document.addEventListener("DOMContentLoaded", () => {
   applyLang();
