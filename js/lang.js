@@ -636,17 +636,7 @@ function setLang(lang) {
   currentLang = lang;
   applyLang();
 }
+let currentLang = localStorage.getItem("lang") || "fi";
 
-/* =========================
-   ALWAYS FORCE FINNISH ON LOAD
-========================= */
-document.addEventListener("DOMContentLoaded", () => {
-  currentLang = "fi";
-  applyLang();
-});
-/* =========================
-   DEBUG ERROR CATCH
-========================= */
-window.onerror = function(message, source, lineno, colno, error) {
-  alert(message + " på rad " + lineno);
-};
+applyLang();
+   
