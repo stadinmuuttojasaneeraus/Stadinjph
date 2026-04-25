@@ -640,4 +640,4 @@ let currentLang = localStorage.getItem("lang") || "fi";
 
 applyLang();
    
-document.body.classList.add("lang-ready");
+
